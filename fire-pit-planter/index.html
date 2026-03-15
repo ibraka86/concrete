@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fire Pit & Planter Concrete Block Calculator: Estimate Patio Materials</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Free concrete block calculator for your fire pit, patio, or retaining wall project. Estimate block size, count, and materials needed for circular or square layouts.">
+  <link rel="canonical" href="https://www.concreteblockcalculator.com/fire-pit-planter/">
+  <meta property="og:title" content="Fire Pit & Planter Concrete Block Calculator">
+  <meta property="og:description" content="Calculate concrete blocks you need for a fire pit or garden wall project.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.concreteblockcalculator.com/fire-pit-planter/">
+  <meta property="og:image" content="https://www.concreteblockcalculator.com/favicon.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fire Pit & Planter Block Calculator">
+  <meta name="twitter:description" content="Calculate blocks for DIY fire pits and garden planters.">
+  <meta name="twitter:image" content="https://www.concreteblockcalculator.com/favicon.svg">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEM0LS9VSQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LEM0LS9VSQ');
+  </script>
+  
+  <style>
+    /* Critical CSS for above-the-fold */
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;color:#0B1A2B;background:#F7FBFF}
+    .site-header{padding:1rem;text-align:center;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .brand{display:inline-flex;align-items:center;gap:0.5rem;font-size:1.5rem;font-weight:700;text-decoration:none;color:#0B1A2B}
+    .brand img{width:32px;height:32px}
+    .tagline{margin:0.5rem 0 0;color:#666;font-size:0.9rem}
+    main{max-width:1200px;margin:0 auto;padding:1rem}
+    .calculator{background:#fff;border-radius:8px;padding:1.5rem;margin-bottom:2rem;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+    h1{margin:0 0 1rem;font-size:2rem;color:#0B1A2B}
+  </style>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <a class="brand" href="/">
+          <img src="../favicon.svg" alt="" aria-hidden="true" width="32" height="32">
+          <span>Concrete Block Calculator</span>
+        </a>
+        <p class="tagline">Fast CMU estimates for blocks, mortar, grout, sand, and reinforcement.</p>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false">Calculators</a>
+          <div class="dropdown-menu" aria-labelledby="calculatorsDropdown">
+            <a href="/" class="dropdown-item">Concrete Block Calculator</a>
+            <a href="/retaining-wall/index.html" class="dropdown-item">Retaining Wall Calculator</a>
+            <a href="/block-weight/index.html" class="dropdown-item">Block Weight Calculator</a>
+            <a href="/fire-pit-planter/index.html" class="dropdown-item active">Fire Pit & Planter Calculator</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/knowledge-base/" class="nav-link">Knowledge Base</a>
+        </div>
+        <div class="nav-item">
+          <a href="/about-us/" class="nav-link">About Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <h1 class="intro-title">Fire Pit & Planter Concrete Block Calculator</h1>
+      <p>Planning a patio upgrade or building a retaining wall? Our concrete block calculator makes it easy to find out how many blocks you’ll need for a custom fire pit or block wall. Whether you’re creating a circular gathering space or a square brick planter, this calculator helps you figure out how many concrete blocks you need for a successful outdoor space.</p>
+      
+      <div class="steps">
+        <h2>How to Use This Concrete Block Calculator for Your Wall Project</h2>
+        <ol>
+          <li><strong>Layout:</strong> Select your wall project type—fire pit or garden planter.</li>
+          <li><strong>Dimension:</strong> Choose a circular or rectangular patio design.</li>
+          <li><strong>Measure:</strong> Enter the diameter or width and height in ft.</li>
+          <li><strong>Block Size:</strong> Input the block size (e.g., standard 8″ x 8″ 16″ CMU).</li>
+          <li><strong>Calculate:</strong> Get an estimate of the total number of blocks you’ll need plus gravel.</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="main-content">
+      <section class="calculator" aria-labelledby="calc-title">
+        <h2 id="calc-title">Estimate Materials Needed: Concrete Block Calculator</h2>
+        
+        <form id="calc-form" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="projectType">Project Type</label>
+              <select id="projectType" name="projectType" required>
+                <option value="firepit">Fire Pit</option>
+                <option value="planter">Garden Planter / Raised Bed</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="shape">Shape</label>
+              <select id="shape" name="shape" required>
+                <option value="circular">Circular / Round</option>
+                <option value="square">Square</option>
+                <option value="rectangular">Rectangular</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="diameter-group">
+              <label for="diameter">Inner Diameter (ft)</label>
+              <input type="number" id="diameter" name="diameter" min="2" max="10" step="0.5" value="3">
+            </div>
+
+            <div class="form-group" id="length-group" style="display: none;">
+              <label for="length">Length (ft)</label>
+              <input type="number" id="length" name="length" min="1" step="0.5" value="4">
+            </div>
+
+            <div class="form-group" id="width-group" style="display: none;">
+              <label for="width">Width (ft)</label>
+              <input type="number" id="width" name="width" min="1" step="0.5" value="4">
+            </div>
+
+            <div class="form-group">
+              <label for="rows">Number of Rows (Height)</label>
+              <input type="number" id="rows" name="rows" min="1" max="8" step="1" value="2">
+            </div>
+
+            <div class="form-group">
+              <label for="blockSize">Block Size</label>
+              <select id="blockSize" name="blockSize" required>
+                <option value="4">4″ CMU (4×8×16)</option>
+                <option value="6">6″ CMU (6×8×16)</option>
+                <option value="8" selected>8″ CMU (8×8×16)</option>
+                <option value="wall">Retaining Wall Block (6″×12″)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="waste">Waste Percentage (%)</label>
+              <input type="number" id="waste" name="waste" value="5" min="0" max="20" step="1">
+            </div>
+          </div>
+
+          <div class="options" id="firepit-options">
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" id="includeFireRing" name="includeFireRing">
+                <span>Include fire ring insert</span>
+              </label>
+            </div>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" id="includeCap" name="includeCap">
+                <span>Include cap stones/blocks</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary">Calculate Materials</button>
+        </form>
+      </section>
+
+      <section class="results" aria-live="polite" aria-atomic="true" id="results">
+        <h2>Materials Needed and Fire Pit Layout Calculation</h2>
+        <div id="results-content">
+          <p class="placeholder">Enter your project dimensions and click "Calculate Materials" to see estimates.</p>
+        </div>
+        <div class="result-actions" style="display: none;">
+          <button id="printBtn" class="btn-secondary">Print / Save PDF</button>
+          <button id="copyBtn" class="btn-secondary">Copy Results</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="how" id="how-we-calculate">
+      <h2>How We Calculate: Patio and Block Wall Estimation</h2>
+      <details>
+        <summary>Calculating Circular Fire Pit Layout</summary>
+        <p>For a circular base, we measure the diameter to calculate the exact number of blocks required for a single block layer. Our calculation simplify the process by depending on the size of the brick or concrete unit you use.</p>
+      </details>
+      
+      <details>
+        <summary>Square Patio Design and Block counts</summary>
+        <p>We estimate how many blocks are needed for a square block wall by calculate the perimeter. You can find the square footage of the wall by multiplying length and height. This makes it easy to get the total number of materials.</p>
+      </details>
+      
+      <details>
+        <summary>Planter and Retaining Wall Project Guidelines</summary>
+        <p>A taller wall project requires more concrete and gravel. For building a retaining wall, we estimate the wall cost based on the block size and sq ft covered. Always check design requirements for installation safety.</p>
+      </details>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions: Fire Pit and Concrete Block Calculator</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+          How many blocks you’ll need for a standard 4 ft fire pit?
+        </button>
+        <div class="faq-answer" id="faq1">
+          <p>For a 4 ft diameter pit, you’ll typically calculate about 12-14 concrete blocks per row, depending on the size of the block size. Using a standard 16-inch length of the block, this tool helps you find out how many blocks you’ll need.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+          What is the typical wall cost for a patio design project?
+        </button>
+        <div class="faq-answer" id="faq2">
+          <p>The wall cost for a small retaining wall or fire pit install ranges from $200–$600. You’ll need to know the cost per block and the thickness of your gravel base to get a final estimate.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+          How do I calculate the sq ft for a planter installation?
+        </button>
+        <div class="faq-answer" id="faq3">
+          <p>You find the square footage by multiplying the width and height of each block wall. This concrete block calculator provides step-by-step instructions and a list of tools to simplify the job.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+          What are the design requirements for an outdoor gathering space?
+        </button>
+        <div class="faq-answer" id="faq4">
+          <p>For a safe outdoor space, ensure the fire pit is 15–20 ft away from any structure. Install on a gravel template and use a paver or concrete base to ensure the soil below doesn't get filled with water.</p>
+        </div>
+      </div>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Fire Pit & Planter Concrete Block Calculator",
+        "url": "https://www.concreteblockcalculator.com/fire-pit-planter/",
+        "applicationCategory": "CalculatorApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate concrete blocks for DIY fire pits and garden planters.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+      </script>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate Fire Pit Blocks",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "text": "Measure diameter or dimensions."
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Choose block size and number of rows."
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Calculate total number of blocks with wastage."
+          }
+        ]
+      }
+      </script>
+    </section>
+
+    <section class="about">
+      <h2>About Our Concrete Block Calculator for Outdoor Space</h2>
+      <p>This fire pit and planter block calculator provides materials needed for any wall project. Our installation guide makes it easy to get the sq ft and total number of blocks. Always install following design requirements and local codes for your gathering space.</p>
+      <p><strong>Contact:</strong> <a href="mailto:hello@concreteblockcalculator.com">hello@concreteblockcalculator.com</a></p>
+      <p><strong>Disclaimer:</strong> Fire pits must comply with local fire codes and safety regulations.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="/">Home</a> · 
+      <a href="#how-we-calculate">How we calculate</a> · 
+      <a href="#faq">FAQ</a> · 
+      <a href="mailto:hello@concreteblockcalculator.com">Contact</a>
+    </nav>
+    <small>
+      © <span id="year"></span> concreteblockcalculator.com
+    </small>
+  </footer>
+
+  <script src="../fire-pit-planter.js" defer></script>
+</body>
+</html>

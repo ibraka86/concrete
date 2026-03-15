@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>How to Build a Concrete Block Retaining Wall: A Step-by-Step Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete step-by-step guide to building a concrete block retaining wall. Learn footing prep, drainage, geogrid reinforcement, block stacking, and finishing. Expert DIY tips.">
+  <link rel="canonical" href="https://concreteblockcalculator.com/how-to-build-concrete-block-retaining-wall/">
+  <meta property="og:title" content="How to Build a Concrete Block Retaining Wall: A Step-by-Step Guide">
+  <meta property="og:description" content="The definitive guide to building a concrete block retaining wall from scratch. Footing, drainage, geogrid, block stacking, and finishing touches.">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+
+  <style>
+    /* Unique styles for this page */
+
+
+    .tagline { margin: 0.4rem 0 0; color: var(--text-muted); font-size: 0.9rem; }
+
+    /* ===== LAYOUT ===== */
+    .skip-link {
+      position: absolute; top: -40px; left: 6px;
+      background: var(--primary); color: white; padding: 8px;
+      border-radius: 4px; font-weight: 500; z-index: 1000;
+    }
+    .skip-link:focus { top: 6px; }
+    main { width: 100%; margin: 0 auto; padding: 1.5rem 0 3rem; }
+
+    /* ===== CARDS / SECTIONS ===== */
+    .card {
+      background: var(--bg-secondary);
+      border-radius: 12px; padding: 1.75rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .card-accent {
+      background: var(--bg-accent);
+      border-radius: 12px; padding: 1.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid var(--border);
+    }
+    /* ===== HERO / HEADER ===== */
+    .article-header {
+      background: linear-gradient(135deg, #0B1A2B 0%, #1a3a5c 100%);
+      border-radius: 20px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 10px 30px var(--shadow-lg);
+      border: 1px solid rgba(255,255,255,0.1);
+      text-align: left;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-header::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(47, 128, 237, 0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .article-header h1 { color: #fff; margin-bottom: 1rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+    .article-header p { color: rgba(255,255,255,0.9); font-size: 1.1rem; }
+
+    /* ===== TOC ===== */
+    .toc {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .toc h3 { margin: 0 0 1rem; font-size: 0.95rem; font-weight: 700; color: #1e293b; display: flex; align-items: center; gap: 0.5rem; }
+    .toc ol { margin: 0; padding-left: 1.2rem; }
+    .toc li { margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .toc a { color: #475569; text-decoration: none; transition: color 0.2s; }
+    .toc a:hover { color: var(--primary); text-decoration: underline; }
+
+    @media (min-width: 1024px) {
+      .toc {
+        float: left;
+        width: 300px;
+        margin-right: 2.5rem;
+        margin-top: 0;
+        position: sticky;
+        top: 2rem;
+        z-index: 10;
+      }
+    }
+
+    /* ===== STEP BLOCKS ===== */
+    .step-block {
+      background: var(--bg-secondary); border-radius: 12px;
+      padding: 1.75rem; margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 4px var(--shadow);
+      border-left: 5px solid var(--primary);
+      position: relative;
+    }
+    .step-number {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 2.2rem; height: 2.2rem; border-radius: 50%;
+      background: var(--primary); color: white;
+      font-weight: 700; font-size: 1rem; margin-bottom: 0.75rem;
+      flex-shrink: 0;
+    }
+    .step-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .step-header h3 { margin: 0; }
+    .step-block.warning { border-left-color: var(--warning); }
+    .step-block.warning .step-number { background: var(--warning); }
+    .step-block.success { border-left-color: var(--success); }
+    .step-block.success .step-number { background: var(--success); }
+
+    /* ===== ALERT BOXES ===== */
+    .alert {
+      border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0;
+      display: flex; gap: 0.75rem; align-items: flex-start;
+      font-size: 0.93rem;
+    }
+    .alert-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .alert-content { color: var(--text-secondary); }
+    .alert-content strong { color: var(--text-primary); }
+    .alert-warning { background: #FFF8F0; border: 1px solid #F6AD55; }
+    .alert-info { background: var(--primary-light); border: 1px solid #90CDF4; }
+    .alert-success { background: #F0FFF4; border: 1px solid #9AE6B4; }
+    .alert-danger { background: #FFF5F5; border: 1px solid #FC8181; }
+
+    /* ===== INFOGRAPHIC ===== */
+    .infographic {
+      background: var(--bg-secondary); border-radius: 12px;
+      padding: 2rem; margin: 2rem 0;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 6px var(--shadow);
+    }
+    .infographic h2 { text-align: center; margin-bottom: 0.5rem; }
+    .infographic .subtitle { text-align: center; color: var(--text-muted); margin-bottom: 2rem; font-size: 0.9rem; }
+    .wall-diagram {
+      width: 100%; max-width: 680px; margin: 0 auto; display: block;
+      font-family: inherit;
+    }
+    .infographic-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem; margin-top: 1.5rem;
+    }
+    .info-card {
+      background: var(--bg-accent); border-radius: 10px; padding: 1.2rem;
+      text-align: center; border: 1px solid var(--border);
+    }
+    .info-card .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .info-card h4 { margin: 0 0 0.4rem; font-size: 0.95rem; }
+    .info-card p { margin: 0; font-size: 0.85rem; color: var(--text-muted); }
+
+    /* ===== TABS / TOGGLE ===== */
+    .tab-container { margin: 1.5rem 0; }
+    .tab-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    .tab-btn {
+      padding: 0.5rem 1.2rem; border-radius: 6px;
+      background: var(--bg-accent); border: 1px solid var(--border);
+      color: var(--text-secondary); cursor: pointer; font-size: 0.9rem; font-weight: 500;
+      transition: all 0.2s;
+    }
+    .tab-btn.active, .tab-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* ===== CHECKLIST ===== */
+    .checklist { list-style: none; padding: 0; margin: 0; }
+    .checklist li {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      padding: 0.6rem 0.75rem; border-radius: 6px; cursor: pointer;
+      transition: background 0.15s; margin-bottom: 0.4rem;
+      border: 1px solid var(--border); background: var(--bg-secondary);
+    }
+    .checklist li:hover { background: var(--bg-accent); }
+    .checklist li.checked { background: #F0FFF4; border-color: #9AE6B4; text-decoration: line-through; color: var(--text-muted); }
+    .checklist li input[type="checkbox"] { margin-top: 0.15rem; accent-color: var(--success); flex-shrink: 0; width: 16px; height: 16px; }
+    .checklist li label { cursor: pointer; font-size: 0.93rem; color: var(--text-secondary); line-height: 1.4; }
+    .checklist-progress { margin-bottom: 1rem; }
+    .progress-bar-wrap { background: var(--border); border-radius: 99px; height: 8px; overflow: hidden; margin-top: 0.4rem; }
+    .progress-bar-fill { background: var(--success); height: 100%; border-radius: 99px; transition: width 0.3s; }
+    .progress-label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.3rem; }
+
+    /* ===== CALCULATOR (Wall Size Estimator) ===== */
+    .calc-grid { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 600px) { .calc-grid { grid-template-columns: 1fr; } }
+    .form-group { display: flex; flex-direction: column; }
+    .form-group label { font-weight: 500; margin-bottom: 0.4rem; color: var(--text-primary); font-size: 0.9rem; }
+    .form-group input, .form-group select {
+      padding: 0.65rem 0.9rem; border: 2px solid var(--border);
+      border-radius: 6px; font-size: 1rem;
+      background: var(--bg-secondary); color: var(--text-primary);
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--primary); }
+    .btn-primary {
+      padding: 0.75rem 1.5rem; border: none; border-radius: 6px;
+      font-size: 1rem; font-weight: 500; cursor: pointer;
+      background: var(--primary); color: white;
+      transition: all 0.2s; min-height: 44px;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 4px 8px var(--shadow); }
+    .btn-secondary {
+      padding: 0.65rem 1.2rem; border: 1px solid var(--border);
+      border-radius: 6px; font-size: 0.9rem; font-weight: 500;
+      cursor: pointer; background: var(--bg-accent); color: var(--text-primary);
+      transition: all 0.2s; min-height: 38px;
+    }
+    .btn-secondary:hover { background: var(--border); }
+    .results-grid { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin-top: 1rem; }
+    .result-item { padding: 1rem; background: var(--bg-accent); border-radius: 8px; border: 1px solid var(--border); }
+    .result-label { font-weight: 500; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.2rem; }
+    .result-value { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+    .result-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.1rem; }
+
+    /* ===== COMPARISON TABLE ===== */
+    .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    .comparison-table th { background: var(--primary); color: white; padding: 0.75rem 1rem; text-align: left; }
+    .comparison-table th:first-child { border-radius: 8px 0 0 0; }
+    .comparison-table th:last-child { border-radius: 0 8px 0 0; }
+    .comparison-table td { padding: 0.65rem 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+    .comparison-table tr:nth-child(even) td { background: var(--bg-accent); }
+    .comparison-table tr:hover td { background: var(--primary-light); }
+    .check { color: var(--success); font-weight: 700; }
+    .cross { color: var(--error); font-weight: 700; }
+    .partial { color: var(--warning); font-weight: 700; }
+    .table-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid var(--border); }
+
+    /* ===== FAQ ===== */
+    .faq-item { margin-bottom: 0.75rem; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .faq-question {
+      width: 100%; padding: 1rem 1.25rem; background: var(--bg-accent);
+      border: none; text-align: left; cursor: pointer; font-weight: 500;
+      color: var(--text-primary); font-size: 0.97rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .faq-question:hover { background: var(--border); }
+    .faq-question::after { content: "+"; font-size: 1.3rem; font-weight: bold; transition: transform 0.2s; color: var(--primary); }
+    .faq-question[aria-expanded="true"]::after { content: "−"; }
+    .faq-answer { display: none; padding: 1rem 1.25rem; border-top: 1px solid var(--border); }
+    .faq-answer.show { display: block; }
+    .faq-answer p { margin: 0; font-size: 0.93rem; }
+
+    /* ===== VIDEO EMBED ===== */
+    .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin: 1.5rem 0; }
+    .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 10px; }
+
+    /* ===== EEEAT SECTION ===== */
+    .eeat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .eeat-card { background: var(--bg-accent); border-radius: 10px; padding: 1.2rem; border: 1px solid var(--border); text-align: center; }
+    .eeat-card .eeat-icon { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    .eeat-card h4 { margin: 0 0 0.4rem; font-size: 0.95rem; }
+    .eeat-card p { margin: 0; font-size: 0.83rem; color: var(--text-muted); }
+
+    /* ===== QUOTE / PRO TIP ===== */
+    .pro-tip {
+      background: var(--primary-light); border-left: 4px solid var(--primary);
+      border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.25rem 0;
+      font-size: 0.93rem; color: var(--text-secondary);
+    }
+    .pro-tip strong { color: var(--primary); }
+
+    /* ===== FOOTER ===== */
+    .site-footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 2rem 1rem; text-align: center; margin-top: 3rem; }
+    .site-footer nav { margin-bottom: 1rem; }
+    .site-footer nav a { margin: 0 0.25rem; font-size: 0.9rem; color: var(--text-muted); }
+    .site-footer nav a:hover { color: var(--primary); }
+    .site-footer small { color: var(--text-muted); font-size: 0.8rem; }
+
+    /* ===== BREADCRUMB ===== */
+    .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .breadcrumb a { color: var(--primary); }
+    .breadcrumb span { margin: 0 0.4rem; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 640px) {
+      main { padding: 1rem 0.75rem 2rem; }
+      h1 { font-size: 1.7rem; }
+      h2 { font-size: 1.35rem; }
+      .card { padding: 1.25rem; }
+      .hero-card { padding: 1.75rem 1.25rem; }
+      .hero-card::after { display: none; }
+    }
+
+    /* ===== SVG wall diagram styles ===== */
+    .wall-layer { transition: opacity 0.3s; }
+    .wall-layer:hover { opacity: 0.85; cursor: pointer; }
+
+    /* ===== Cost Table ===== */
+    .cost-bar-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem; }
+    .cost-bar-label { min-width: 140px; font-size: 0.88rem; color: var(--text-secondary); }
+    .cost-bar-outer { flex: 1; background: var(--border); border-radius: 99px; height: 20px; overflow: hidden; }
+    .cost-bar-inner { height: 100%; border-radius: 99px; background: var(--primary); display: flex; align-items: center; padding-left: 8px; transition: width 0.6s ease; }
+    .cost-bar-val { font-size: 0.78rem; color: white; font-weight: 600; white-space: nowrap; }
+
+    /* ===== Smooth scroll ===== */
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <a class="brand" href="/">
+          <img src="../../favicon.svg" alt="" aria-hidden="true" width="32" height="32">
+          <span>Concrete Block Calculator</span>
+        </a>
+        <p class="tagline">Fast CMU estimates for blocks, mortar, grout, sand, and reinforcement.</p>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false">Calculators</a>
+          <div class="dropdown-menu" aria-labelledby="calculatorsDropdown">
+            <a href="/" class="dropdown-item">Concrete Block Calculator</a>
+            <a href="/retaining-wall/index.html" class="dropdown-item">Retaining Wall Calculator</a>
+            <a href="/block-weight/index.html" class="dropdown-item">Block Weight Calculator</a>
+            <a href="/fire-pit-planter/index.html" class="dropdown-item">Fire Pit & Planter Calculator</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/knowledge-base/" class="nav-link active">Knowledge Base</a>
+        </div>
+        <div class="nav-item">
+          <a href="/about-us/" class="nav-link">About Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<!-- ===== MAIN ===== -->
+<main id="main">
+  <div class="blog-layout">
+    <div class="blog-main">
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>›</span>
+    <a href="/blog">Blog</a><span>›</span>
+    <span>How to Build a Concrete Block Retaining Wall</span>
+  </nav>
+
+    <div class="article-header">
+      <div class="article-meta">
+        <span>📅 Updated March 2026</span>
+        <span>⏱ 18 min read</span>
+        <span>🔨 DIY Level: Intermediate</span>
+      </div>
+      <h1>How to Build a Concrete Block Retaining Wall: A Step-by-Step Guide</h1>
+      <p>Site planning, footing preparation, drainage systems, geogrid reinforcement, block stacking, and finishing caps. Built from real-world experience and backed by engineering best practices.</p>
+      <div class="article-meta" style="margin-top: 1rem;">
+        <span class="badge badge-info">Permits & Codes</span>
+        <span class="badge badge-info">Drainage & Waterproofing</span>
+        <span class="badge badge-info">Geogrid Reinforcement</span>
+      </div>
+    </div>
+
+  <!-- ===== E-E-A-T / TRUST BOX ===== -->
+  <div class="card" id="why-trust">
+    <h2 style="margin-top:0">⭐ Why Trust This Guide</h2>
+    <div class="eeat-grid">
+      <div class="eeat-card">
+        <div class="eeat-icon">🏗️</div>
+        <h4>Experience-Based</h4>
+        <p>Written using real construction practices, field-verified step-by-step procedures, and techniques used by professional masons across the U.S.</p>
+      </div>
+      <div class="eeat-card">
+        <div class="eeat-icon">📐</div>
+        <h4>Engineering-Backed</h4>
+        <p>All structural recommendations align with NCMA (National Concrete Masonry Association) guidelines and Allan Block best practices for SRW design.</p>
+      </div>
+      <div class="eeat-card">
+        <div class="eeat-icon">🔍</div>
+        <h4>Competitor-Analyzed</h4>
+        <p>We analyzed the top 5 ranking guides on this topic, identified content gaps, and filled them — especially on drainage, geogrid, and code compliance.</p>
+      </div>
+      <div class="eeat-card">
+        <div class="eeat-icon">🧮</div>
+        <h4>Interactive Tools</h4>
+        <p>Includes a material estimator, interactive checklist, comparison table, and HTML infographic — tools no other guide offers in one place.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #1a3a5c 0%, #2F80ED 100%); color: white; text-align: center; padding: 2.5rem;">
+    <h2 style="color: white; margin-top: 0;">Plan Your Wall Like a Pro</h2>
+    <p style="color: rgba(255,255,255,0.9); margin-bottom: 1.5rem;">Get exact material counts, gravel volume, and structural requirements for your retaining wall in seconds.</p>
+    <a href="/retaining-wall/index.html" class="btn-primary" style="background: white; color: var(--primary);">Open Retaining Wall Calculator →</a>
+  </div>
+
+  <!-- ===== TABLE OF CONTENTS ===== -->
+  <div class="toc">
+    <h3>📋 Table of Contents</h3>
+    <ol>
+      <li><a href="#overview">Project Overview &amp; When You Need a Retaining Wall</a></li>
+      <li><a href="#planning">Phase 1 – Planning, Permits &amp; Block Selection</a></li>
+      <li><a href="#materials">Tools &amp; Materials Complete List</a></li>
+      <li><a href="#estimator">Interactive Material Estimator</a></li>
+      <li><a href="#steps">Step-by-Step Construction (Steps 1–10)</a></li>
+      <li><a href="#drainage">Drainage Deep-Dive: The #1 Cause of Wall Failure</a></li>
+      <li><a href="#geogrid">Geogrid Reinforcement Guide</a></li>
+      <li><a href="#infographic">Visual Wall Cross-Section Infographic</a></li>
+      <li><a href="#wall-types">Wall Type Comparison</a></li>
+      <li><a href="#cost">Cost Breakdown &amp; Budget Guide</a></li>
+      <li><a href="#mistakes">10 Mistakes That Destroy Retaining Walls</a></li>
+      <li><a href="#checklist">Pre-Build Checklist</a></li>
+      <li><a href="#faq">Frequently Asked Questions</a></li>
+    </ol>
+  </div>
+
+  <!-- ===== SECTION 1: OVERVIEW ===== -->
+  <section id="overview" class="card">
+    <h2>🏡 Project Overview: When Do You Need a Retaining Wall?</h2>
+    <p>A <strong>concrete block retaining wall</strong> — also called a <strong>Segmental Retaining Wall (SRW)</strong> or <strong>CMU retaining wall</strong> — is a structural system designed to hold back soil, prevent erosion, and create flat, usable terraces on sloped properties. Unlike decorative garden walls, retaining walls are load-bearing structures that must resist significant lateral earth pressure and hydrostatic pressure from groundwater.</p>
+
+    <h3>You Need a Retaining Wall If:</h3>
+    <ul>
+      <li>Your yard has a slope greater than 3:1 (3 feet of run for every 1 foot of rise)</li>
+      <li>You're experiencing soil erosion, hillside slippage, or mudslides</li>
+      <li>You want to create level garden beds, patios, or driveways on sloped land</li>
+      <li>A road, driveway, or structure is cut into a hillside</li>
+      <li>You're managing stormwater runoff on your property</li>
+    </ul>
+
+    <h3>Why Concrete Blocks Are the Top Choice</h3>
+    <p>Concrete masonry units (CMU) offer the best combination of strength, cost-effectiveness, and DIY-friendliness for most residential retaining walls. Here's how they compare:</p>
+    <div class="table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th>Concrete Blocks</th>
+            <th>Poured Concrete</th>
+            <th>Timber/Railroad Ties</th>
+            <th>Natural Stone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>DIY Friendly</strong></td>
+            <td class="check">✔ High</td>
+            <td class="cross">✘ Low</td>
+            <td class="partial">~ Medium</td>
+            <td class="cross">✘ Low</td>
+          </tr>
+          <tr>
+            <td><strong>Cost (per linear ft)</strong></td>
+            <td>$15–$35</td>
+            <td>$40–$80</td>
+            <td>$10–$20</td>
+            <td>$50–$120</td>
+          </tr>
+          <tr>
+            <td><strong>Lifespan</strong></td>
+            <td>50–100 yrs</td>
+            <td>50–100 yrs</td>
+            <td>10–20 yrs</td>
+            <td>100+ yrs</td>
+          </tr>
+          <tr>
+            <td><strong>Drainage Built-in</strong></td>
+            <td class="check">✔ Easy</td>
+            <td class="partial">~ Requires weep holes</td>
+            <td class="check">✔ Natural</td>
+            <td class="check">✔ Natural</td>
+          </tr>
+          <tr>
+            <td><strong>Height Limit (DIY)</strong></td>
+            <td>Up to 4 ft</td>
+            <td>Any (with engineering)</td>
+            <td>3–4 ft</td>
+            <td>3 ft</td>
+          </tr>
+          <tr>
+            <td><strong>Permit Required</strong></td>
+            <td>Usually &gt;4 ft</td>
+            <td>Always</td>
+            <td>Usually &gt;3 ft</td>
+            <td>Usually &gt;3 ft</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert alert-info" style="margin-top:1.25rem;">
+      <div class="alert-icon">💡</div>
+      <div class="alert-content"><strong>Key Stat:</strong> The #1 cause of retaining wall failure in the U.S. is <strong>inadequate drainage</strong>, not structural weakness. Most DIY walls fail not because of poor block quality but because water saturates the soil behind the wall and creates 2–3× the intended lateral pressure. This guide addresses drainage more thoroughly than any competitor.</div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO 1 ===== -->
+  <div class="card" style="padding:1.25rem;">
+    <h3 style="margin:0 0 0.75rem;">🎬 Watch: Complete DIY Retaining Wall Build (Pro Tutorial)</h3>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/zPGFSOrV2GA" title="How to Build a Retaining Wall Pro Tips" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p style="margin:0.5rem 0 0; font-size:0.85rem; color:var(--text-muted);">▶ Professional contractor demonstrates full retaining wall construction from excavation to cap installation.</p>
+  </div>
+
+  <!-- ===== SECTION 2: PLANNING ===== -->
+  <section id="planning" class="card">
+    <h2>📐 Phase 1 – Planning, Permits &amp; Block Selection</h2>
+
+    <h3>Step 0 (Before You Dig): Call 811</h3>
+    <div class="alert alert-danger">
+      <div class="alert-icon">⚠️</div>
+      <div class="alert-content"><strong>CRITICAL:</strong> In the United States, you are legally required to call <strong>811 (Dig Safe)</strong> at least 3 business days before any excavation. This free service marks underground utilities (gas, water, electric, fiber). Hitting a line can be fatal and result in massive fines.</div>
+    </div>
+
+    <h3>Do You Need a Permit?</h3>
+    <p>This varies by state and municipality, but a general U.S. rule of thumb:</p>
+    <ul>
+      <li><strong>Wall under 3 feet:</strong> Usually no permit required in most jurisdictions</li>
+      <li><strong>Wall 3–4 feet:</strong> Permit often required; check local codes</li>
+      <li><strong>Wall over 4 feet:</strong> Almost always requires a permit <em>and</em> a licensed structural engineer's stamp</li>
+      <li><strong>Any wall near a property line:</strong> Setback requirements may apply — check HOA rules</li>
+      <li><strong>Walls supporting a surcharge</strong> (driveway, structure above): Always get an engineer</li>
+    </ul>
+
+    <div class="alert alert-warning">
+      <div class="alert-icon">🏛️</div>
+      <div class="alert-content"><strong>Tip:</strong> Contact your local building department or planning office. A $75 permit avoids a costly tear-down order, fines, and insurance issues if the wall damages a neighbor's property.</div>
+    </div>
+
+    <h3>Choosing the Right Concrete Block</h3>
+    <p>Not all concrete blocks are created equal for retaining walls. For DIY retaining applications, use <strong>segmental retaining wall (SRW) blocks</strong> — not standard CMU bricks. These are specifically engineered for lateral load bearing.</p>
+
+    <div class="tab-container" id="block-tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab('blocks','locking')">Locking/Interlocking</button>
+        <button class="tab-btn" onclick="switchTab('blocks','pin')">Pin-Lock Blocks</button>
+        <button class="tab-btn" onclick="switchTab('blocks','gravity')">Gravity Blocks</button>
+        <button class="tab-btn" onclick="switchTab('blocks','large')">Large Format CMU</button>
+      </div>
+      <div id="blocks-locking" class="tab-content active card-accent">
+        <h4>🔒 Locking/Interlocking Blocks (e.g., Allan Block, Versa-Lok)</h4>
+        <p><strong>Best for:</strong> Most residential DIY retaining walls up to 6 ft with geogrid</p>
+        <ul>
+          <li>Feature a <strong>locking lip or setback batter</strong> that naturally angles the wall into the hillside</li>
+          <li>No mortar required — rely on <strong>gravity and interlocking</strong> geometry</li>
+          <li>Most support <strong>geogrid integration</strong> for taller walls</li>
+          <li>Available in decorative textures at Home Depot / Lowe's</li>
+        </ul>
+        <p><strong>Typical size:</strong> 12″W × 6″H × 8″D | <strong>Weight:</strong> ~28–80 lbs each</p>
+      </div>
+      <div id="blocks-pin" class="tab-content card-accent">
+        <h4>📌 Pin-Lock Blocks (e.g., Pavestone, Unilock)</h4>
+        <p><strong>Best for:</strong> Moderate walls 2–5 ft, curved designs</p>
+        <ul>
+          <li>Use fiberglass or composite <strong>connecting pins</strong> to lock courses together</li>
+          <li>Very forgiving for curved and angled wall layouts</li>
+          <li>Pins provide lateral resistance without mortar</li>
+          <li>Easier to course-adjust during construction</li>
+        </ul>
+        <p><strong>Typical size:</strong> 12″W × 6″H × 9″D | <strong>Weight:</strong> ~35–65 lbs each</p>
+      </div>
+      <div id="blocks-gravity" class="tab-content card-accent">
+        <h4>⚖️ Standard Gravity Blocks (Flat Face Stacking)</h4>
+        <p><strong>Best for:</strong> Low walls under 2 ft, decorative garden borders</p>
+        <ul>
+          <li>Simple flat blocks stacked with no locking mechanism</li>
+          <li>Rely entirely on <strong>weight and setback</strong> for stability</li>
+          <li>Limited to about 2 ft without engineering intervention</li>
+          <li>Cheapest option, least structural strength</li>
+        </ul>
+        <p><strong>Typical size:</strong> 16″W × 4″H × 8″D | <strong>Weight:</strong> ~20–45 lbs each</p>
+      </div>
+      <div id="blocks-large" class="tab-content card-accent">
+        <h4>🧱 Large Format CMU (8×8×16 Standard Block)</h4>
+        <p><strong>Best for:</strong> Mortar-set walls, taller commercial retaining applications</p>
+        <ul>
+          <li>Standard 8×8×16 inch hollow CMU with mortar joints</li>
+          <li>Requires a poured concrete footing below frost line</li>
+          <li>Can be reinforced with rebar and grout fill</li>
+          <li>Requires masonry skills — not recommended for first-time DIYers</li>
+        </ul>
+        <p><strong>Typical size:</strong> 16″L × 8″H × 8″D | <strong>Weight:</strong> ~28–38 lbs each</p>
+      </div>
+    </div>
+
+    <h3>Planning Your Layout</h3>
+    <ul>
+      <li>Use <strong>stakes and mason's string</strong> to outline the wall footprint</li>
+      <li>For curves: use a garden hose to outline the desired shape, then mark with spray paint</li>
+      <li>Measure total linear feet and maximum wall height — you'll need both for the material estimator below</li>
+      <li>Plan for a <strong>1-inch setback per course</strong> (batter) — most SRW blocks build this in automatically</li>
+      <li>The wall footprint extends 1 ft below grade for every foot of finished wall height (burial depth)</li>
+    </ul>
+  </section>
+
+  <!-- ===== SECTION 3: MATERIALS ===== -->
+  <section id="materials" class="card">
+    <h2>🛒 Complete Tools &amp; Materials List</h2>
+    <p>Use this comprehensive list before purchasing. Prices are 2025–2026 U.S. averages.</p>
+
+    <div class="tab-container" id="materials-tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab('mat','blocks-mat')">Blocks &amp; Masonry</button>
+        <button class="tab-btn" onclick="switchTab('mat','drainage-mat')">Drainage System</button>
+        <button class="tab-btn" onclick="switchTab('mat','reinforcement-mat')">Reinforcement</button>
+        <button class="tab-btn" onclick="switchTab('mat','tools-mat')">Tools</button>
+      </div>
+
+      <div id="mat-blocks-mat" class="tab-content active card-accent">
+        <ul>
+          <li>🧱 <strong>SRW retaining wall blocks</strong> — calculate using estimator below; buy 10% extra</li>
+          <li>🔲 <strong>Cap/coping blocks</strong> — for the final course (decorative finish)</li>
+          <li>💧 <strong>Landscape block adhesive</strong> (e.g., LOCTITE PL 500 or DAP concrete adhesive) — for cap course</li>
+          <li>⬛ <strong>3/4" crushed gravel / wall rock</strong> — ~1 ton per 10 linear feet of wall (3 ft height)</li>
+          <li>🪨 <strong>Paver base / crusher run</strong> — for footing base, ~6–8" deep in trench</li>
+          <li>🌱 <strong>Topsoil</strong> — for final backfill layer (top 6–12")</li>
+        </ul>
+      </div>
+
+      <div id="mat-drainage-mat" class="tab-content card-accent">
+        <ul>
+          <li>🕳️ <strong>4" perforated drain pipe (French drain)</strong> — same length as the wall + outlet run</li>
+          <li>🧶 <strong>Non-woven geotextile filter fabric</strong> — NOT woven; wraps the drain pipe &amp; gravel zone; ~2× wall height in width</li>
+          <li>🟡 <strong>Sock for drain pipe</strong> — pre-filtered pipe sock prevents clogging</li>
+          <li>🔧 <strong>Solid drain pipe</strong> — to run from perforated section to daylight outlet</li>
+          <li>📍 <strong>Landscape fabric staples</strong> — to secure filter fabric during backfill</li>
+        </ul>
+      </div>
+
+      <div id="mat-reinforcement-mat" class="tab-content card-accent">
+        <ul>
+          <li>🕸️ <strong>Geogrid</strong> (uniaxial, e.g., Mirafi, Tensar) — for walls over 3 ft; extends back into hillside equal to wall height; specify per layer</li>
+          <li>🔩 <strong>Rebar #4 or #5</strong> — if using CMU blocks with grouted cores</li>
+          <li>🪣 <strong>Grout/core fill mix</strong> — for CMU block cores (if mortar-set)</li>
+          <li>⚙️ <strong>Deadman anchors</strong> — T-shaped blocks or timber ties buried perpendicular for extra gravity walls</li>
+        </ul>
+      </div>
+
+      <div id="mat-tools-mat" class="tab-content card-accent">
+        <ul>
+          <li>⛏️ Trenching shovel &amp; spade</li>
+          <li>🔨 Rubber mallet / dead-blow hammer</li>
+          <li>📏 4–6 ft level + torpedo level</li>
+          <li>🧵 Mason's string line + line level</li>
+          <li>🎯 Grade stakes</li>
+          <li>🖌️ Ground-marking spray paint</li>
+          <li>📐 Measuring tape</li>
+          <li>🪵 Hand tamper or plate compactor (rental ~$75/day)</li>
+          <li>⚙️ Angle grinder with diamond masonry blade (for cutting blocks)</li>
+          <li>🔬 Safety glasses, gloves, dust mask (N95 minimum for masonry dust)</li>
+          <li>🚜 Mini-excavator or skid steer (rental ~$350/day — worth it for walls over 30 ft)</li>
+          <li>🪣 Wheelbarrow</li>
+          <li>🔦 Work lights (if working near dusk)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: ESTIMATOR ===== -->
+  <section id="estimator" class="card">
+    <h2>🧮 Interactive Material Estimator</h2>
+    <p>Enter your wall dimensions to get a quick material estimate. For precise block counts, use our <a href="/">full Concrete Block Calculator</a>.</p>
+
+    <form id="wall-estimator" onsubmit="calcWall(event)">
+      <div class="calc-grid">
+        <div class="form-group">
+          <label for="wallLength">Wall Length (feet)</label>
+          <input type="number" id="wallLength" min="1" step="0.5" placeholder="e.g. 20" required>
+        </div>
+        <div class="form-group">
+          <label for="wallHeight">Finished Wall Height (feet)</label>
+          <input type="number" id="wallHeight" min="0.5" max="8" step="0.25" placeholder="e.g. 3.5" required>
+        </div>
+        <div class="form-group">
+          <label for="blockH">Block Height (inches)</label>
+          <select id="blockH">
+            <option value="6" selected>6" (standard SRW)</option>
+            <option value="4">4" (small tumbled)</option>
+            <option value="8">8" (large CMU)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="blockL">Block Face Width (inches)</label>
+          <select id="blockL">
+            <option value="12" selected>12" (standard)</option>
+            <option value="16">16" (CMU)</option>
+            <option value="9">9" (pin-lock)</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin-top:1rem;">
+        <button type="submit" class="btn-primary">⚡ Estimate Materials</button>
+      </div>
+    </form>
+
+    <div id="wall-results" style="display:none; margin-top:1.5rem;">
+      <h3 style="margin-top:0;">📊 Your Estimated Materials</h3>
+      <div class="results-grid">
+        <div class="result-item"><div class="result-label">🧱 Blocks Needed</div><div class="result-value" id="r-blocks">—</div><div class="result-note">includes 10% waste</div></div>
+        <div class="result-item"><div class="result-label">⛏️ Gravel (tons)</div><div class="result-value" id="r-gravel">—</div><div class="result-note">3/4" crushed, behind wall</div></div>
+        <div class="result-item"><div class="result-label">🕳️ Drain Pipe (ft)</div><div class="result-value" id="r-pipe">—</div><div class="result-note">4" perforated + outlet</div></div>
+        <div class="result-item"><div class="result-label">🧶 Filter Fabric (sq ft)</div><div class="result-value" id="r-fabric">—</div><div class="result-note">non-woven geotextile</div></div>
+        <div class="result-item"><div class="result-label">🕸️ Geogrid (sq ft)</div><div class="result-value" id="r-geo">—</div><div class="result-note" id="r-geo-note">if wall &gt;3 ft</div></div>
+        <div class="result-item"><div class="result-label">💰 Est. Block Cost</div><div class="result-value" id="r-cost">—</div><div class="result-note">at ~$2.50/block avg</div></div>
+      </div>
+      <div class="alert alert-info" style="margin-top:1rem;">
+        <div class="alert-icon">ℹ️</div>
+        <div class="alert-content">These are rough estimates for planning. Actual quantities depend on block brand, site conditions, and soil type. Always verify with your supplier. <a href="/">Use our full calculator</a> for precise CMU counts.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: STEP-BY-STEP ===== -->
+  <section id="steps">
+    <h2 class="card" style="margin-bottom:1rem; padding:1.25rem 1.75rem;">🔨 Step-by-Step Construction Guide</h2>
+
+    <!-- STEP 1 -->
+    <div class="step-block" id="step1">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <h3>Mark Layout &amp; Excavate the Site</h3>
+      </div>
+      <p>Using your grade stakes, mason's string, and marking paint, clearly define the entire wall footprint. For <strong>straight walls</strong>, run two parallel string lines to define the front face and back edge. For <strong>curved walls</strong>, use a garden hose, then trace with spray paint.</p>
+
+      <h4>Excavation Depth Formula:</h4>
+      <div class="card-accent" style="border-radius:8px; padding:1rem; margin:0.75rem 0;">
+        <strong>Trench depth = Block Height × 2 + 6–8" of gravel base</strong><br>
+        <span style="font-size:0.9rem; color:var(--text-muted);">Example: 6" blocks → bury one full course (6") + 6–8" gravel = 12–14" total trench depth</span>
+      </div>
+
+      <h4>Cutting Back the Hillside:</h4>
+      <p>For walls <strong>over 3 ft tall</strong>, you must cut back into the hillside <strong>as far as your wall is tall</strong>. This creates space for the drainage zone and geogrid layers. Example: a 4 ft wall requires 4 ft of cut-back behind the wall face.</p>
+      <ul>
+        <li>For small walls (&lt;20 ft, &lt;3 ft height): hand tools work fine</li>
+        <li>For larger projects: rent a mini-excavator or skid steer — it's worth every penny</li>
+      </ul>
+
+      <div class="alert alert-warning">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-content"><strong>Don't build on a slope!</strong> The wall base must be <em>level</em> — step your footing trench up or down to ensure the first course is always horizontal, even if the terrain slopes along the wall's length.</div>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step-block" id="step2">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <h3>Prepare the Footing (The Foundation of Everything)</h3>
+      </div>
+      <p>Your wall is only as strong as its foundation. Skipping or rushing the footing is the #2 cause of retaining wall failure after poor drainage.</p>
+
+      <h4>Footing Specs:</h4>
+      <ul>
+        <li><strong>Width:</strong> At least 16" wide (or twice your block depth)</li>
+        <li><strong>Gravel depth:</strong> 6–8" of <strong>compacted 3/4" crushed gravel</strong> (angular, not rounded pea gravel)</li>
+        <li><strong>Level tolerance:</strong> ±1/4" across the entire footing run</li>
+      </ul>
+
+      <h4>Process:</h4>
+      <ol>
+        <li>Dig to the required depth, removing all organic material (roots, topsoil)</li>
+        <li>Optional: lay non-woven filter fabric in trench bottom to prevent settling</li>
+        <li>Add 6–8" of <strong>angular crushed gravel (3/4" clean stone)</strong> — never use pea gravel or sand alone</li>
+        <li>Compact thoroughly with a plate compactor or hand tamper — make <strong>multiple passes</strong></li>
+        <li>Check level with a 4-foot level in all directions — adjust before adding blocks</li>
+      </ol>
+
+      <div class="pro-tip">
+        <strong>🏆 Pro Tip:</strong> Rent a vibratory plate compactor for this step. Hand tamping is acceptable for small walls but a plate compactor achieves significantly better soil and gravel density, especially in sandy soils. Uncompacted base = tilting wall in 2–3 years.
+      </div>
+
+      <h4>For Mortar-Set CMU Walls Only:</h4>
+      <p>If using standard 8×8×16 CMU blocks with mortar, you'll need a <strong>poured concrete footing</strong> (not just gravel) that goes below the local <strong>frost line</strong>. In Northern states this may be 36–48" deep. This type of wall requires a permit in most jurisdictions.</p>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step-block" id="step3">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <h3>Set the First Course (The Most Critical Step)</h3>
+      </div>
+      <p>The first course of blocks is the single most important step in the entire project. Every subsequent course stacks directly on top — errors here multiply with every layer.</p>
+
+      <h4>Rules for First Course:</h4>
+      <ul>
+        <li>Place blocks <strong>one full block height below final grade</strong> (buried course)</li>
+        <li>Use a long 4–6 ft level to check both <strong>side-to-side</strong> and <strong>front-to-back</strong> level</li>
+        <li>Check adjacent blocks are in the <strong>same horizontal plane</strong> — no high or low spots</li>
+        <li>Blocks should be <strong>nearly level front-to-back</strong>, or leaning very slightly back into the hillside (never forward)</li>
+        <li>If blocks have a locking lip/flange on the back: either bury it or remove the flange with a chisel on the first course only</li>
+      </ul>
+
+      <div class="alert alert-danger">
+        <div class="alert-icon">🚫</div>
+        <div class="alert-content"><strong>Do NOT rush this step.</strong> Spending an extra hour perfecting the first course will save you hours of frustration and structural problems on every subsequent course. Use a dead-blow hammer to make micro-adjustments in gravel — do not strike the block face directly.</div>
+      </div>
+
+      <h4>Handling Slopes Along the Wall Length:</h4>
+      <p>If your terrain slopes along the length of the wall (not just behind it), you'll need to <strong>step your first course</strong>. Think of it like stair-stepping — each step is one block height. Keep a string line at constant elevation along the wall face as your reference.</p>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step-block warning" id="step4">
+      <div class="step-header">
+        <div class="step-number">4</div>
+        <h3>Install the Drainage System (Don't Skip This)</h3>
+      </div>
+      <p>Install drainage <strong>before backfilling</strong>. This is the step most DIYers underestimate or skip — and the primary reason retaining walls lean, crack, and collapse.</p>
+
+      <h4>The French Drain System:</h4>
+      <ol>
+        <li>Place a <strong>4" perforated drain pipe</strong> directly behind the first course of blocks at the footing level</li>
+        <li>The pipe must slope <strong>at least 1% grade</strong> (1/8" per foot) toward the outlet</li>
+        <li>Wrap the pipe zone with <strong>non-woven geotextile filter fabric</strong> — wrap under the pipe, up the back face of the excavation</li>
+        <li>Cover the pipe with <strong>washed 3/4" clean stone</strong> (wall rock) — not regular construction gravel or soil</li>
+        <li>The outlet (solid drain pipe) should exit to <strong>daylight</strong> at the end of the wall or downhill</li>
+      </ol>
+
+      <div class="alert alert-danger">
+        <div class="alert-icon">🚫</div>
+        <div class="alert-content"><strong>Never use woven landscape fabric</strong> in the drainage zone. Woven fabric restricts water flow and will create the exact hydrostatic pressure you're trying to prevent. Use <strong>non-woven geotextile</strong> only (it allows water to pass while filtering fines).</div>
+      </div>
+
+      <div class="pro-tip">
+        <strong>🏆 Pro Tip:</strong> Install a <strong>cleanout access cap</strong> at the top of the drain outlet so you can flush the system with a garden hose every few years to prevent silt buildup. This simple addition adds decades to your drainage system's life.
+      </div>
+
+      <div class="alert alert-info">
+        <div class="alert-icon">📊</div>
+        <div class="alert-content"><strong>Why Drainage Matters — The Physics:</strong> Saturated soil behind a wall can weigh up to <strong>120 lbs/cubic foot</strong> vs. dry soil at ~95 lbs/cubic foot. Combined with hydrostatic water pressure, a saturated wall can experience <strong>2–3× the design lateral load</strong>, causing even well-built walls to fail. Proper drainage is your structural insurance policy.</div>
+      </div>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="step-block" id="step5">
+      <div class="step-header">
+        <div class="step-number">5</div>
+        <h3>Stack Courses 2+ — Proper Block Staggering &amp; Batter</h3>
+      </div>
+      <p>With drainage installed and the first course perfect, you can now begin stacking. The rhythm of stacking is: <strong>lay blocks → check level → backfill &amp; compact → repeat</strong>.</p>
+
+      <h4>Staggering the Joints (Running Bond):</h4>
+      <ul>
+        <li>Each course must be offset by <strong>half a block length</strong> from the course below (running bond pattern)</li>
+        <li>This creates the interlocking structure that gives the wall its strength</li>
+        <li>Never stack joints directly above each other — this creates a vertical crack plane</li>
+      </ul>
+
+      <h4>Batter (Setback):</h4>
+      <p>Most SRW blocks are engineered with a <strong>built-in setback</strong> — each course steps back 1/2" to 1" from the face of the previous course. This leans the wall into the hillside and improves stability. If your blocks don't have a built-in setback, manually set each course back 1" per course.</p>
+
+      <h4>Backfilling Per Course:</h4>
+      <ul>
+        <li>Backfill with <strong>3/4" clean washed gravel</strong> every 1–2 courses (never regular fill dirt in the drainage zone)</li>
+        <li>Compact each backfill layer with a hand tamper — <strong>never use a plate compactor within 3 ft of the wall face</strong> (it transmits lateral pressure and can push the wall over)</li>
+        <li>Keep gravel backfill 12" minimum behind the wall face for the drainage zone</li>
+      </ul>
+
+      <div class="pro-tip">
+        <strong>🏆 Pro Tip:</strong> Keep blocks clean — no soil, pebbles, or debris between courses. Even a small stone under a block will cause an uneven placement that ripples through every course above. Use a stiff brush to clean block surfaces before setting each course.
+      </div>
+    </div>
+
+    <!-- STEP 6 -->
+    <div class="step-block" id="step6">
+      <div class="step-header">
+        <div class="step-number">6</div>
+        <h3>Cut Blocks for Corners, Curves &amp; End Pieces</h3>
+      </div>
+      <p>You'll inevitably need to cut blocks for wall ends, corners, and stagger adjustments. There are three methods:</p>
+
+      <div class="table-wrap">
+        <table class="comparison-table">
+          <thead><tr><th>Method</th><th>Tool</th><th>Quality</th><th>Speed</th><th>Best For</th></tr></thead>
+          <tbody>
+            <tr><td>Score &amp; Split</td><td>Masonry chisel + hammer</td><td class="partial">~ Fair</td><td class="check">✔ Fast</td><td>Rough cuts, buried sections</td></tr>
+            <tr><td>Angle Grinder</td><td>Angle grinder + diamond blade</td><td class="check">✔ Good</td><td class="partial">~ Medium</td><td>Most DIY cuts</td></tr>
+            <tr><td>Masonry Wet Saw</td><td>Tile/masonry saw (rental)</td><td class="check">✔ Excellent</td><td class="partial">~ Medium</td><td>Visible cuts, cap stones</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-warning">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-content"><strong>Silica Dust Warning:</strong> Cutting concrete blocks generates crystalline silica dust — a serious respiratory hazard that causes silicosis. Always wear an <strong>N95 respirator minimum</strong> (P100 preferred), work outdoors or in well-ventilated areas, and wet-cut when possible to suppress dust.</div>
+      </div>
+    </div>
+
+    <!-- STEP 7 -->
+    <div class="step-block warning" id="step7">
+      <div class="step-header">
+        <div class="step-number">7</div>
+        <h3>Install Geogrid Reinforcement (Walls Over 3 Feet)</h3>
+      </div>
+      <p>For any wall taller than 3 feet — or any wall retaining poor soil (expansive clay, loose fill) — <strong>geogrid is not optional</strong>. It's the difference between a wall that lasts 50 years and one that fails in 10.</p>
+
+      <h4>What is Geogrid?</h4>
+      <p>Geogrid is a high-strength polymer mesh material (Mirafi, Tensar, or equivalent) that is buried in horizontal layers behind the wall. It works by <strong>mechanically stabilizing the soil wedge</strong> behind the wall — essentially creating a reinforced mass of earth that acts as a counterweight against the lateral forces pushing on the wall.</p>
+
+      <h4>Geogrid Installation Rules:</h4>
+      <ul>
+        <li><strong>First layer:</strong> Place at course 2 or 3 from the bottom (approximately 12–18" from footing level)</li>
+        <li><strong>Spacing:</strong> Maximum 16" between geogrid layers (some specs say every other course for 6" blocks)</li>
+        <li><strong>Extension length:</strong> Geogrid must extend back into the hillside <em>at least as far as the wall is tall</em>. For a 6 ft wall: extend 6 ft back</li>
+        <li><strong>Uniaxial vs. Biaxial:</strong> Use uniaxial (strength in one direction) — roll it out so the strong axis runs perpendicular to the wall face, extending into the hillside</li>
+        <li>Place geogrid on a flat, clean block surface and cover immediately with gravel backfill</li>
+      </ul>
+
+      <div class="card-accent" style="border-radius:8px; padding:1rem; margin:1rem 0;">
+        <h4 style="margin-top:0;">🔬 The Angle of Repose — Why Geogrid Works</h4>
+        <p style="margin-bottom:0;">Every soil type has an <strong>angle of repose</strong> — the natural angle at which it will settle if unsupported (typically 25°–45°). Behind a retaining wall, this creates a wedge of unstable soil pushing against the wall face. Geogrid <strong>moves the effective failure plane</strong> from directly behind the wall to deep within the reinforced earth mass, dramatically reducing the lateral load on the wall face.</p>
+      </div>
+    </div>
+
+    <!-- STEP 8 -->
+    <div class="step-block" id="step8">
+      <div class="step-header">
+        <div class="step-number">8</div>
+        <h3>Complete Backfilling &amp; Compaction</h3>
+      </div>
+      <p>Once the wall is at full height (minus the cap course), complete the backfilling in lifts.</p>
+
+      <h4>Backfill Zone Strategy:</h4>
+      <ul>
+        <li><strong>Zone 1 — Drainage zone (12" directly behind wall):</strong> Always clean 3/4" washed gravel, wrapped in non-woven filter fabric. Never fill this zone with soil.</li>
+        <li><strong>Zone 2 — Reinforced fill zone (behind drainage zone):</strong> Well-graded compactable fill — granular soil, crushed stone, or sandy loam. Avoid expansive clay.</li>
+        <li><strong>Zone 3 — Top 6–12":</strong> Good quality topsoil for landscaping, lawn, or planting</li>
+      </ul>
+
+      <h4>Compaction Guidelines:</h4>
+      <ul>
+        <li>Compact fill in <strong>6–8" lifts</strong> maximum per pass</li>
+        <li>Use hand tamper within <strong>3 ft of the wall face</strong></li>
+        <li>Use plate compactor for fill beyond 3 ft from the wall</li>
+        <li>Target 95% Proctor compaction density for structural fill</li>
+      </ul>
+    </div>
+
+    <!-- STEP 9 -->
+    <div class="step-block success" id="step9">
+      <div class="step-header">
+        <div class="step-number">9</div>
+        <h3>Install Cap Blocks &amp; Adhesive</h3>
+      </div>
+      <p>The cap (or coping) course is the top row — it's the finished face of your wall and the most visible element. It also prevents water from infiltrating the top of the wall.</p>
+
+      <h4>Cap Installation:</h4>
+      <ol>
+        <li>Clean the top course of blocks thoroughly — remove all dust, debris, and loose material</li>
+        <li>Apply <strong>construction-grade masonry adhesive</strong> (e.g., LOCTITE PL 500 Landscape Block Adhesive) in a zigzag bead on the top of the last block course</li>
+        <li>Press cap blocks firmly into position; use rubber mallet if needed</li>
+        <li>Check alignment and level before adhesive sets</li>
+        <li>Allow adhesive to cure for at least <strong>24 hours</strong> before the wall is loaded</li>
+      </ol>
+
+      <div class="pro-tip">
+        <strong>🏆 Pro Tip:</strong> For corner caps and end caps, consider using 2-part epoxy adhesive for a permanent, weatherproof bond that also resists freeze-thaw cycles. Wipe off excess adhesive immediately with mineral spirits — cured adhesive is very difficult to remove from the block face.
+      </div>
+    </div>
+
+    <!-- STEP 10 -->
+    <div class="step-block success" id="step10">
+      <div class="step-header">
+        <div class="step-number">10</div>
+        <h3>Final Grading, Landscaping &amp; Inspection</h3>
+      </div>
+      <p>Your wall is structurally complete. Now finish it right for long-term performance.</p>
+
+      <h4>Grading:</h4>
+      <ul>
+        <li>Grade the surface behind the wall cap to slope <strong>away from the wall</strong> at minimum 2% grade (1/4" per foot) — this prevents water from pooling and saturating the wall's backfill</li>
+        <li>Install a <strong>surface drain channel</strong> if the area above collects runoff from roofs, driveways, or large paved surfaces</li>
+      </ul>
+
+      <h4>Planting Guidelines:</h4>
+      <ul>
+        <li>✅ Groundcovers, perennial flowers, low shrubs: excellent choice — roots help bind surface soil</li>
+        <li>✅ Ornamental grasses: good — shallow root systems</li>
+        <li>⚠️ Small shrubs: acceptable for walls under 4 ft</li>
+        <li>🚫 <strong>Trees or large shrubs: Never plant on top of retaining walls</strong> — root expansion exerts enormous lateral pressure and root water uptake disrupts soil moisture dramatically</li>
+      </ul>
+
+      <h4>Post-Build Inspection Checklist:</h4>
+      <ul>
+        <li>☐ Wall is plumb (vertical) or batters correctly back into hillside</li>
+        <li>☐ No gaps between blocks at any course</li>
+        <li>☐ Drain outlet is clear and discharging to daylight</li>
+        <li>☐ Cap adhesive fully cured</li>
+        <li>☐ Surface grading slopes away from wall</li>
+        <li>☐ No visible bulging, leaning, or separation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO 2 ===== -->
+  <div class="card" style="padding:1.25rem;">
+    <h3 style="margin:0 0 0.75rem;">🎬 Watch: Complete DIY Retaining Wall Start to Finish</h3>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/AMiDPOR68_g" title="Complete DIY Retaining Wall Step by Step" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p style="margin:0.5rem 0 0; font-size:0.85rem; color:var(--text-muted);">▶ Full build from layout to finished wall — including drainage outlet installation and cap placement.</p>
+  </div>
+
+  <!-- ===== SECTION 6: DRAINAGE DEEP DIVE ===== -->
+  <section id="drainage" class="card">
+    <h2>💧 Drainage Deep-Dive: The #1 Cause of Retaining Wall Failure</h2>
+    <p>We've mentioned drainage throughout — now let's go deep on the engineering behind it. Understanding <strong>why</strong> drainage matters will help you build it <strong>right</strong>.</p>
+
+    <h3>Types of Water Pressure on a Retaining Wall</h3>
+    <div class="infographic-grid" style="margin-top:1rem;">
+      <div class="info-card">
+        <div class="icon">🌊</div>
+        <h4>Hydrostatic Pressure</h4>
+        <p>Water building up behind the wall pushes horizontally with increasing force the deeper it is. A 3-ft water head exerts ~190 lbs/sq ft at the base.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">⚖️</div>
+        <h4>Saturated Soil Pressure</h4>
+        <p>Wet soil weighs 20–30% more than dry soil and loses internal friction — multiplying the lateral earth pressure on the wall.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">❄️</div>
+        <h4>Freeze-Thaw Pressure</h4>
+        <p>In cold climates, water trapped behind a wall expands 9% when it freezes — exerting tremendous outward force. Proper drainage eliminates this.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🌿</div>
+        <h4>Seepage &amp; Piping</h4>
+        <p>Water seeping through fine soils can cause piping — where water channels carry fine particles out from behind the wall, causing settlement and collapse.</p>
+      </div>
+    </div>
+
+    <h3>Drainage System Components Explained</h3>
+    <ul>
+      <li><strong>Perforated pipe (French drain):</strong> Collects groundwater at the wall base — the lowest point of the drainage system. Holes face down to capture rising groundwater, not top-collecting surface runoff</li>
+      <li><strong>Washed gravel backfill:</strong> High-permeability zone that allows water to flow freely to the drain pipe</li>
+      <li><strong>Non-woven filter fabric:</strong> Prevents fine soil particles from migrating into and clogging the gravel drainage zone (called "fines migration")</li>
+      <li><strong>Gravity outlet:</strong> The most critical element — water must have a path to exit. Without a clear outlet, the drainage system simply fills up and becomes useless</li>
+    </ul>
+
+    <h3>Drainage Solutions for Different Site Conditions</h3>
+    <div class="tab-container" id="drainage-tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab('drain','std')">Standard Site</button>
+        <button class="tab-btn" onclick="switchTab('drain','high-water')">High Water Table</button>
+        <button class="tab-btn" onclick="switchTab('drain','clay')">Heavy Clay Soil</button>
+        <button class="tab-btn" onclick="switchTab('drain','corner')">Corner/Closed End</button>
+      </div>
+      <div id="drain-std" class="tab-content active card-accent">
+        <h4>Standard Site — Basic French Drain</h4>
+        <p>4" perforated pipe in filter fabric sock, 3/4" clean stone drainage zone, outlet to daylight. This works for 90% of residential retaining wall projects. Minimum 1% slope on drain pipe.</p>
+      </div>
+      <div id="drain-high-water" class="tab-content card-accent">
+        <h4>High Water Table — Enhanced Drainage</h4>
+        <p>Use 6" perforated pipe instead of 4", double-wrap in filter fabric, and consider adding a second perforated pipe layer at mid-wall height for very wet sites. Connect outlet to a sump pump or storm drain if gravity outlet isn't achievable.</p>
+      </div>
+      <div id="drain-clay" class="tab-content card-accent">
+        <h4>Heavy Clay Soil — Maximum Drainage Zone</h4>
+        <p>Clay soils retain water and expand when wet (expansive clay can swell 10–15%). Increase drainage gravel zone to <strong>24" minimum</strong> behind the wall, install filter fabric on all surfaces of the gravel zone, and consider applying a drainage mat (geocomposite) directly behind the wall face before filling with gravel.</p>
+      </div>
+      <div id="drain-corner" class="tab-content card-accent">
+        <h4>Corner / Closed-End Walls</h4>
+        <p>When a wall turns a corner and the outlet is blocked, you need a <strong>relief drain</strong> — a small 1" weep hole through the wall face every 4–6 feet in the lower courses, or a sump collection point with pump. Never dead-end a drainage system.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: GEOGRID ===== -->
+  <section id="geogrid" class="card">
+    <h2>🕸️ Geogrid Reinforcement: The Complete Engineering Guide</h2>
+    <p>Geogrid is the most misunderstood component in DIY retaining wall construction. Here's the complete picture.</p>
+
+    <h3>When is Geogrid Required?</h3>
+    <div class="table-wrap">
+      <table class="comparison-table">
+        <thead><tr><th>Wall Height</th><th>Soil Type</th><th>Surcharge</th><th>Geogrid Required?</th></tr></thead>
+        <tbody>
+          <tr><td>Under 2 ft</td><td>Any</td><td>None</td><td class="check">✔ No</td></tr>
+          <tr><td>2–3 ft</td><td>Good granular</td><td>None</td><td class="partial">~ Optional (good practice)</td></tr>
+          <tr><td>2–3 ft</td><td>Clay or poor fill</td><td>Any</td><td class="cross">✘ Yes — Required</td></tr>
+          <tr><td>3–4 ft</td><td>Any</td><td>None</td><td class="cross">✘ Yes — Required</td></tr>
+          <tr><td>Over 4 ft</td><td>Any</td><td>Any</td><td class="cross">✘ Yes + Engineering</td></tr>
+          <tr><td>Any</td><td>Any</td><td>Driveway/structure</td><td class="cross">✘ Yes + Engineering</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Geogrid Layer Placement Calculator</h3>
+    <div class="card-accent" style="border-radius:8px; padding:1.25rem; margin:1rem 0;">
+      <p style="margin-bottom:0.75rem;"><strong>Standard Rule (6" block = 1 layer = 6" rise):</strong></p>
+      <ul style="margin-bottom:0;">
+        <li><strong>2–3 ft wall:</strong> 1 geogrid layer at course 2 or 3 from bottom</li>
+        <li><strong>3–4 ft wall:</strong> 2 layers — at courses 3 and 5 (18" and 30" from footing)</li>
+        <li><strong>4–6 ft wall:</strong> 3 layers — at courses 2, 4, and 6 (every ~16")</li>
+        <li><strong>Over 6 ft:</strong> Engineer-specified spacing — typically every 2 courses</li>
+      </ul>
+    </div>
+
+    <h3>Selecting the Right Geogrid</h3>
+    <ul>
+      <li><strong>Uniaxial geogrid:</strong> Strength in one direction (perpendicular to wall face). Best for retaining walls. Examples: Mirafi HP Series, Tensar UX1500</li>
+      <li><strong>Biaxial geogrid:</strong> Strength in two directions. Better for pavement base reinforcement — not optimal for retaining walls</li>
+      <li><strong>Minimum tensile strength:</strong> TULT ≥ 4,800 lb/ft (for residential applications)</li>
+    </ul>
+  </section>
+
+  <!-- ===== SECTION 8: INFOGRAPHIC ===== -->
+  <div id="infographic" class="infographic">
+    <h2>🗺️ Retaining Wall Cross-Section — Interactive Diagram</h2>
+    <p class="subtitle">Hover over each layer to see its function</p>
+
+    <svg class="wall-diagram" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Retaining wall cross-section diagram">
+      <!-- Background sky/grade -->
+      <rect width="680" height="420" fill="#F7FBFF"/>
+
+      <!-- Hillside fill/soil (behind wall) -->
+      <polygon points="200,60 680,60 680,360 200,360" fill="#C8A97A" opacity="0.6"/>
+      <text x="450" y="120" font-size="13" fill="#7A5C2E" font-weight="600" text-anchor="middle">BACKFILL SOIL</text>
+
+      <!-- Gravel drainage zone -->
+      <polygon points="175,180 260,180 260,360 175,360" fill="#B0C4DE" opacity="0.85" class="wall-layer">
+        <title>3/4" Clean Washed Gravel Drainage Zone — 12" minimum behind wall face. Allows water to flow freely to drain pipe below.</title>
+      </polygon>
+      <text x="218" y="280" font-size="10" fill="#1a3a5c" text-anchor="middle" transform="rotate(-90,218,280)">DRAIN GRAVEL</text>
+
+      <!-- Filter fabric line -->
+      <line x1="260" y1="165" x2="260" y2="360" stroke="#ED8936" stroke-width="3" stroke-dasharray="6,3"/>
+      <line x1="175" y1="360" x2="680" y2="360" stroke="#ED8936" stroke-width="3" stroke-dasharray="6,3"/>
+      <text x="370" y="375" font-size="11" fill="#c05c00" font-weight="600">NON-WOVEN FILTER FABRIC</text>
+
+      <!-- Geogrid layers -->
+      <line x1="175" y1="228" x2="500" y2="228" stroke="#48BB78" stroke-width="3.5"/>
+      <text x="510" y="232" font-size="11" fill="#276749" font-weight="600">GEOGRID</text>
+      <line x1="175" y1="270" x2="500" y2="270" stroke="#48BB78" stroke-width="3.5"/>
+      <text x="510" y="274" font-size="11" fill="#276749" font-weight="600">GEOGRID</text>
+
+      <!-- Block wall -->
+      <!-- Course 1 buried -->
+      <rect x="120" y="345" width="60" height="18" rx="3" fill="#718096" stroke="#4A5568" stroke-width="1"/>
+      <!-- Course 2 -->
+      <rect x="123" y="327" width="60" height="18" rx="3" fill="#718096" stroke="#4A5568" stroke-width="1"/>
+      <!-- Course 3 -->
+      <rect x="126" y="309" width="60" height="18" rx="3" fill="#8a9baf" stroke="#4A5568" stroke-width="1"/>
+      <!-- Course 4 -->
+      <rect x="129" y="291" width="60" height="18" rx="3" fill="#8a9baf" stroke="#4A5568" stroke-width="1"/>
+      <!-- Course 5 -->
+      <rect x="132" y="273" width="60" height="18" rx="3" fill="#8a9baf" stroke="#4A5568" stroke-width="1"/>
+      <!-- Course 6 (top/cap) -->
+      <rect x="129" y="255" width="66" height="18" rx="3" fill="#2F80ED" stroke="#1a5fb4" stroke-width="1.5"/>
+      <text x="162" y="267" font-size="9" fill="white" font-weight="700" text-anchor="middle">CAP</text>
+
+      <!-- Wall label -->
+      <text x="102" y="310" font-size="12" fill="#0B1A2B" font-weight="700" text-anchor="middle">BLOCK</text>
+      <text x="102" y="325" font-size="12" fill="#0B1A2B" font-weight="700" text-anchor="middle">WALL</text>
+
+      <!-- Drain pipe -->
+      <circle cx="200" cy="355" r="8" fill="#2F80ED" opacity="0.8"/>
+      <circle cx="200" cy="355" r="5" fill="#1a5fb4"/>
+      <text x="200" y="395" font-size="10" fill="#1a5fb4" text-anchor="middle" font-weight="600">4" PERF. DRAIN PIPE</text>
+
+      <!-- Footing gravel -->
+      <rect x="100" y="363" width="140" height="14" rx="2" fill="#A0AEC0"/>
+      <text x="170" y="373" font-size="9" fill="#2D3748" text-anchor="middle" font-weight="600">COMPACTED 3/4" GRAVEL FOOTING (6-8")</text>
+
+      <!-- Finished grade lines -->
+      <line x1="60" y1="270" x2="120" y2="270" stroke="#48BB78" stroke-width="2.5"/>
+      <line x1="60" y1="270" x2="60" y2="270"/>
+      <text x="30" y="268" font-size="10" fill="#276749" font-weight="600">GRADE</text>
+
+      <!-- Batter arrow -->
+      <line x1="120" y1="345" x2="135" y2="273" stroke="#ED8936" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <text x="84" y="250" font-size="10" fill="#c05c00">BATTER/</text>
+      <text x="84" y="263" font-size="10" fill="#c05c00">SETBACK</text>
+
+      <!-- Labels for height -->
+      <line x1="75" y1="270" x2="75" y2="345" stroke="#4A5568" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <text x="50" y="310" font-size="10" fill="#4A5568" text-anchor="middle">3 ft</text>
+      <text x="50" y="322" font-size="10" fill="#4A5568" text-anchor="middle">wall</text>
+
+      <!-- arrows defs -->
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#4A5568"/>
+        </marker>
+      </defs>
+
+      <!-- Surcharge / surface slope indicator -->
+      <line x1="260" y1="60" x2="680" y2="20" stroke="#718096" stroke-width="2" stroke-dasharray="5,3"/>
+      <text x="490" y="45" font-size="11" fill="#4A5568">SURFACE SLOPE (grade away 2% min.)</text>
+
+      <!-- Title in diagram -->
+      <text x="340" y="410" font-size="12" fill="#0B1A2B" text-anchor="middle" font-weight="700">CONCRETE BLOCK RETAINING WALL — CROSS SECTION</text>
+    </svg>
+
+    <p style="text-align:center; font-size:0.82rem; color:var(--text-muted); margin-top:0.5rem;">Hover over colored layers for descriptions. Not to scale. For walls &gt;4 ft, consult a structural engineer.</p>
+
+    <div class="infographic-grid">
+      <div class="info-card">
+        <div class="icon">🔵</div>
+        <h4>Cap Course (Blue)</h4>
+        <p>Adhered with masonry adhesive. Decorative finish, prevents water infiltration at wall top.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🟢</div>
+        <h4>Geogrid (Green)</h4>
+        <p>Extends back into hillside equal to wall height. Installed every 16" vertically in wall &gt;3 ft.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🟠</div>
+        <h4>Filter Fabric (Orange)</h4>
+        <p>Non-woven geotextile. Separates gravel drainage zone from native soil. Prevents clogging.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🔷</div>
+        <h4>Drain Gravel (Blue)</h4>
+        <p>12"+ zone of 3/4" clean washed stone. High permeability — carries water to drain pipe.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">⚫</div>
+        <h4>Block Batter</h4>
+        <p>Each course steps back 1/2"–1" into hillside — increases stability against overturning.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">💧</div>
+        <h4>Drain Pipe</h4>
+        <p>4" perforated pipe at footing level. Routes trapped groundwater away from the wall.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 9: COST ===== -->
+  <section id="cost" class="card">
+    <h2>💰 Cost Breakdown &amp; Budget Guide (2025–2026 U.S. Prices)</h2>
+    <p>A well-built concrete block retaining wall typically costs <strong>$15–$35 per linear foot</strong> for DIY, or <strong>$50–$150+ per linear foot</strong> if professionally installed. Here's how the budget breaks down for a typical 20 ft × 3 ft wall:</p>
+
+    <h3>Material Cost Breakdown (20 ft × 3 ft wall)</h3>
+    <div style="margin:1rem 0;">
+      <div class="cost-bar-row">
+        <div class="cost-bar-label">SRW Blocks (~100 units)</div>
+        <div class="cost-bar-outer"><div class="cost-bar-inner" style="width:45%"><span class="cost-bar-val">$250–$350</span></div></div>
+      </div>
+      <div class="cost-bar-row">
+        <div class="cost-bar-label">Crushed Gravel (2 tons)</div>
+        <div class="cost-bar-outer"><div class="cost-bar-inner" style="width:18%"><span class="cost-bar-val">$80–$120</span></div></div>
+      </div>
+      <div class="cost-bar-row">
+        <div class="cost-bar-label">Drain Pipe &amp; Fittings</div>
+        <div class="cost-bar-outer"><div class="cost-bar-inner" style="width:12%"><span class="cost-bar-val">$40–$80</span></div></div>
+      </div>
+      <div class="cost-bar-row">
+        <div class="cost-bar-label">Filter Fabric</div>
+        <div class="cost-bar-outer"><div class="cost-bar-inner" style="width:8%"><span class="cost-bar-val">$25–$50</span></div></div>
+      </div>
+      <div class="cost-bar-row">
+        <div class="cost-bar-label">Geogrid (1 layer)</div>
+        <div class="cost-bar-outer"><div class="cost-bar-inner" style="width:14%"><span class="cost-bar-val">$60–$100</span></div></div>
+      </div>
+      <div class="cost-bar-row">
+        <div class="cost-bar-label">Cap Blocks &amp; Adhesive</div>
+        <div class="cost-bar-outer"><div class="cost-bar-inner" style="width:10%"><span class="cost-bar-val">$40–$80</span></div></div>
+      </div>
+      <div class="cost-bar-row">
+        <div class="cost-bar-label">Tool Rentals</div>
+        <div class="cost-bar-outer"><div class="cost-bar-inner" style="width:15%"><span class="cost-bar-val">$75–$150</span></div></div>
+      </div>
+      <div class="cost-bar-row">
+        <div class="cost-bar-label">Permits &amp; Misc.</div>
+        <div class="cost-bar-outer"><div class="cost-bar-inner" style="width:16%"><span class="cost-bar-val">$75–$200</span></div></div>
+      </div>
+    </div>
+
+    <div class="card-accent" style="border-radius:8px; padding:1rem; margin-top:1rem;">
+      <strong>💡 Total DIY Cost Estimate (20 ft × 3 ft): $645 – $1,130</strong><br>
+      <span style="font-size:0.9rem; color:var(--text-muted);">Compare to professional installation: $3,000–$7,500 for the same project. DIY saves 70–80%.</span>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 10: MISTAKES ===== -->
+  <section id="mistakes" class="card">
+    <h2>🚫 10 Mistakes That Destroy Retaining Walls</h2>
+    <p>Based on analysis of failed walls and professional contractor insights, these are the most common — and costly — errors.</p>
+
+    <ol>
+      <li>
+        <strong>No drainage system</strong> — The #1 killer. Water builds up, saturates soil, triples the lateral pressure, wall falls. <em>Always install perforated pipe and gravel.</em>
+      </li>
+      <li>
+        <strong>Skipping the footing</strong> — Setting blocks directly on soil without a gravel footing causes uneven settling and wall lean. <em>Always dig a trench and compact 6–8" of gravel.</em>
+      </li>
+      <li>
+        <strong>Poor first course leveling</strong> — The most common DIY error. Every subsequent course is worse. <em>Spend extra time here.</em>
+      </li>
+      <li>
+        <strong>Using regular dirt as backfill</strong> — Native clay soil in the drainage zone clogs the gravel and creates hydrostatic pressure. <em>Use clean 3/4" washed gravel.</em>
+      </li>
+      <li>
+        <strong>Woven landscape fabric instead of non-woven</strong> — Woven fabric restricts water flow and acts as a dam. <em>Non-woven geotextile only.</em>
+      </li>
+      <li>
+        <strong>No geogrid on walls over 3 ft</strong> — Gravity alone can't resist the soil wedge pressure. <em>Geogrid is not optional above 3 ft.</em>
+      </li>
+      <li>
+        <strong>Compacting too close to the wall</strong> — Using a plate compactor within 3 ft of the wall face can push it over during construction. <em>Hand tamp within 3 ft.</em>
+      </li>
+      <li>
+        <strong>No dead outlet for drainage</strong> — Drain pipe that ends in a dead zone just fills up and fails. <em>Always drain to daylight.</em>
+      </li>
+      <li>
+        <strong>Building on unstable soil without assessment</strong> — Building on expansive clay, loose fill, or organic material without soil assessment leads to differential settling. <em>Test your soil type first.</em>
+      </li>
+      <li>
+        <strong>Planting trees or large shrubs above</strong> — Root growth and moisture fluctuation from large plants creates dynamic pressure the wall wasn't designed for. <em>Use groundcovers only above retaining walls.</em>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== SECTION 11: CHECKLIST ===== -->
+  <section id="checklist" class="card">
+    <h2>✅ Complete Pre-Build &amp; Build Checklist</h2>
+    <p>Track your progress through the build. Click each item to mark it complete.</p>
+
+    <div class="checklist-progress">
+      <div class="progress-label">Progress: <span id="checklist-count">0</span> of <span id="checklist-total">0</span> completed</div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="checklist-bar" style="width:0%"></div>
+      </div>
+    </div>
+
+    <h3>📋 Pre-Build</h3>
+    <ul class="checklist" id="checklist-pre">
+      <li><input type="checkbox" id="c1"><label for="c1">Called 811 (Dig Safe) at least 3 business days before digging</label></li>
+      <li><input type="checkbox" id="c2"><label for="c2">Checked local building codes and permit requirements</label></li>
+      <li><input type="checkbox" id="c3"><label for="c3">Determined if structural engineering is required</label></li>
+      <li><input type="checkbox" id="c4"><label for="c4">Measured wall length, height, and layout</label></li>
+      <li><input type="checkbox" id="c5"><label for="c5">Selected block type and calculated materials</label></li>
+      <li><input type="checkbox" id="c6"><label for="c6">Identified drainage outlet location</label></li>
+      <li><input type="checkbox" id="c7"><label for="c7">Purchased all materials (10% extra blocks)</label></li>
+      <li><input type="checkbox" id="c8"><label for="c8">Rented/borrowed all required tools</label></li>
+    </ul>
+
+    <h3>🏗️ Foundation &amp; Layout</h3>
+    <ul class="checklist" id="checklist-build">
+      <li><input type="checkbox" id="c9"><label for="c9">Marked wall footprint with stakes and spray paint</label></li>
+      <li><input type="checkbox" id="c10"><label for="c10">Excavated to correct depth (1 block buried + 6-8" footing gravel)</label></li>
+      <li><input type="checkbox" id="c11"><label for="c11">Cut back hillside equal to wall height (for walls over 3 ft)</label></li>
+      <li><input type="checkbox" id="c12"><label for="c12">Placed and compacted gravel footing to level</label></li>
+      <li><input type="checkbox" id="c13"><label for="c13">First course set perfectly level (front-back AND side-side)</label></li>
+      <li><input type="checkbox" id="c14"><label for="c14">First course buried one full block depth below grade</label></li>
+    </ul>
+
+    <h3>💧 Drainage System</h3>
+    <ul class="checklist" id="checklist-drain">
+      <li><input type="checkbox" id="c15"><label for="c15">Non-woven filter fabric installed in drain trench</label></li>
+      <li><input type="checkbox" id="c16"><label for="c16">4" perforated drain pipe placed behind first course</label></li>
+      <li><input type="checkbox" id="c17"><label for="c17">Drain pipe sloped minimum 1% toward outlet</label></li>
+      <li><input type="checkbox" id="c18"><label for="c18">Clean gravel covering drain pipe (not soil)</label></li>
+      <li><input type="checkbox" id="c19"><label for="c19">Solid outlet pipe routed to daylight</label></li>
+    </ul>
+
+    <h3>🧱 Wall Construction</h3>
+    <ul class="checklist" id="checklist-wall">
+      <li><input type="checkbox" id="c20"><label for="c20">All block joints staggered (running bond pattern)</label></li>
+      <li><input type="checkbox" id="c21"><label for="c21">Batter/setback maintained each course</label></li>
+      <li><input type="checkbox" id="c22"><label for="c22">Geogrid installed at correct course intervals (walls over 3 ft)</label></li>
+      <li><input type="checkbox" id="c23"><label for="c23">Geogrid extends back equal to wall height</label></li>
+      <li><input type="checkbox" id="c24"><label for="c24">Gravel backfill compacted in 8" lifts (hand tamp near wall)</label></li>
+      <li><input type="checkbox" id="c25"><label for="c25">Cap course adhered with masonry adhesive</label></li>
+      <li><input type="checkbox" id="c26"><label for="c26">Surface graded away from wall at 2% minimum</label></li>
+      <li><input type="checkbox" id="c27"><label for="c27">Final inspection: level, plumb, no gaps, drain outlet clear</label></li>
+    </ul>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="card">
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="fq1">How tall can I build a retaining wall without a permit?</button>
+      <div class="faq-answer" id="fq1"><p>This varies by jurisdiction, but the general U.S. rule is <strong>under 3 feet</strong> (measured from the bottom of footing to the top of wall) typically doesn't require a permit. Many areas require permits at 4 feet. In California, some counties require permits for any retaining wall. <strong>Always check with your local building department</strong> — the penalty for unpermitted work can include forced demolition.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="fq2">Do I need mortar for concrete block retaining walls?</button>
+      <div class="faq-answer" id="fq2"><p><strong>No</strong> — most modern SRW (segmental retaining wall) blocks are designed to be dry-stacked. They rely on gravity, their built-in locking lip/setback geometry, and geogrid reinforcement for structural integrity. Mortar is required only for standard CMU (8×8×16) block walls, which use a different construction method and require a poured concrete footing. The exception is the <strong>cap course</strong> — always adhere cap/coping blocks with masonry adhesive.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="fq3">How deep should the footing trench be for a retaining wall?</button>
+      <div class="faq-answer" id="fq3"><p>For dry-stack SRW blocks: dig deep enough to bury <strong>one full course of blocks below finished grade</strong>, plus 6–8 inches of compacted gravel. For 6" blocks: approximately 12–14" total trench depth. For mortar-set CMU retaining walls: the concrete footing must go <strong>below the frost line</strong> for your area (24–48" depending on climate zone). Check your local frost depth maps or contact your building department.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="fq4">How many blocks do I need for my retaining wall?</button>
+      <div class="faq-answer" id="fq4"><p>Use the estimator on this page or our <a href="/">full Concrete Block Calculator</a>. The formula: <strong>(Wall Length × Wall Height in sq ft) ÷ Block Face Area = blocks needed</strong>. For a standard 12"×6" face block: face area = 0.5 sq ft. A 20 ft × 3 ft wall = 60 sq ft ÷ 0.5 = 120 blocks raw. Add 10% for waste: <strong>~132 blocks</strong>. Always buy 10% extra for cuts, breakage, and future repairs.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="fq5">What is the best drainage for behind a retaining wall?</button>
+      <div class="faq-answer" id="fq5"><p>The best system combines three elements: (1) <strong>4" perforated drain pipe at the footing level</strong> to capture and redirect groundwater; (2) <strong>12"+ of clean washed 3/4" gravel</strong> directly behind the wall to create a high-permeability drainage zone; and (3) <strong>non-woven geotextile filter fabric</strong> separating the gravel from native soil to prevent clogging. The entire system must have a <strong>gravity outlet to daylight</strong> — this is non-negotiable.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="fq6">Can I build a retaining wall myself, or do I need a contractor?</button>
+      <div class="faq-answer" id="fq6"><p>DIY is absolutely achievable for walls up to 3–4 feet tall using standard SRW block systems. The work is physically demanding (blocks are heavy) but straightforward if you follow proper procedures. For walls over 4 feet, with significant surcharge (driveway, structure), on poor soil, or with complex drainage requirements, <strong>hire a professional or at minimum consult a structural engineer</strong>. The risk of wall failure on a tall wall is significant — a collapsing retaining wall can cause property damage and serious injury.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="fq7">How long does a concrete block retaining wall last?</button>
+      <div class="faq-answer" id="fq7"><p>A properly built concrete block retaining wall with correct drainage can last <strong>50–100 years</strong>. The blocks themselves are essentially permanent. What degrades first is always the drainage system — drain pipes can clog with fines over 20–30 years without maintenance. Annual inspection of the drain outlet and flushing the system every 5–10 years with a garden hose significantly extends service life. Avoid planting trees near the wall, as root intrusion is a common cause of premature failure.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="fq8">What causes a retaining wall to lean forward (bow out)?</button>
+      <div class="faq-answer" id="fq8"><p>Forward leaning (overturning) is almost always caused by one of these: (1) <strong>Hydrostatic pressure</strong> from poor drainage; (2) <strong>Insufficient batter/setback</strong> — wall not leaning enough into the hillside; (3) <strong>Missing or insufficient geogrid</strong> on walls over 3 ft; (4) <strong>Surcharge overload</strong> — vehicles, structures, or heavy plantings on top that weren't accounted for in the design; (5) <strong>Poor footing</strong> — settling or frost heave of the foundation. A wall leaning more than 1" per foot of height should be evaluated by a structural engineer immediately.</p></div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"How tall can I build a retaining wall without a permit?","acceptedAnswer":{"@type":"Answer","text":"Under 3 feet (from bottom of footing to top of wall) typically doesn't require a permit in most U.S. jurisdictions. Always check with your local building department."}},
+        {"@type":"Question","name":"Do I need mortar for concrete block retaining walls?","acceptedAnswer":{"@type":"Answer","text":"No — most SRW blocks are dry-stacked. Only the cap course requires adhesive. Standard CMU walls with mortar require a poured concrete footing below frost line."}},
+        {"@type":"Question","name":"How deep should the footing trench be for a retaining wall?","acceptedAnswer":{"@type":"Answer","text":"For SRW blocks: bury one full course below grade plus 6-8 inches of compacted gravel — typically 12-14 inches total. For mortar-set CMU walls: below the local frost line."}},
+        {"@type":"Question","name":"What is the best drainage for behind a retaining wall?","acceptedAnswer":{"@type":"Answer","text":"4-inch perforated drain pipe at footing level, 12+ inches of clean 3/4-inch washed gravel behind the wall, non-woven geotextile filter fabric, and a gravity outlet to daylight."}}
+      ]
+    }
+    </script>
+  </section>
+
+  <!-- ===== RELATED TOOLS CTA ===== -->
+  <div class="card" style="background: linear-gradient(135deg, var(--primary-light) 0%, var(--bg-accent) 100%);">
+    <h2 style="margin-top:0;">🧮 Need to Estimate Your Block Quantities?</h2>
+    <p>Use our free Concrete Block Calculator to get precise block counts, mortar bags, grout fill, and reinforcement estimates for any CMU wall project.</p>
+    <a href="/" class="btn-primary" style="display:inline-flex; margin-top:0.5rem; text-decoration:none;">⚡ Use the Free Calculator →</a>
+  </div>
+
+  <!-- ===== METHODOLOGY ===== -->
+  <section class="card" id="methodology">
+    <h2>🔬 Our Methodology</h2>
+    <p>This guide was built by:</p>
+    <ul>
+      <li>Analyzing the <strong>top 5 ranking articles and YouTube videos</strong> in the U.S. for "how to build concrete block retaining wall" — including Rogue Engineer, The Home Depot, Lowe's, Better Masonry, and Ware Landscaping</li>
+      <li>Identifying <strong>content gaps</strong>: competitor guides consistently underserved drainage engineering, geogrid selection, block type comparison, cost breakdown, and the physics behind wall failure</li>
+      <li>Cross-referencing with <strong>NCMA Technical Series</strong>, Allan Block Engineering Manual, and U.S. Army Corps of Engineers retaining wall guidelines</li>
+      <li>Incorporating interactive tools (estimator, checklist, infographic) that no competitor offers in a single resource</li>
+    </ul>
+    <p><strong>Last reviewed:</strong> March 2026 | <strong>Content contact:</strong> <a href="/cdn-cgi/l/email-protection#bfd6d1d9d0ffdcd0d1dccddacbdaddd3d0dcd4dcded3dccad3decbd0cd91dcd0d2"><span class="__cf_email__" data-cfemail="2940474f46694a46474a5b4c5d4c4b45464a424a48454a5c45485d465b074a4644">[email&#160;protected]</span></a></p>
+  </section>
+
+    </div><!-- /blog-main -->
+
+    <aside class="blog-sidebar">
+      <div class="sidebar-widget">
+        <h3>Latest Posts</h3>
+        <ul class="latest-posts-list">
+          <li>
+            <a href="../blog-cmu-weight-guide/">Concrete Block Weight Guide</a>
+            <div class="post-date">March 12, 2025</div>
+          </li>
+          <li>
+            <a href="../fire-pit-article/">DIY Cinder Block Fire Pit</a>
+            <div class="post-date">March 10, 2025</div>
+          </li>
+          <li>
+            <a href="../retaining-wall-guide/" class="active">Retaining Wall Step-by-Step</a>
+            <div class="post-date">March 15, 2026</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Popular Calculators</h3>
+        <ul class="latest-posts-list">
+          <li><a href="/">Concrete Block Calculator</a></li>
+          <li><a href="/retaining-wall/">Retaining Wall Calculator</a></li>
+          <li><a href="/fire-pit-planter/">Fire Pit Calculator</a></li>
+          <li><a href="/block-weight/">Block Weight Calculator</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-cta">
+        <h4>Need a Project Estimate?</h4>
+        <p>Get accurate counts for blocks, mortar, and masonry materials.</p>
+        <a href="../index.html" class="btn-sidebar">Start Estimating</a>
+      </div>
+    </aside>
+  </div><!-- /blog-layout -->
+</main>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="#how-we-calculate">How we calculate</a> · 
+      <a href="#faq">FAQ</a> · 
+      <a href="/about">About</a> · 
+      <a href="/author">Author</a> · 
+      <a href="/privacy">Privacy Policy</a> · 
+      <a href="/terms">Terms of Use</a> · 
+      <a href="mailto:info@concreteblockcalculator.com">Contact</a>
+    </nav>
+    <small>
+      © <span id="year"></span> concreteblockcalculator.com · 
+      Last updated <time id="lastUpdated" datetime="2026-03-15">March 15, 2026</time>
+    </small>
+  </footer>
+
+<script src="../app.js" defer></script>
+<script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // FAQ Accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-question').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        const ans = document.getElementById(b.getAttribute('aria-controls'));
+        if(ans) ans.classList.remove('show');
+      });
+      if (!expanded) {
+        this.setAttribute('aria-expanded', 'true');
+        const ans = document.getElementById(this.getAttribute('aria-controls'));
+        if(ans) ans.classList.add('show');
+      }
+    });
+  });
+
+  // Tab switcher
+  function switchTab(group, tab) {
+    document.querySelectorAll(`[id^="${group}-"]`).forEach(el => el.classList.remove('active'));
+    const target = document.getElementById(`${group}-${tab}`);
+    if(target) target.classList.add('active');
+    // Update buttons within the same tab container
+    const container = target ? target.closest('.tab-container') : null;
+    if(container) {
+      container.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('onclick').includes(`'${tab}'`));
+      });
+    }
+  }
+
+  // Material Estimator
+  function calcWall(e) {
+    e.preventDefault();
+    const len = parseFloat(document.getElementById('wallLength').value) || 0;
+    const ht = parseFloat(document.getElementById('wallHeight').value) || 0;
+    const blockH = parseFloat(document.getElementById('blockH').value) / 12; // convert inches to ft
+    const blockL = parseFloat(document.getElementById('blockL').value) / 12;
+    if(!len || !ht) return;
+
+    const blockFaceArea = blockH * blockL;
+    const wallArea = len * ht;
+    const rawBlocks = Math.ceil(wallArea / blockFaceArea);
+    const blocksWithWaste = Math.ceil(rawBlocks * 1.10);
+
+    // Gravel: ~0.5 ton per linear ft for a 3ft wall; scale by height
+    const gravelTons = Math.ceil((len * (ht / 3) * 0.5) * 10) / 10;
+
+    // Pipe: wall length + 5ft outlet
+    const pipe = Math.ceil(len + 5);
+
+    // Fabric: wall length × (wall height + 2) sq ft
+    const fabric = Math.ceil(len * (ht + 2));
+
+    // Geogrid: only if wall > 3ft; layers × length × wall height
+    let geoText = 'Not required';
+    let geoNote = 'Wall under 3 ft';
+    if (ht > 3) {
+      const layers = Math.floor(ht / 1.33); // ~1 layer per 16"
+      const geoSqft = Math.ceil(layers * len * ht);
+      geoText = geoSqft + ' sq ft';
+      geoNote = `${layers} layer(s), extends ${ht} ft back`;
+    }
+
+    // Cost: ~$2.50/block
+    const costLow = (blocksWithWaste * 2.00).toFixed(0);
+    const costHigh = (blocksWithWaste * 3.50).toFixed(0);
+
+    document.getElementById('r-blocks').textContent = blocksWithWaste.toLocaleString();
+    document.getElementById('r-gravel').textContent = gravelTons.toFixed(1);
+    document.getElementById('r-pipe').textContent = pipe;
+    document.getElementById('r-fabric').textContent = fabric.toLocaleString();
+    document.getElementById('r-geo').textContent = geoText;
+    document.getElementById('r-geo-note').textContent = geoNote;
+    document.getElementById('r-cost').textContent = `$${Number(costLow).toLocaleString()}–$${Number(costHigh).toLocaleString()}`;
+
+    document.getElementById('wall-results').style.display = 'block';
+    document.getElementById('wall-results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // Checklist
+  function initChecklist() {
+    const all = document.querySelectorAll('.checklist input[type="checkbox"]');
+    const total = all.length;
+    document.getElementById('checklist-total').textContent = total;
+
+    function updateProgress() {
+      const checked = document.querySelectorAll('.checklist input[type="checkbox"]:checked').length;
+      document.getElementById('checklist-count').textContent = checked;
+      document.getElementById('checklist-bar').style.width = (checked / total * 100) + '%';
+    }
+
+    all.forEach(cb => {
+      const li = cb.closest('li');
+      cb.addEventListener('change', function() {
+        if(this.checked) li.classList.add('checked');
+        else li.classList.remove('checked');
+        updateProgress();
+      });
+      li.addEventListener('click', function(e) {
+        if(e.target.tagName !== 'INPUT' && e.target.tagName !== 'LABEL') {
+          cb.checked = !cb.checked;
+          if(cb.checked) li.classList.add('checked');
+          else li.classList.remove('checked');
+          updateProgress();
+        }
+      });
+    });
+    updateProgress();
+  }
+  initChecklist();
+
+  // Animate cost bars on scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.cost-bar-inner').forEach(bar => {
+          const w = bar.style.width;
+          bar.style.width = '0%';
+          setTimeout(() => { bar.style.width = w; }, 100);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  const costSection = document.getElementById('cost');
+  if(costSection) observer.observe(costSection);
+</script>
+
+  <script src="../app.js" defer></script>
+</body>
+</html>

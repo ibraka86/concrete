@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Concrete Block Weight Guide: Standard, Lightweight & Heavyweight CMU | ConceteBlockCalculator.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The definitive CMU weight guide. Exact weights for standard, lightweight, and heavyweight concrete blocks by size. Includes interactive weight calculator, comparison charts, ASTM specs, and expert advice.">
+  <link rel="canonical" href="https://concreteblockcalculator.com/blog/concrete-block-weight-guide/">
+  <meta property="og:title" content="Concrete Block Weight Guide: Standard, Lightweight & Heavyweight CMU">
+  <meta property="og:description" content="The definitive CMU weight guide. Exact weights for standard, lightweight, and heavyweight concrete blocks by size.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://concreteblockcalculator.com/blog/concrete-block-weight-guide/">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Concrete Block Weight Guide: Standard, Lightweight & Heavyweight CMU",
+    "description": "The definitive guide to concrete masonry unit (CMU) weights. Covers standard, lightweight, and heavyweight blocks with exact weights, ASTM specifications, and selection advice.",
+    "author": {"@type": "Organization", "name": "ConceteBlockCalculator.com"},
+    "publisher": {"@type": "Organization", "name": "ConceteBlockCalculator.com"},
+    "datePublished": "2025-09-23",
+    "dateModified": "2025-09-23"
+  }
+  </script>
+
+  <style>
+    /* Unique styles for this page or overrides */
+    .article-header { border-top: 4px solid var(--primary); }
+    main { width: 100%; margin: 0 auto; padding: 1.5rem 0 3rem; }
+
+
+    .article-meta {
+      display: flex; flex-wrap: wrap; gap: 0.75rem;
+      margin-bottom: 1.2rem; font-size: 0.85rem; color: var(--text-muted);
+    }
+    .article-meta span { display: flex; align-items: center; gap: 0.3rem; }
+    .badge {
+      display: inline-block; padding: 0.2rem 0.7rem;
+      border-radius: 20px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em;
+    }
+    .badge-blue { background: #EBF4FF; color: #2563EB; }
+    .badge-green { background: #F0FFF4; color: #276749; }
+    .toc {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .toc h4 { margin: 0 0 1rem; font-size: 0.95rem; font-weight: 700; color: #1e293b; display: flex; align-items: center; gap: 0.5rem; }
+    .toc ol { margin: 0; padding-left: 1.2rem; }
+    .toc li { margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .toc a { color: #475569; text-decoration: none; transition: color 0.2s; }
+    .toc a:hover { color: var(--primary); text-decoration: underline; }
+
+    @media (min-width: 1024px) {
+      .toc {
+        float: left;
+        width: 300px;
+        margin-right: 2.5rem;
+        margin-top: 0;
+        position: sticky;
+        top: 2rem;
+        z-index: 10;
+      }
+    }
+
+    /* ===== CARDS ===== */
+    .card {
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .card h2 { margin-top: 0; }
+    .card h3 { margin-top: 0; }
+
+    /* ===== CALLOUT BOXES ===== */
+    .callout {
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid;
+      display: flex; gap: 0.8rem; align-items: flex-start;
+    }
+    .callout-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .callout-content p { margin: 0; }
+    .callout-info { background: #EBF8FF; border-color: #3182CE; }
+    .callout-warning { background: #FFFAF0; border-color: #DD6B20; }
+    .callout-success { background: #F0FFF4; border-color: #38A169; }
+    .callout-tip { background: #FAF5FF; border-color: #805AD5; }
+
+    /* ===== TABLES ===== */
+    .table-wrap { overflow-x: auto; margin: 1.5rem 0; border-radius: 8px; border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    thead { background: var(--bg-accent); }
+    th { padding: 0.85rem 1rem; font-weight: 600; text-align: left; color: var(--text-primary); border-bottom: 2px solid var(--border); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--bg-accent); }
+    .highlight-row td { background: #EBF4FF; font-weight: 600; color: var(--text-primary); }
+    .table-caption { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center; font-style: italic; }
+
+    /* ===== INTERACTIVE WEIGHT CALCULATOR ===== */
+    .calc-box {
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .calc-box h3 { margin-top: 0; color: var(--primary); }
+    .calc-grid { display: grid; gap: 1rem; margin-bottom: 1.2rem; }
+    @media (min-width: 540px) { .calc-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 800px) { .calc-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .calc-group label { display: block; font-weight: 500; font-size: 0.9rem; margin-bottom: 0.4rem; color: var(--text-primary); }
+    .calc-group select, .calc-group input {
+      width: 100%; padding: 0.65rem 0.9rem;
+      border: 2px solid var(--border); border-radius: 6px;
+      font-size: 1rem; background: var(--bg-secondary); color: var(--text-primary);
+      transition: border-color 0.2s;
+    }
+    .calc-group select:focus, .calc-group input:focus { outline: none; border-color: var(--primary); }
+    .btn-calc {
+      padding: 0.75rem 2rem; background: var(--primary); color: white;
+      border: none; border-radius: 6px; font-size: 1rem; font-weight: 600;
+      cursor: pointer; transition: all 0.2s; min-height: 44px;
+    }
+    .btn-calc:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 4px 8px var(--shadow); }
+    .calc-result {
+      margin-top: 1.2rem; padding: 1rem 1.25rem;
+      background: var(--bg-accent); border-radius: 8px;
+      border: 1px solid var(--border); display: none;
+    }
+    .calc-result.show { display: block; }
+    .result-row { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
+    .result-row:last-child { border-bottom: none; }
+    .result-label { font-size: 0.9rem; color: var(--text-secondary); }
+    .result-val { font-size: 1.15rem; font-weight: 700; color: var(--primary); }
+
+    /* ===== INFOGRAPHIC ===== */
+    .infographic {
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .infographic h3 { margin-top: 0; text-align: center; }
+    .infographic-subtitle { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .weight-bars { display: flex; flex-direction: column; gap: 1rem; }
+    .bar-item { display: flex; align-items: center; gap: 1rem; }
+    .bar-label { min-width: 140px; font-size: 0.88rem; font-weight: 500; color: var(--text-primary); text-align: right; }
+    .bar-track { flex: 1; background: var(--bg-accent); border-radius: 20px; height: 28px; overflow: hidden; position: relative; }
+    .bar-fill { height: 100%; border-radius: 20px; display: flex; align-items: center; justify-content: flex-end; padding-right: 0.75rem; font-size: 0.82rem; font-weight: 700; color: white; transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+    .bar-fill.lw { background: linear-gradient(90deg, #48BB78, #38A169); }
+    .bar-fill.mw { background: linear-gradient(90deg, #2F80ED, #2563EB); }
+    .bar-fill.hw { background: linear-gradient(90deg, #ED8936, #DD6B20); }
+    .bar-fill.xhw { background: linear-gradient(90deg, #F56565, #C53030); }
+    .infographic-legend { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+    .legend-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: var(--text-secondary); }
+    .legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ===== COMPARISON TOGGLE ===== */
+    .toggle-wrapper {
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 4px var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .toggle-wrapper h3 { margin-top: 0; }
+    .toggle-tabs { display: flex; gap: 0.5rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
+    .tab-btn {
+      padding: 0.5rem 1.2rem; border-radius: 20px; border: 2px solid var(--border);
+      background: var(--bg-accent); color: var(--text-secondary);
+      cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: all 0.2s;
+    }
+    .tab-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+    .tab-btn:hover:not(.active) { border-color: var(--primary); color: var(--primary); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ===== CHECKLIST ===== */
+    .checklist { list-style: none; padding: 0; }
+    .checklist li {
+      padding: 0.55rem 0.75rem;
+      display: flex; align-items: flex-start; gap: 0.6rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.93rem; color: var(--text-secondary);
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before { content: "✓"; color: var(--success); font-weight: 700; flex-shrink: 0; margin-top: 0.05rem; }
+    .checklist li.cross::before { content: "✗"; color: var(--error); }
+
+    /* ===== STAT BOXES ===== */
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .stat-box {
+      background: var(--bg-secondary); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.1rem; text-align: center;
+      box-shadow: 0 1px 3px var(--shadow);
+    }
+    .stat-value { font-size: 2rem; font-weight: 800; color: var(--primary); line-height: 1; }
+    .stat-unit { font-size: 0.85rem; font-weight: 500; color: var(--text-muted); }
+    .stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem; }
+
+    /* ===== VIDEO EMBED ===== */
+    .video-embed {
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 4px var(--shadow);
+      border: 1px solid var(--border);
+    }
+    .video-embed h3 { margin-top: 0; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 8px; }
+
+    /* ===== DENSITY DIAGRAM ===== */
+    .density-visual {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 540px) { .density-visual { grid-template-columns: 1fr; } }
+    .density-block {
+      border-radius: 10px; padding: 1.2rem; text-align: center;
+      border: 2px solid; transition: transform 0.2s;
+    }
+    .density-block:hover { transform: translateY(-3px); }
+    .density-block.light { background: #F0FFF4; border-color: #48BB78; }
+    .density-block.standard { background: #EBF4FF; border-color: #2F80ED; }
+    .density-block.heavy { background: #FFF5F5; border-color: #F56565; }
+    .density-block .block-icon { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    .density-block .block-type { font-weight: 700; font-size: 1rem; margin-bottom: 0.25rem; color: var(--text-primary); }
+    .density-block .block-pcf { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .density-block .block-weight { font-size: 1.4rem; font-weight: 800; }
+    .density-block.light .block-weight { color: #276749; }
+    .density-block.standard .block-weight { color: #1a56db; }
+    .density-block.heavy .block-weight { color: #c53030; }
+    .density-block .block-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.3rem; }
+
+    /* ===== FAQ ===== */
+    .faq-item { margin-bottom: 1rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+    .faq-question {
+      width: 100%; padding: 1rem; background: var(--bg-accent); border: none;
+      text-align: left; cursor: pointer; font-weight: 500; color: var(--text-primary);
+      font-size: 1rem; display: flex; justify-content: space-between; align-items: center;
+    }
+    .faq-question:hover { background: var(--border); }
+    .faq-question::after { content: "+"; font-size: 1.3rem; font-weight: bold; transition: transform 0.2s; }
+    .faq-question[aria-expanded="true"]::after { content: "−"; }
+    .faq-answer { display: none; padding: 1rem; border-top: 1px solid var(--border); }
+    .faq-answer.show { display: block; }
+    .faq-answer p { margin: 0; }
+
+    /* ===== EEAT BOX ===== */
+    .eeat-box {
+      background: linear-gradient(135deg, #EBF4FF 0%, #F0FFF4 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    .eeat-box h3 { margin-top: 0; color: var(--primary); }
+    .eeat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .eeat-item { display: flex; gap: 0.6rem; align-items: flex-start; }
+    .eeat-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .eeat-text strong { display: block; font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.2rem; }
+    .eeat-text span { font-size: 0.82rem; color: var(--text-muted); }
+
+    /* ===== CTA BOX ===== */
+    .cta-box {
+      background: linear-gradient(135deg, var(--primary) 0%, #1a56db 100%);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: center;
+      margin: 2.5rem 0;
+      color: white;
+    }
+    .cta-box h3 { color: white; margin: 0 0 0.75rem; font-size: 1.3rem; }
+    .cta-box p { color: rgba(255,255,255,0.85); margin: 0 0 1.25rem; }
+    .btn-cta {
+      display: inline-block; padding: 0.85rem 2rem;
+      background: white; color: var(--primary);
+      border-radius: 6px; font-weight: 700; font-size: 1rem;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.25); color: var(--primary); text-decoration: none; }
+
+    /* ===== FOOTER (identical to homepage) ===== */
+    .site-footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .site-footer nav { margin-bottom: 1rem; }
+    .site-footer nav a { margin: 0 0.25rem; color: var(--primary); font-size: 0.9rem; }
+    .site-footer small { color: var(--text-muted); font-size: 0.8rem; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 640px) {
+      main { padding: 0 0.5rem 2rem; }
+      .article-header, .card { padding: 1rem; }
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.3rem; }
+      .bar-label { min-width: 100px; font-size: 0.8rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+    @media (prefers-contrast: high) {
+      :root { --border: #000000; }
+      button, input, select { border-width: 3px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <a class="brand" href="/">
+          <img src="../../favicon.svg" alt="" aria-hidden="true" width="32" height="32">
+          <span>Concrete Block Calculator</span>
+        </a>
+        <p class="tagline">Fast CMU estimates for blocks, mortar, grout, sand, and reinforcement.</p>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false">Calculators</a>
+          <div class="dropdown-menu" aria-labelledby="calculatorsDropdown">
+            <a href="/" class="dropdown-item">Concrete Block Calculator</a>
+            <a href="/retaining-wall/index.html" class="dropdown-item">Retaining Wall Calculator</a>
+            <a href="/block-weight/index.html" class="dropdown-item">Block Weight Calculator</a>
+            <a href="/fire-pit-planter/index.html" class="dropdown-item">Fire Pit & Planter Calculator</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/knowledge-base/" class="nav-link active">Knowledge Base</a>
+        </div>
+        <div class="nav-item">
+          <a href="/about-us/" class="nav-link">About Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+  <div class="blog-layout">
+    <div class="blog-main">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span>›</span>
+        <a href="/blog">Blog</a><span>›</span>
+        <span>Concrete Block Weight Guide</span>
+      </nav>
+        <!-- ===== ARTICLE HEADER ===== -->
+        <article>
+    <div class="article-header">
+      <div class="article-meta">
+        <span>📅 Updated September 2025</span>
+        <span>⏱ 12 min read</span>
+        <span>✍️ By ConceteBlockCalculator.com Editors</span>
+        <span><span class="badge badge-blue">CMU Guide</span></span>
+        <span><span class="badge badge-green">ASTM C90 Referenced</span></span>
+      </div>
+
+      <h1>Concrete Block Weight Guide: Standard, Lightweight &amp; Heavyweight CMU</h1>
+
+      <p>Whether you're estimating structural loads, planning a delivery, or choosing the right block for your project—knowing the <strong>exact weight of your CMU</strong> is non-negotiable. This guide covers every concrete masonry unit weight classification, size-by-size data tables, ASTM C90 density specs, and a built-in interactive calculator so you never have to guess.</p>
+
+      <!-- Quick Stats -->
+      <div class="stat-grid">
+        <div class="stat-box">
+          <div class="stat-value">20–28</div>
+          <div class="stat-unit">lbs</div>
+          <div class="stat-label">Lightweight 8×8×16 CMU</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">36–42</div>
+          <div class="stat-unit">lbs</div>
+          <div class="stat-label">Standard 8×8×16 CMU</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">44–55</div>
+          <div class="stat-unit">lbs</div>
+          <div class="stat-label">Heavyweight 8×8×16 CMU</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">3</div>
+          <div class="stat-unit">classes</div>
+          <div class="stat-label">ASTM C90 Density Types</div>
+        </div>
+      </div>
+
+      </div><!-- /article-header -->
+
+      <!-- Table of Contents (outside header for better floating) -->
+      <div class="toc">
+        <h4>📋 Table of Contents</h4>
+        <ol>
+          <li><a href="#why-weight-matters">Why CMU Weight Matters</a></li>
+          <li><a href="#astm-classifications">ASTM C90 Weight Classifications Explained</a></li>
+          <li><a href="#weight-by-size">Concrete Block Weight by Size (Full Chart)</a></li>
+          <li><a href="#density-visual">Visual Density Comparison</a></li>
+          <li><a href="#calculator">Interactive CMU Weight Calculator</a></li>
+          <li><a href="#infographic">CMU Weight Infographic</a></li>
+          <li><a href="#lightweight-deep-dive">Lightweight CMU: Deep Dive</a></li>
+          <li><a href="#standard-deep-dive">Standard (Normal) Weight CMU</a></li>
+          <li><a href="#heavyweight-deep-dive">Heavyweight CMU</a></li>
+          <li><a href="#comparison-toggle">Side-by-Side Comparison</a></li>
+          <li><a href="#wall-weight-table">Wall Weight Reference Table</a></li>
+          <li><a href="#selection-guide">Which Block Should You Choose?</a></li>
+          <li><a href="#factors-affecting-weight">Factors That Affect CMU Weight</a></li>
+          <li><a href="#eeat">About This Guide</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ol>
+      </div>
+
+      <!-- Interlinking Section -->
+      <div class="cta-box">
+        <h3>Ready to Calculate?</h3>
+        <p>Now that you know the weight, use our tools to estimate your project materials perfectly.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="/" class="btn-cta">Main Block Calculator</a>
+          <a href="/block-weight/index.html" class="btn-cta">Weight Calculator</a>
+        </div>
+      </div>
+
+    <!-- ===== SECTION 1: WHY WEIGHT MATTERS ===== -->
+    <div class="card" id="why-weight-matters">
+      <h2>1. Why CMU Weight Matters More Than You Think</h2>
+      <p>Concrete block weight isn't just a trivia stat—it directly impacts <strong>five mission-critical areas</strong> of every masonry project:</p>
+      <ul>
+        <li><strong>Structural load calculations:</strong> Engineers use block density to compute dead loads on foundations, beams, and footings. Getting this wrong leads to under-designed structures.</li>
+        <li><strong>Transportation &amp; logistics:</strong> A standard pallet holds ~90 blocks. At 38 lbs each, that's 3,420 lbs—near the limit for many flatbed trucks. Lightweight blocks can bump that count by 30%+.</li>
+        <li><strong>Mason productivity:</strong> Heavier blocks slow installation. Lightweight CMUs can increase laying speed by up to 20%, cutting labor costs on large projects.</li>
+        <li><strong>Thermal &amp; acoustic performance:</strong> Lower-density (lighter) blocks have better insulation R-values; denser (heavier) blocks deliver superior STC (Sound Transmission Class) ratings.</li>
+        <li><strong>Fire resistance:</strong> Density and aggregate type directly affect fire-resistance ratings per IBC and NFPA standards.</li>
+      </ul>
+      <div class="callout callout-info">
+        <div class="callout-icon">ℹ️</div>
+        <div class="callout-content">
+          <p><strong>Key insight from a masonry engineer:</strong> "One of the most common mistakes I see on job sites is specifying lightweight CMUs for load-bearing walls without verifying compressive strength requirements—or ordering normal-weight blocks where lightweight would meet code and save $15,000 in labor." — Heidi Jandris, Jandris Block (3rd generation masonry manufacturer)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 2: ASTM CLASSIFICATIONS ===== -->
+    <div class="card" id="astm-classifications">
+      <h2>2. ASTM C90 Weight Classifications Explained</h2>
+      <p>In the United States, all load-bearing concrete masonry units must meet <strong>ASTM C90</strong> — the governing standard published by ASTM International. This standard defines three weight (density) classifications based on the oven-dry weight of the concrete per cubic foot (pcf):</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Classification</th>
+              <th>Density (oven-dry)</th>
+              <th>Common Aggregates</th>
+              <th>Typical 8×8×16 Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Lightweight</strong></td>
+              <td>Less than 105 lb/ft³</td>
+              <td>Expanded shale, clay, slate, pumice, perlite</td>
+              <td>20–28 lbs</td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>Medium Weight</strong> (Normal)</td>
+              <td>105–125 lb/ft³</td>
+              <td>Mix of lightweight &amp; normal aggregates</td>
+              <td>29–35 lbs</td>
+            </tr>
+            <tr>
+              <td><strong>Normal Weight</strong> (Standard)</td>
+              <td>125 lb/ft³ or more</td>
+              <td>Sand, gravel, crushed stone, slag</td>
+              <td>36–42 lbs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-caption">Source: ASTM C90 Standard Specification for Loadbearing Concrete Masonry Units</p>
+
+      <div class="callout callout-warning">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-content">
+          <p><strong>Important:</strong> The terms "heavyweight CMU" and "normal weight CMU" are often used interchangeably in the field. Technically, ASTM C90 does not define a separate "heavyweight" category—normal weight (125+ pcf) is the densest standard class. However, high-density specialty blocks (135+ pcf) used for radiation shielding or blast resistance are sometimes called "heavyweight" by manufacturers.</p>
+        </div>
+      </div>
+
+      <h3>What Does "Density" Actually Mean for a Block?</h3>
+      <p>Density (pcf) refers to the <em>unit weight of the concrete mix</em> used to manufacture the CMU—not the weight of the finished hollow block. Two blocks with the same hollow-core geometry but different aggregate types will weigh differently because their concrete matrix has different densities.</p>
+      <p>This is why a lightweight 8×8×16 block can weigh just 20–28 lbs while a normal-weight block of the same dimensions weighs 36–42 lbs. The hollow cores are identical; the concrete walls around them are denser.</p>
+
+      <div class="callout callout-success">
+        <div class="callout-icon">✅</div>
+        <div class="callout-content">
+          <p><strong>Critical fact:</strong> Density does NOT affect compressive strength. Both lightweight and normal-weight CMUs can achieve the same PSI ratings. Strength is determined by the manufacturing process (vibration/compaction) and cement content—not aggregate density. Source: Jandris Block Technical Bulletin</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 3: WEIGHT BY SIZE TABLE ===== -->
+    <div class="card" id="weight-by-size">
+      <h2>3. Concrete Block Weight by Size: The Complete Reference Chart</h2>
+      <p>The table below lists average weights for common CMU sizes across all three density classifications. These represent industry averages — actual weights may vary ±5% by manufacturer.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Block Size (Nominal)</th>
+              <th>Block Type</th>
+              <th>Lightweight (lbs)</th>
+              <th>Medium Weight (lbs)</th>
+              <th>Normal Weight (lbs)</th>
+              <th>Solid (lbs)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>4″×8″×16″</strong></td>
+              <td>Hollow (partition)</td>
+              <td>10–13</td>
+              <td>14–17</td>
+              <td>15–20</td>
+              <td>22–26</td>
+            </tr>
+            <tr>
+              <td><strong>6″×8″×16″</strong></td>
+              <td>Hollow</td>
+              <td>18–22</td>
+              <td>23–27</td>
+              <td>28–32</td>
+              <td>45–56</td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>8″×8″×16″</strong></td>
+              <td>Hollow (standard)</td>
+              <td>20–28</td>
+              <td>29–35</td>
+              <td>36–42</td>
+              <td>54–65</td>
+            </tr>
+            <tr>
+              <td><strong>8″×8″×8″</strong></td>
+              <td>Half block (hollow)</td>
+              <td>10–14</td>
+              <td>14–18</td>
+              <td>18–24</td>
+              <td>27–33</td>
+            </tr>
+            <tr>
+              <td><strong>10″×8″×16″</strong></td>
+              <td>Hollow</td>
+              <td>26–32</td>
+              <td>35–41</td>
+              <td>40–50</td>
+              <td>68–80</td>
+            </tr>
+            <tr>
+              <td><strong>12″×8″×16″</strong></td>
+              <td>Hollow (foundation)</td>
+              <td>32–38</td>
+              <td>40–48</td>
+              <td>50–58</td>
+              <td>82–95</td>
+            </tr>
+            <tr>
+              <td><strong>12″×8″×8″</strong></td>
+              <td>Half block (hollow)</td>
+              <td>16–20</td>
+              <td>20–24</td>
+              <td>26–32</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>2″×8″×16″</strong></td>
+              <td>Solid cap / patio</td>
+              <td>—</td>
+              <td>—</td>
+              <td>14–18</td>
+              <td>14–18</td>
+            </tr>
+            <tr>
+              <td><strong>4″×8″×2.5″</strong></td>
+              <td>Concrete paver</td>
+              <td>—</td>
+              <td>—</td>
+              <td>6–8</td>
+              <td>6–8</td>
+            </tr>
+            <tr>
+              <td><strong>8″×8″×16″</strong></td>
+              <td>Bond beam / lintel</td>
+              <td>—</td>
+              <td>—</td>
+              <td>~38 (empty)</td>
+              <td>80–110 (filled)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-caption">All weights in pounds (lbs). Hollow = standard 2-core block. Solid = no cores. Data compiled from ASTM C90, Angelus Block, Partanna, Block USA, and field measurements.</p>
+
+      <div class="callout callout-tip">
+        <div class="callout-icon">💡</div>
+        <div class="callout-content">
+          <p><strong>Pro tip — the "filled block" trap:</strong> A hollow 8×8×16 normal-weight block weighs 36–42 lbs. Fill those cores with grout (140 pcf) and steel, and that same block assembly weighs 63–75 lbs. Always use filled weights in structural dead-load calculations for reinforced CMU walls.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 4: VISUAL DENSITY COMPARISON ===== -->
+    <div class="card" id="density-visual">
+      <h2>4. Visual: How Weight Compares Between CMU Types</h2>
+      <p>For the same <strong>8″×8″×16″ hollow block</strong>—the most common CMU in North American construction—here's how the three main weight categories stack up at a glance:</p>
+
+      <div class="density-visual">
+        <div class="density-block light">
+          <div class="block-icon">🟩</div>
+          <div class="block-type">Lightweight CMU</div>
+          <div class="block-pcf">&lt;105 lb/ft³ (pcf)</div>
+          <div class="block-weight">20–28 lbs</div>
+          <div class="block-note">Expanded shale, clay, or slate aggregate</div>
+        </div>
+        <div class="density-block standard">
+          <div class="block-icon">🟦</div>
+          <div class="block-type">Medium/Normal Weight CMU</div>
+          <div class="block-pcf">105–135 lb/ft³ (pcf)</div>
+          <div class="block-weight">29–42 lbs</div>
+          <div class="block-note">Mixed or standard sand/gravel aggregate</div>
+        </div>
+        <div class="density-block heavy">
+          <div class="block-icon">🟥</div>
+          <div class="block-type">High-Density CMU</div>
+          <div class="block-pcf">135–145+ lb/ft³ (pcf)</div>
+          <div class="block-weight">44–58 lbs</div>
+          <div class="block-note">Dense gravel, slag, or specialty aggregate</div>
+        </div>
+      </div>
+
+      <p>The <strong>46% weight difference</strong> between a lightweight and a normal-weight 8×8×16 CMU is significant on a job site. On a wall requiring 500 blocks, that's a difference of roughly <strong>9,000 lbs of total block weight</strong>—affecting everything from truck loads to mason fatigue.</p>
+    </div>
+
+    <!-- ===== INTERACTIVE CALCULATOR ===== -->
+    <div class="calc-box" id="calculator">
+      <h3>🧮 Interactive CMU Weight Calculator</h3>
+      <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.25rem;">Select your block size and density class to instantly calculate single block weight, pallet weight, and truck load capacity.</p>
+      <div class="calc-grid">
+        <div class="calc-group">
+          <label for="blockSize">Block Size (Nominal)</label>
+          <select id="blockSize">
+            <option value="4x8x16">4″×8″×16″</option>
+            <option value="6x8x16">6″×8″×16″</option>
+            <option value="8x8x16" selected>8″×8″×16″ (Standard)</option>
+            <option value="8x8x8">8″×8″×8″ (Half)</option>
+            <option value="10x8x16">10″×8″×16″</option>
+            <option value="12x8x16">12″×8″×16″</option>
+          </select>
+        </div>
+        <div class="calc-group">
+          <label for="densityClass">Density Classification</label>
+          <select id="densityClass">
+            <option value="lw">Lightweight (&lt;105 pcf)</option>
+            <option value="mw">Medium Weight (105–125 pcf)</option>
+            <option value="nw" selected>Normal Weight (125+ pcf)</option>
+            <option value="solid">Solid Block (Normal Weight)</option>
+          </select>
+        </div>
+        <div class="calc-group">
+          <label for="blockQty">Number of Blocks</label>
+          <input type="number" id="blockQty" value="90" min="1" max="100000" step="1">
+        </div>
+      </div>
+      <button class="btn-calc" onclick="calcWeight()">⚖️ Calculate Weight</button>
+      <div class="calc-result" id="calcResult">
+        <div class="result-row"><span class="result-label">Single Block Weight</span><span class="result-val" id="r-single">—</span></div>
+        <div class="result-row"><span class="result-label">Total Weight (<span id="r-qty-label">90</span> blocks)</span><span class="result-val" id="r-total">—</span></div>
+        <div class="result-row"><span class="result-label">Typical Pallet (90 blocks)</span><span class="result-val" id="r-pallet">—</span></div>
+        <div class="result-row"><span class="result-label">Half-ton pickup truck capacity</span><span class="result-val" id="r-truck500">—</span></div>
+        <div class="result-row"><span class="result-label">1-ton truck capacity (2,000 lb)</span><span class="result-val" id="r-truck1000">—</span></div>
+      </div>
+    </div>
+
+    <!-- ===== INFOGRAPHIC ===== -->
+    <div class="infographic" id="infographic">
+      <h3>📊 CMU Weight Comparison Infographic</h3>
+      <p class="infographic-subtitle">Average weight of 8×8×16 CMU by fill type and density class (in pounds)</p>
+      <div class="weight-bars" id="weightBars">
+        <div class="bar-item">
+          <div class="bar-label">LW Hollow Block</div>
+          <div class="bar-track"><div class="bar-fill lw" style="width:0%" data-width="24%">24 lbs</div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label">LW Solid Block</div>
+          <div class="bar-track"><div class="bar-fill lw" style="width:0%" data-width="36%">36 lbs</div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label">MW Hollow Block</div>
+          <div class="bar-track"><div class="bar-fill mw" style="width:0%" data-width="32%">32 lbs</div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label">NW Hollow Block</div>
+          <div class="bar-track"><div class="bar-fill hw" style="width:0%" data-width="39%">39 lbs</div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label">NW Solid Block</div>
+          <div class="bar-track"><div class="bar-fill hw" style="width:0%" data-width="58%">58 lbs</div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label">NW Filled + Grout</div>
+          <div class="bar-track"><div class="bar-fill xhw" style="width:0%" data-width="70%">70 lbs</div></div>
+        </div>
+      </div>
+      <div class="infographic-legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#48BB78"></div>Lightweight CMU</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#2F80ED"></div>Medium Weight CMU</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#ED8936"></div>Normal Weight CMU</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#F56565"></div>Grouted/Filled CMU</div>
+      </div>
+      <p style="text-align:center; font-size:0.8rem; color:var(--text-muted); margin-top:1rem;">100% = 100 lbs. Bar widths proportional to average weight. LW = Lightweight, MW = Medium Weight, NW = Normal Weight.</p>
+    </div>
+
+    <!-- ===== SECTION 5: LIGHTWEIGHT DEEP DIVE ===== -->
+    <div class="card" id="lightweight-deep-dive">
+      <h2>5. Lightweight CMU: The Complete Picture</h2>
+
+      <h3>What Makes a CMU "Lightweight"?</h3>
+      <p>Lightweight CMUs use <strong>expanded aggregates</strong>—materials that have been thermally processed (rotary kiln or sintering) to create a porous, cellular microstructure. Common expanded aggregates include:</p>
+      <ul>
+        <li><strong>Expanded shale</strong> (most common in the Eastern US)</li>
+        <li><strong>Expanded clay</strong></li>
+        <li><strong>Expanded slate</strong></li>
+        <li><strong>Pumice</strong> (volcanic, naturally occurring)</li>
+        <li><strong>Perlite</strong> (volcanic glass, heat-expanded)</li>
+        <li><strong>Cinders/slag</strong> (industrial byproducts—less common today)</li>
+      </ul>
+      <p>These aggregates can be up to <strong>46% lighter</strong> than conventional sand/gravel, according to Johnson Concrete Products. Yet because density ≠ strength, lightweight blocks manufactured under ASTM C90 meet identical compressive strength minimums (1,900 psi net area).</p>
+
+      <h3>Lightweight CMU Weight by Size</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Nominal Size</th><th>Avg Weight (lbs)</th><th>Avg Weight (kg)</th><th>Density pcf</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>4″×8″×16″ hollow</td><td>10–13</td><td>4.5–5.9</td><td>&lt;105</td></tr>
+            <tr><td>6″×8″×16″ hollow</td><td>18–22</td><td>8.2–10</td><td>&lt;105</td></tr>
+            <tr class="highlight-row"><td>8″×8″×16″ hollow</td><td>20–28</td><td>9.1–12.7</td><td>&lt;105</td></tr>
+            <tr><td>8″×8″×8″ half hollow</td><td>10–14</td><td>4.5–6.4</td><td>&lt;105</td></tr>
+            <tr><td>10″×8″×16″ hollow</td><td>26–32</td><td>11.8–14.5</td><td>&lt;105</td></tr>
+            <tr><td>12″×8″×16″ hollow</td><td>32–38</td><td>14.5–17.2</td><td>&lt;105</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Advantages of Lightweight CMU</h3>
+      <ul class="checklist">
+        <li>Higher R-value (better thermal insulation) due to porous aggregate</li>
+        <li>Improved fire resistance ratings — lower thermal conductivity slows heat transfer</li>
+        <li>Better mason productivity — lighter blocks = faster installation, reduced fatigue</li>
+        <li>Reduced structural dead loads — can allow lighter foundation design</li>
+        <li>Same compressive strength as normal-weight (PSI not affected by density)</li>
+        <li>Lower transportation costs per block (more blocks per truckload)</li>
+      </ul>
+
+      <h3>Disadvantages / Trade-offs</h3>
+      <ul class="checklist">
+        <li class="cross">Lower STC (sound transmission class) — less effective at blocking sound</li>
+        <li class="cross">Can be harder to source in some regions (limited manufacturers)</li>
+        <li class="cross">Higher unit cost than standard CMU in most markets</li>
+        <li class="cross">May require special surface treatment for exposed architectural finishes</li>
+      </ul>
+
+      <div class="callout callout-info">
+        <div class="callout-icon">ℹ️</div>
+        <div class="callout-content">
+          <p><strong>Typical application:</strong> Lightweight CMUs are ideal for upper-floor walls in multi-story construction, partition walls, interior non-load-bearing walls, and any application where reducing dead load is a priority (e.g., building over parking structures or podium slabs).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 6: NORMAL WEIGHT DEEP DIVE ===== -->
+    <div class="card" id="standard-deep-dive">
+      <h2>6. Standard (Normal Weight) CMU: The Industry Benchmark</h2>
+
+      <p>Normal-weight CMU — density of <strong>125 pcf or more</strong> — is the default specification for most structural masonry in the United States. It uses conventional dense aggregates: natural sand, gravel, crushed stone, or blast-furnace slag.</p>
+
+      <h3>Normal Weight CMU Weight by Size</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Nominal Size</th><th>Hollow (lbs)</th><th>60% Solid (lbs)</th><th>Fully Solid (lbs)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>4″×8″×16″</td><td>15–20</td><td>—</td><td>22–26</td></tr>
+            <tr><td>6″×8″×16″</td><td>28–32</td><td>—</td><td>45–56</td></tr>
+            <tr class="highlight-row"><td>8″×8″×16″</td><td>36–42</td><td>44–48</td><td>54–65</td></tr>
+            <tr><td>8″×8″×8″ half</td><td>18–24</td><td>—</td><td>27–33</td></tr>
+            <tr><td>10″×8″×16″</td><td>40–50</td><td>—</td><td>68–80</td></tr>
+            <tr><td>12″×8″×16″</td><td>50–58</td><td>—</td><td>82–95</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-caption">The classic 8×8×16 hollow CMU at Home Depot is typically listed at 38 lbs — though field measurements often show 35–36 lbs due to natural variation.</p>
+
+      <h3>Key Performance Properties</h3>
+      <ul class="checklist">
+        <li>Excellent compressive strength (1,900+ psi net area per ASTM C90)</li>
+        <li>Superior STC ratings for noise-sensitive applications (schools, hotels, healthcare)</li>
+        <li>Wide availability — stocked at virtually every masonry supplier and big-box store</li>
+        <li>Proven long-term durability in exterior exposure</li>
+        <li class="cross">Heavier per block = higher labor costs on large projects</li>
+        <li class="cross">Lower thermal insulation than lightweight counterpart</li>
+      </ul>
+    </div>
+
+    <!-- ===== SECTION 7: HEAVYWEIGHT DEEP DIVE ===== -->
+    <div class="card" id="heavyweight-deep-dive">
+      <h2>7. Heavyweight &amp; High-Density CMU</h2>
+      <p>While ASTM C90 doesn't formally define a "heavyweight" category beyond normal weight (125+ pcf), the industry uses this term for <strong>high-density specialty blocks</strong> manufactured with dense aggregates like barite, magnetite, or limonite ore. These blocks typically range from <strong>135–145+ pcf</strong> and are engineered for specific performance requirements:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Use Case</th><th>Density (pcf)</th><th>Typical 8×8×16 Weight</th><th>Key Property</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Standard construction</td><td>125–135</td><td>36–44 lbs</td><td>General structural use</td></tr>
+            <tr class="highlight-row"><td>Sound barrier / STC walls</td><td>135–140</td><td>44–50 lbs</td><td>High STC rating (55+)</td></tr>
+            <tr><td>Radiation shielding</td><td>140–200+</td><td>55–80+ lbs</td><td>X-ray / gamma attenuation</td></tr>
+            <tr><td>Blast / ballistic walls</td><td>140–160</td><td>50–70 lbs</td><td>High mass, impact resistance</td></tr>
+            <tr><td>Security / prison walls</td><td>135–145</td><td>46–58 lbs</td><td>Reinforced, anti-breach</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-warning">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-content">
+          <p><strong>Radiation-shielding CMUs</strong> used in hospitals, nuclear facilities, and industrial radiography suites can weigh 2–3× more than standard blocks. These are specialty-order items not available at standard suppliers. Always consult a radiation shielding specialist for these applications.</p>
+        </div>
+      </div>
+
+      <h3>When to Use Heavyweight CMU</h3>
+      <ul>
+        <li><strong>Hospital imaging rooms</strong> (MRI, X-ray, CT) — radiation attenuation requirements</li>
+        <li><strong>Recording studios &amp; home theaters</strong> — maximum STC performance</li>
+        <li><strong>Highway/railroad noise barriers</strong> — mass-law acoustics benefit from higher density</li>
+        <li><strong>Industrial facilities</strong> — blast protection, machinery vibration dampening</li>
+        <li><strong>Secure government/correctional facilities</strong> — structural anti-breach requirements</li>
+      </ul>
+    </div>
+
+    <!-- ===== SECTION 8: COMPARISON TOGGLE ===== -->
+    <div class="toggle-wrapper" id="comparison-toggle">
+      <h3>🔄 Side-by-Side Comparison: Choose Your Block Type</h3>
+      <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1rem;">Click a tab to see properties for each CMU weight class.</p>
+      <div class="toggle-tabs">
+        <button class="tab-btn active" onclick="switchTab('lw', this)">Lightweight</button>
+        <button class="tab-btn" onclick="switchTab('mw', this)">Medium Weight</button>
+        <button class="tab-btn" onclick="switchTab('nw', this)">Normal Weight</button>
+        <button class="tab-btn" onclick="switchTab('hd', this)">High Density</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-lw">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Property</th><th>Lightweight CMU Value</th></tr></thead>
+            <tbody>
+              <tr><td>Density (pcf)</td><td>&lt; 105</td></tr>
+              <tr class="highlight-row"><td>Typical 8×8×16 weight</td><td>20–28 lbs (9–12.7 kg)</td></tr>
+              <tr><td>Aggregate types</td><td>Expanded shale, clay, slate, pumice</td></tr>
+              <tr><td>Compressive strength (ASTM C90)</td><td>1,900+ psi (same as normal weight)</td></tr>
+              <tr><td>R-value (per inch)</td><td>~0.25–0.35 (better than NW)</td></tr>
+              <tr><td>STC rating (8″ hollow)</td><td>~46–50</td></tr>
+              <tr><td>Fire resistance (2-hr UL rating)</td><td>Yes (typically lower EST needed)</td></tr>
+              <tr><td>Mason productivity</td><td>⭐⭐⭐⭐⭐ Highest</td></tr>
+              <tr><td>Cost vs. normal weight</td><td>+5–15% higher unit cost</td></tr>
+              <tr><td>Best uses</td><td>Interior partitions, upper floors, schools, offices</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-mw">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Property</th><th>Medium Weight CMU Value</th></tr></thead>
+            <tbody>
+              <tr><td>Density (pcf)</td><td>105–125</td></tr>
+              <tr class="highlight-row"><td>Typical 8×8×16 weight</td><td>29–35 lbs (13–15.9 kg)</td></tr>
+              <tr><td>Aggregate types</td><td>Mixed lightweight + standard aggregate</td></tr>
+              <tr><td>Compressive strength (ASTM C90)</td><td>1,900+ psi</td></tr>
+              <tr><td>R-value (per inch)</td><td>~0.20–0.28</td></tr>
+              <tr><td>STC rating (8″ hollow)</td><td>~48–52</td></tr>
+              <tr><td>Fire resistance</td><td>Yes</td></tr>
+              <tr><td>Mason productivity</td><td>⭐⭐⭐⭐ High</td></tr>
+              <tr><td>Cost vs. normal weight</td><td>~Comparable or slight premium</td></tr>
+              <tr><td>Best uses</td><td>Mixed-use buildings, commercial, residential exterior</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-nw">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Property</th><th>Normal Weight CMU Value</th></tr></thead>
+            <tbody>
+              <tr><td>Density (pcf)</td><td>125+</td></tr>
+              <tr class="highlight-row"><td>Typical 8×8×16 weight</td><td>36–42 lbs (16.3–19 kg)</td></tr>
+              <tr><td>Aggregate types</td><td>Sand, gravel, crushed stone, slag</td></tr>
+              <tr><td>Compressive strength (ASTM C90)</td><td>1,900+ psi</td></tr>
+              <tr><td>R-value (per inch)</td><td>~0.16–0.22 (lower)</td></tr>
+              <tr><td>STC rating (8″ hollow)</td><td>~52–56</td></tr>
+              <tr><td>Fire resistance</td><td>Yes</td></tr>
+              <tr><td>Mason productivity</td><td>⭐⭐⭐ Moderate</td></tr>
+              <tr><td>Cost vs. normal weight</td><td>Baseline (lowest cost)</td></tr>
+              <tr><td>Best uses</td><td>Foundation walls, load-bearing walls, sound barriers, retaining walls</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-hd">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Property</th><th>High-Density CMU Value</th></tr></thead>
+            <tbody>
+              <tr><td>Density (pcf)</td><td>135–200+</td></tr>
+              <tr class="highlight-row"><td>Typical 8×8×16 weight</td><td>44–80+ lbs (20–36+ kg)</td></tr>
+              <tr><td>Aggregate types</td><td>Barite, magnetite, limonite, dense slag</td></tr>
+              <tr><td>Compressive strength</td><td>2,500–5,000+ psi (specialty)</td></tr>
+              <tr><td>R-value (per inch)</td><td>~0.10–0.16 (lowest)</td></tr>
+              <tr><td>STC rating (8″ hollow)</td><td>55–65+</td></tr>
+              <tr><td>Radiation attenuation</td><td>Yes (barite/magnetite grades)</td></tr>
+              <tr><td>Mason productivity</td><td>⭐⭐ Low</td></tr>
+              <tr><td>Cost vs. normal weight</td><td>+50–300% depending on type</td></tr>
+              <tr><td>Best uses</td><td>Medical imaging, nuclear, recording studios, blast walls</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 9: WALL WEIGHT TABLE ===== -->
+    <div class="card" id="wall-weight-table">
+      <h2>8. CMU Wall Weight Reference Table (psf)</h2>
+      <p>For structural engineers and architects: the table below shows the <strong>average weight of a completed CMU wall in pounds per square foot (psf)</strong>, accounting for hollow cores, bond beams, and standard reinforcing steel. Grout weight assumed at 140 pcf.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Block Type &amp; Density</th>
+              <th>Wall Thickness</th>
+              <th>Solid Grouted (psf)</th>
+              <th>Grouted @ 32″ o.c. (psf)</th>
+              <th>Grouted @ 48″ o.c. (psf)</th>
+              <th>Ungrouted (psf)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2"><strong>Lightweight</strong><br><small>103 pcf</small></td>
+              <td>6″</td><td>52</td><td>39</td><td>34</td><td>29</td>
+            </tr>
+            <tr>
+              <td>8″</td><td>75</td><td>57</td><td>50</td><td>38</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><strong>Medium Weight</strong><br><small>115 pcf</small></td>
+              <td>6″</td><td>57</td><td>44</td><td>40</td><td>33</td>
+            </tr>
+            <tr class="highlight-row">
+              <td>8″</td><td>82</td><td>63</td><td>56</td><td>44</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><strong>Normal Weight</strong><br><small>135 pcf</small></td>
+              <td>6″</td><td>65</td><td>51</td><td>45</td><td>40</td>
+            </tr>
+            <tr>
+              <td>8″</td><td>95</td><td>74</td><td>66</td><td>55</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><strong>Normal Weight</strong><br><small>135 pcf</small></td>
+              <td>10″</td><td>110</td><td>88</td><td>78</td><td>65</td>
+            </tr>
+            <tr>
+              <td>12″</td><td>133</td><td>107</td><td>95</td><td>80</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-caption">Data adapted from Angelus Block Wall Weights technical bulletin. Always verify with your structural engineer for project-specific dead load calculations.</p>
+
+      <div class="callout callout-info">
+        <div class="callout-icon">ℹ️</div>
+        <div class="callout-content">
+          <p><strong>How to read this table:</strong> "Grouted @ 32″ o.c." means vertical cores are filled with grout every 32 inches on center. Solid grouted = all cores filled. The higher the grout fill, the heavier—and stronger—the wall system.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECTION 10: SELECTION GUIDE ===== -->
+    <div class="card" id="selection-guide">
+      <h2>9. Which CMU Should You Choose? Decision Guide</h2>
+
+      <div class="callout callout-tip">
+        <div class="callout-icon">💡</div>
+        <div class="callout-content">
+          <p><strong>Quick decision rule:</strong> If your primary concern is <em>acoustics</em>, go heavier. If it's <em>thermal performance or labor cost</em>, go lighter. If you need <em>maximum versatility at lowest cost</em>, normal-weight is your baseline.</p>
+        </div>
+      </div>
+
+      <h3>Choose Lightweight CMU When:</h3>
+      <ul class="checklist">
+        <li>Reducing dead loads on the structure is a design priority</li>
+        <li>Project is on upper floors of multi-story buildings</li>
+        <li>Thermal insulation performance matters (schools, residences)</li>
+        <li>Labor cost reduction is important on high-block-count projects</li>
+        <li>Fire resistance is a design priority</li>
+        <li>The building will not be in a high-noise environment</li>
+      </ul>
+
+      <h3>Choose Normal Weight CMU When:</h3>
+      <ul class="checklist">
+        <li>Foundation walls, below-grade work, or retaining walls</li>
+        <li>Acoustic performance (STC) is critical (apartments, hotels, healthcare)</li>
+        <li>Budget constraints favor the lowest unit cost available</li>
+        <li>Wide local availability is required</li>
+        <li>Exterior walls exposed to weather (denser blocks resist moisture intrusion better)</li>
+      </ul>
+
+      <h3>Choose High-Density CMU When:</h3>
+      <ul class="checklist">
+        <li>Radiation shielding is required (medical, nuclear, industrial)</li>
+        <li>Maximum sound isolation is specified (recording, broadcast studios)</li>
+        <li>Blast or ballistic resistance is required</li>
+        <li>Correctional or secure facility construction</li>
+      </ul>
+    </div>
+
+    <!-- ===== SECTION 11: FACTORS AFFECTING WEIGHT ===== -->
+    <div class="card" id="factors-affecting-weight">
+      <h2>10. 6 Key Factors That Affect Concrete Block Weight</h2>
+
+      <h3>1. Aggregate Type</h3>
+      <p>The single biggest factor. Lightweight aggregates (expanded shale, pumice) can reduce block weight by 30–46% compared to dense sand/gravel aggregates, per Johnson Concrete Products.</p>
+
+      <h3>2. Hollow vs. Solid Core</h3>
+      <p>A standard 8×8×16 hollow CMU has two cores occupying roughly 50–55% of its volume. A solid block of the same dimensions weighs 40–60% more. Example: hollow NW = 38 lbs, solid NW = ~54 lbs.</p>
+
+      <h3>3. Moisture Content</h3>
+      <p>Concrete blocks absorb water. A freshly cured or recently wetted block can weigh <strong>5–10% more</strong> than its dry weight. ASTM C90 weights are measured oven-dry. Always account for moisture in shipping and structural calculations.</p>
+
+      <h3>4. Block Geometry (% Solids)</h3>
+      <p>Blocks classified as "60% solid" (partially filled cores) weigh more than standard hollow blocks. A 60%-solid 8×8×16 NW block weighs approximately 44–48 lbs vs. 36–42 lbs for fully hollow.</p>
+
+      <h3>5. Grout Fill</h3>
+      <p>Filling hollow cores with grout (140 pcf) dramatically increases weight. A fully grouted 8×8×16 NW CMU assembly (block + grout + rebar) weighs 63–75 lbs — roughly <strong>double the hollow block weight</strong>.</p>
+
+      <h3>6. Manufacturer Variation</h3>
+      <p>Even within the same size and classification, blocks from different manufacturers vary by ±3–5 lbs. The Prepper Press field test found a Home Depot 8×8×16 block (listed at 38 lbs) actually weighed 35.4 lbs. Always weigh on-site for precise structural calculations on critical projects.</p>
+
+      <div class="callout callout-success">
+        <div class="callout-icon">✅</div>
+        <div class="callout-content">
+          <p><strong>Formula to verify block weight:</strong><br>
+          Weight (lbs) = Volume (ft³) × Density (pcf)<br>
+          Volume = (L × W × H in inches) ÷ 1,728<br>
+          Example for 8×8×16 at 135 pcf: (8×8×16) ÷ 1,728 × 135 = <strong>59.3 lbs</strong> (fully solid). A hollow block is ~65% of solid weight = ~38.5 lbs. ✓</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA 1 -->
+    <div class="cta-box">
+      <h3>📐 Need to Estimate Blocks for Your Entire Project?</h3>
+      <p>Use our free CMU Calculator to get block counts, mortar, grout, and reinforcement quantities in seconds.</p>
+      <a href="/" class="btn-cta">Try the Free CMU Calculator →</a>
+    </div>
+
+    <!-- ===== VIDEO SECTION ===== -->
+
+
+    <!-- ===== EEAT SECTION ===== -->
+    <div class="eeat-box" id="eeat">
+      <h3>🏆 Why Trust This Guide?</h3>
+      <p style="color:var(--text-secondary);">This article was researched and written by the editorial team at <strong>ConceteBlockCalculator.com</strong>. Here's our methodology:</p>
+      <div class="eeat-grid">
+        <div class="eeat-item">
+          <div class="eeat-icon">📐</div>
+          <div class="eeat-text">
+            <strong>Primary Sources</strong>
+            <span>Weight data sourced from ASTM C90, Angelus Block, Partanna CMU technical bulletins, and Block USA specifications.</span>
+          </div>
+        </div>
+        <div class="eeat-item">
+          <div class="eeat-icon">🔬</div>
+          <div class="eeat-text">
+            <strong>Field Verification</strong>
+            <span>Referenced real-world block weighing (Prepper Press field measurements), not just manufacturer specs.</span>
+          </div>
+        </div>
+        <div class="eeat-item">
+          <div class="eeat-icon">🏗️</div>
+          <div class="eeat-text">
+            <strong>Industry Expert Input</strong>
+            <span>Insights from Jandris Block (3rd-generation masonry manufacturer with Pratt Institute architectural credentials).</span>
+          </div>
+        </div>
+        <div class="eeat-item">
+          <div class="eeat-icon">🔄</div>
+          <div class="eeat-text">
+            <strong>Regular Updates</strong>
+            <span>Content reviewed against current ASTM C90 standards and updated annually. Last review: September 2025.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== FAQ ===== -->
+    <div class="card" id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="bfaq1">How much does a standard 8×8×16 concrete block weigh?</button>
+        <div class="faq-answer" id="bfaq1">
+          <p>A standard (normal-weight) 8×8×16 hollow CMU weighs <strong>36–42 lbs</strong> on average (about 38 lbs is the most commonly cited figure). Lightweight versions of the same size weigh 20–28 lbs. The variation depends on the specific aggregate used, moisture content, and manufacturer. Always check the actual product data sheet for your supplier.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="bfaq2">What is the difference between a cinder block and a concrete block?</button>
+        <div class="faq-answer" id="bfaq2">
+          <p>"Cinder block" is an older term for masonry blocks that historically used <strong>coal cinders (ash)</strong> as aggregate — making them lighter and less durable. Modern concrete masonry units (CMUs) no longer use coal cinders; they use expanded shale/clay for lightweight or natural stone aggregates for normal-weight blocks. Today, "cinder block" and "concrete block" are used interchangeably in everyday speech, but technically they're different products. Modern CMUs meeting ASTM C90 are significantly stronger than historical cinder blocks.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="bfaq3">Does a lighter CMU mean it's weaker?</button>
+        <div class="faq-answer" id="bfaq3">
+          <p><strong>No.</strong> This is one of the most common misconceptions in masonry. ASTM C90 requires all load-bearing CMUs — regardless of weight class — to meet a minimum compressive strength of 1,900 psi (net area). Density does NOT determine strength. Strength is determined by the cement content and the manufacturing process (vibration intensity and compaction). Lightweight CMUs from reputable manufacturers are every bit as structurally capable as normal-weight units.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="bfaq4">How many concrete blocks fit on a standard pallet?</button>
+        <div class="faq-answer" id="bfaq4">
+          <p>A standard pallet typically holds <strong>72–90 blocks</strong> for 8×8×16 CMUs, depending on the manufacturer and stacking arrangement. At 38 lbs each, a full pallet of normal-weight blocks weighs approximately 2,700–3,420 lbs. Lightweight blocks at ~24 lbs would bring the same pallet count to 1,728–2,160 lbs — a significant difference for delivery planning and flooring load limits.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="bfaq5">How much does a filled (grouted) concrete block weigh?</button>
+        <div class="faq-answer" id="bfaq5">
+          <p>A normal-weight 8×8×16 hollow CMU weighs about 38 lbs empty. When fully filled with concrete grout (140 pcf) and rebar, the same unit weighs approximately <strong>63–75 lbs</strong>. This is critical for structural dead load calculations — never use empty block weight for grouted wall calculations. Bond beam and lintel blocks filled with concrete and steel can exceed 100 lbs per unit.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="bfaq6">What does pcf mean in CMU specifications?</button>
+        <div class="faq-answer" id="bfaq6">
+          <p><strong>pcf = pounds per cubic foot</strong>. It's the unit used to express concrete density (unit weight). ASTM C90 classifies CMUs as lightweight (&lt;105 pcf), medium weight (105–125 pcf), or normal weight (125+ pcf). Note: pcf is the density of the <em>concrete mix</em>, not the weight of the finished block. A hollow block weighs much less than a solid block of the same concrete density because the hollow cores reduce overall material volume.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="bfaq7">Can I use lightweight CMU for exterior load-bearing walls?</button>
+        <div class="faq-answer" id="bfaq7">
+          <p>Yes, in most cases. Lightweight CMUs meeting ASTM C90 have the same minimum compressive strength (1,900 psi net area) as normal-weight blocks and are fully code-compliant for load-bearing exterior walls in IBC jurisdictions. The key considerations are: (1) verify the specific product's moisture absorption performance for your climate zone, (2) confirm STC requirements are met if acoustics matter, and (3) always have a structural engineer verify for your specific application and local code.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="bfaq8">How do I calculate how many blocks I can fit in my truck?</button>
+        <div class="faq-answer" id="bfaq8">
+          <p>First, find your truck's payload capacity (not GVWR — payload = GVWR minus curb weight, typically 1,500–2,000 lbs for a half-ton pickup). Then divide payload by the block weight. Example: 1,500 lb payload ÷ 38 lbs/block = <strong>39 blocks max</strong> for normal-weight 8×8×16. With lightweight blocks at 24 lbs: 1,500 ÷ 24 = <strong>62 blocks</strong>. Always stay under rated payload and check that your bed can physically fit that many blocks (stacking height, footprint). Use our calculator above for instant results.</p>
+        </div>
+      </div>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "How much does a standard 8×8×16 concrete block weigh?", "acceptedAnswer": {"@type": "Answer", "text": "A standard (normal-weight) 8×8×16 hollow CMU weighs 36–42 lbs on average (about 38 lbs is the most commonly cited figure). Lightweight versions of the same size weigh 20–28 lbs."}},
+          {"@type": "Question", "name": "Does a lighter CMU mean it's weaker?", "acceptedAnswer": {"@type": "Answer", "text": "No. ASTM C90 requires all load-bearing CMUs regardless of weight class to meet a minimum compressive strength of 1,900 psi net area. Density does not determine strength."}},
+          {"@type": "Question", "name": "How much does a filled grouted concrete block weigh?", "acceptedAnswer": {"@type": "Answer", "text": "A normal-weight 8×8×16 hollow CMU weighs about 38 lbs empty. When fully filled with concrete grout and rebar, the same unit weighs approximately 63–75 lbs."}}
+        ]
+      }
+      </script>
+    </div>
+
+    <!-- CTA 2 -->
+    <div class="cta-box">
+      <h3>🔢 Ready to Calculate Your Block Order?</h3>
+      <p>Enter your wall dimensions and get instant estimates for blocks, mortar, grout, and reinforcement. Free, no signup required.</p>
+      <a href="/" class="btn-cta">Open the CMU Calculator →</a>
+    </div>
+
+      </article><!-- /article -->
+    </div><!-- /blog-main -->
+
+    <aside class="blog-sidebar">
+      <div class="sidebar-widget">
+        <h3>Latest Posts</h3>
+        <ul class="latest-posts-list">
+          <li>
+            <a href="../blog-cmu-weight-guide/" class="active">Concrete Block Weight Guide</a>
+            <div class="post-date">March 12, 2025</div>
+          </li>
+          <li>
+            <a href="../fire-pit-article/">DIY Cinder Block Fire Pit</a>
+            <div class="post-date">March 10, 2025</div>
+          </li>
+          <li>
+            <a href="../retaining-wall-guide/">Retaining Wall Step-by-Step</a>
+            <div class="post-date">March 15, 2026</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>Popular Calculators</h3>
+        <ul class="latest-posts-list">
+          <li><a href="/">Concrete Block Calculator</a></li>
+          <li><a href="/retaining-wall/">Retaining Wall Calculator</a></li>
+          <li><a href="/fire-pit-planter/">Fire Pit Calculator</a></li>
+          <li><a href="/block-weight/">Block Weight Calculator</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-cta">
+        <h4>Need a Project Estimate?</h4>
+        <p>Get accurate counts for blocks, mortar, and masonry materials.</p>
+        <a href="../index.html" class="btn-sidebar">Start Estimating</a>
+      </div>
+    </aside>
+  </div><!-- /blog-layout -->
+</main>
+
+  <!-- ===== FOOTER (identical to homepage) ===== -->
+  <footer class="site-footer">
+    <nav>
+      <a href="#how-we-calculate">How we calculate</a> ·
+      <a href="#faq">FAQ</a> ·
+      <a href="/about">About</a> ·
+      <a href="/author">Author</a> ·
+      <a href="/privacy">Privacy Policy</a> ·
+      <a href="/terms">Terms of Use</a> ·
+      <a href="/cdn-cgi/l/email-protection#f69f989099b69599989584938293949a99959d95979a95839a97829984d895999b">Contact</a>
+    </nav>
+    <small>
+      © <span id="year"></span> concreteblockcalculator.com ·
+      Last updated <time datetime="2025-09-23">September 23, 2025</time>
+    </small>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="../app.js" defer></script>
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Animate infographic bars on scroll
+    const bars = document.querySelectorAll('.bar-fill');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          setTimeout(() => { bar.style.width = bar.dataset.width; }, 200);
+          observer.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.3 });
+    bars.forEach(b => observer.observe(b));
+
+    // Weight calculator
+    const weightData = {
+      '4x8x16':  { lw: 11.5, mw: 15.5, nw: 17.5, solid: 24 },
+      '6x8x16':  { lw: 20,   mw: 25,   nw: 30,   solid: 50 },
+      '8x8x16':  { lw: 24,   mw: 32,   nw: 39,   solid: 59 },
+      '8x8x8':   { lw: 12,   mw: 16,   nw: 21,   solid: 30 },
+      '10x8x16': { lw: 29,   mw: 38,   nw: 45,   solid: 74 },
+      '12x8x16': { lw: 35,   mw: 44,   nw: 54,   solid: 88 }
+    };
+
+    function calcWeight() {
+      const size = document.getElementById('blockSize').value;
+      const density = document.getElementById('densityClass').value;
+      const qty = parseInt(document.getElementById('blockQty').value) || 90;
+      const w = weightData[size][density];
+      const total = w * qty;
+      const pallet = w * 90;
+      const truck500 = Math.floor(500 / w);
+      const truck1000 = Math.floor(1000 / w);
+      document.getElementById('r-single').textContent = w + ' lbs (' + (w * 0.4536).toFixed(1) + ' kg)';
+      document.getElementById('r-qty-label').textContent = qty;
+      document.getElementById('r-total').textContent = total.toLocaleString() + ' lbs (' + (total * 0.4536 / 1000).toFixed(2) + ' tons)';
+      document.getElementById('r-pallet').textContent = pallet.toLocaleString() + ' lbs';
+      document.getElementById('r-truck500').textContent = truck500 + ' blocks max';
+      document.getElementById('r-truck1000').textContent = truck1000 + ' blocks max';
+      const resultEl = document.getElementById('calcResult');
+      resultEl.classList.add('show');
+      resultEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // Tab switcher
+    function switchTab(id, btn) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-' + id).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !expanded);
+        const answer = document.getElementById(btn.getAttribute('aria-controls'));
+        answer.classList.toggle('show', !expanded);
+      });
+    });
+
+    // Keyboard: Enter key in calculator
+    document.getElementById('blockQty').addEventListener('keydown', e => {
+      if (e.key === 'Enter') calcWeight();
+    });
+  </script>
+  <script src="../app.js" defer></script>
+</body>
+</html>

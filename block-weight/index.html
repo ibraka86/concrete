@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Concrete Weight Calculator: Weigh Your Concrete & Blocks | Free Estimator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Use our free concrete weight calculator to weigh your concrete slabs, masonry blocks, and mixes. Find the weight of concrete per cubic yard or cubic foot easily.">
+  <link rel="canonical" href="https://www.concreteblockcalculator.com/block-weight/">
+  <meta property="og:title" content="Concrete Weight Calculator | Weigh Concrete & Blocks">
+  <meta property="og:description" content="Calculate concrete weight, density, and volume for blocks and slabs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.concreteblockcalculator.com/block-weight/">
+  <meta property="og:image" content="https://www.concreteblockcalculator.com/favicon.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Concrete Block Weight Calculator">
+  <meta name="twitter:description" content="Calculate CMU weight and block density for different sizes.">
+  <meta name="twitter:image" content="https://www.concreteblockcalculator.com/favicon.svg">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEM0LS9VSQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LEM0LS9VSQ');
+  </script>
+  
+  <style>
+    /* Critical CSS for above-the-fold */
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;color:#0B1A2B;background:#F7FBFF}
+    .site-header{padding:1rem;text-align:center;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .brand{display:inline-flex;align-items:center;gap:0.5rem;font-size:1.5rem;font-weight:700;text-decoration:none;color:#0B1A2B}
+    .brand img{width:32px;height:32px}
+    .tagline{margin:0.5rem 0 0;color:#666;font-size:0.9rem}
+    main{max-width:1200px;margin:0 auto;padding:1rem}
+    .calculator{background:#fff;border-radius:8px;padding:1.5rem;margin-bottom:2rem;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+    h1{margin:0 0 1rem;font-size:2rem;color:#0B1A2B}
+  </style>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <a class="brand" href="/">
+          <img src="../favicon.svg" alt="" aria-hidden="true" width="32" height="32">
+          <span>Concrete Block Calculator</span>
+        </a>
+        <p class="tagline">Fast CMU estimates for blocks, mortar, grout, sand, and reinforcement.</p>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false">Calculators</a>
+          <div class="dropdown-menu" aria-labelledby="calculatorsDropdown">
+            <a href="/" class="dropdown-item">Concrete Block Calculator</a>
+            <a href="/retaining-wall/index.html" class="dropdown-item">Retaining Wall Calculator</a>
+            <a href="/block-weight/index.html" class="dropdown-item active">Block Weight Calculator</a>
+            <a href="/fire-pit-planter/index.html" class="dropdown-item">Fire Pit & Planter Calculator</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/knowledge-base/" class="nav-link">Knowledge Base</a>
+        </div>
+        <div class="nav-item">
+          <a href="/about-us/" class="nav-link">About Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <h1 class="intro-title">Concrete Block Weight Calculator</h1>
+      <p>Need to calculate concrete weight for a slab or masonry wall? Our concrete weight calculator helps you weigh your materials accurately. Whether you need to find the weight of a circular slab or standard blocks, this concrete calculator provides a precise estimation in lbs and kg.</p>
+      
+      <div class="steps">
+        <h2>How to Use the Concrete Weight Calculator to Calculate Concrete Weight</h2>
+        <ol>
+          <li><strong>Select Type:</strong> Pick from lightweight concrete, standard, or structural mix.</li>
+          <li><strong>Dimensions:</strong> Enter thickness and width for different shapes like circular or rectangular concrete slabs.</li>
+          <li><strong>Calculate:</strong> Our calculator determines the volume and weight of concrete based on density.</li>
+          <li><strong>Results:</strong> Get the concrete weigh for one cubic yard or the total number for the wall project.</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="main-content">
+      <section class="calculator" aria-labelledby="calc-title">
+        <h2 id="calc-title">Concrete Weight Calculator: Estimate Heavyweight and Low-Density Materials</h2>
+        
+        <form id="calc-form" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="blockSize">Block Size</label>
+              <select id="blockSize" name="blockSize" required>
+                <option value="6">6″ CMU (6×8×16)</option>
+                <option value="8" selected>8″ CMU (8×8×16)</option>
+                <option value="12">12″ CMU (12×8×16)</option>
+                <option value="4">4″ CMU (4×8×16)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="blockType">Block Type</label>
+              <select id="blockType" name="blockType" required>
+                <option value="standard" selected>Standard Weight</option>
+                <option value="lightweight">Lightweight</option>
+                <option value="heavyweight">Heavyweight/Dense</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">Number of Blocks</label>
+              <input type="number" id="quantity" name="quantity" min="1" value="100" step="1" required>
+            </div>
+
+            <div class="form-group">
+              <label for="configuration">Block Configuration</label>
+              <select id="configuration" name="configuration" required>
+                <option value="hollow" selected>Hollow (2-3 core)</option>
+                <option value="solid">Solid/Filled</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary">Calculate Weight</button>
+        </form>
+      </section>
+
+      <section class="results" aria-live="polite" aria-atomic="true" id="results">
+        <h2>Concrete Weight Estimation: Calculate Concrete Weight in Lbs and Kg</h2>
+        <div id="results-content">
+          <p class="placeholder">Select your block specifications and click "Calculate Weight" to see estimates.</p>
+        </div>
+        <div class="result-actions" style="display: none;">
+          <button id="printBtn" class="btn-secondary">Print / Save PDF</button>
+          <button id="copyBtn" class="btn-secondary">Copy Results</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="how" id="how-we-calculate">
+      <h2>How to Calculate Concrete Weight: Density, Volume, and Concrete Mix Guide</h2>
+      <details>
+        <summary>Concrete Weight Standards and Density of Concrete</summary>
+        <p>Concrete is a mixture of cement, sand, gravel, and coarse aggregates. The density of concrete determines its weight—standard concrete typically weighs around 145–150 lbs per cubic foot. For a cubic yard of concrete weighs about 4,000 lbs.</p>
+      </details>
+      
+      <details>
+        <summary>Calculating Volume for Different Shapes</summary>
+        <p>To find the weight, first calculate the volume of concrete in cubic foot or cubic yard. Multiply the square feet by thickness (or depth of the concrete). For a circular slab, use the diameter to find the volume.</p>
+      </details>
+      
+      <details>
+        <summary>Concrete Mix Types: Lightweight vs Structural</summary>
+        <p>Lightweight concrete uses low-density aggregate like crushed stone or pumice, weighing about 90–115 pounds per cubic foot. Masonry blocks and concrete products like ready-mix or mortar vary in weight of the concrete depending on the type of concrete used.</p>
+      </details>
+      
+      <details>
+        <summary>Estimated Weight for Common Projects</summary>
+        <p>A typical concrete wall or slab requires several yards of concrete. One yard of concrete weighs differently based on moisture and mix. Use our concrete calculator to estimate how many kilogram or pounds you need for structural safety.</p>
+      </details>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions (FAQs): Weight of Concrete and Concrete Mix Info</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+          How much does one cubic yard of concrete weigh?
+        </button>
+        <div class="faq-answer" id="faq1">
+          <p>One cubic yard of concrete typically weighs about 4,000 lbs. The cubic yard of concrete weighs can vary depending on whether you use ready-mix or a low-density lightweight concrete mix.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+          What is the weight of concrete slabs per cubic foot?
+        </button>
+        <div class="faq-answer" id="faq2">
+          <p>Standard concrete slabs weigh approximately 150 pounds per cubic foot. If you use a circular slab template, the weight of concrete remains the same per volume, but the total amount of concrete changes.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+          How to calculate the weight of concrete in kilogram (kg)?
+        </button>
+        <div class="faq-answer" id="faq3">
+          <p>To calculate concrete weight in kilogram, first find the volume and weight of concrete in lbs and then multiply by 0.453592. Our concrete weight calculator does this weight conversion automatically for all concrete products.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+          Does the concrete weight depends on the mix type?
+        </button>
+        <div class="faq-answer" id="faq4">
+          <p>Yes, concrete weight depends heavily on the aggregate and mix. Masonry blocks using heavyweight stone will weigh much more than those using sand and low-density fillers.</p>
+        </div>
+      </div>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Concrete Weight Calculator",
+        "url": "https://www.concreteblockcalculator.com/block-weight/",
+        "applicationCategory": "CalculatorApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate concrete weight for slabs, blocks, and various different shapes.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+      </script>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate Concrete Weight",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "text": "Identify the type of concrete mix (standard vs lightweight)."
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Determine the volume in cubic feet or cubic yards."
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Multiply volume by the density of the concrete."
+          }
+        ]
+      }
+      </script>
+    </section>
+
+    <section class="about">
+      <h2>About Our Free Concrete Weight Calculator and Masonry Resource</h2>
+      <p>This weight of concrete resource is a free concrete tool to help you estimate concrete weight for masonry and structural work. We use the latest mix standards to calculate the volume and find the weight for ready-mix or cement projects.</p>
+      <p><strong>Contact:</strong> <a href="mailto:hello@concreteblockcalculator.com">hello@concreteblockcalculator.com</a></p>
+      <p><strong>Disclaimer:</strong> Weight estimates are approximate. Always verify with your ready-mix supplier.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="/">Home</a> · 
+      <a href="#how-we-calculate">How we calculate</a> · 
+      <a href="#faq">FAQ</a> · 
+      <a href="mailto:hello@concreteblockcalculator.com">Contact</a>
+    </nav>
+    <small>
+      © <span id="year"></span> concreteblockcalculator.com
+    </small>
+  </footer>
+
+  <script src="../block-weight.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Concrete Block Calculator (CMU) – Blocks, Mortar, Grout, Reinforcement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Calculate concrete block (CMU) materials for 6″, 8″, and 12″ blocks. Estimate blocks, mortar, sand, grout, and reinforcement with our fast, accurate tool.">
+  <link rel="canonical" href="https://concreteblockcalculator.com/">
+  <meta property="og:title" content="Concrete Block Calculator (CMU)">
+  <meta property="og:description" content="Calculate concrete block (CMU) materials for 6″, 8″, and 12″ blocks. Estimate blocks, mortar, sand, grout, and reinforcement with our fast, accurate tool.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://concreteblockcalculator.com/">
+  <meta property="og:image" content="https://concreteblockcalculator.com/favicon.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Concrete Block Calculator (CMU)">
+  <meta name="twitter:description" content="Calculate concrete block (CMU) materials for 6″, 8″, and 12″ blocks. Estimate blocks, mortar, sand, grout, and reinforcement with our fast, accurate tool.">
+  <meta name="twitter:image" content="https://concreteblockcalculator.com/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEM0LS9VSQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LEM0LS9VSQ');
+  </script>
+  
+  <style>
+    /* Critical CSS for above-the-fold */
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;color:#0B1A2B;background:#F7FBFF}
+    .site-header{padding:1rem;text-align:center;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .nav-menu{display:flex;justify-content:center;gap:1rem;margin:1rem 0}
+    .nav-menu a{font-size:1rem;color:#0B1A2B;text-decoration:none}
+    .nav-menu a:hover{text-decoration:underline}
+    .brand{display:inline-flex;align-items:center;gap:0.5rem;font-size:1.5rem;font-weight:700;text-decoration:none;color:#0B1A2B}
+    .brand img{width:32px;height:32px}
+    .tagline{margin:0.5rem 0 0;color:#666;font-size:0.9rem}
+    main{max-width:1200px;margin:0 auto;padding:1rem}
+    .calculator{background:#fff;border-radius:8px;padding:1.5rem;margin-bottom:2rem;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+    h1{margin:0 0 1rem;font-size:2rem;color:#0B1A2B}
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <a class="brand" href="/">
+          <img src="favicon.svg" alt="" aria-hidden="true" width="32" height="32">
+          <span>Concrete Block Calculator</span>
+        </a>
+        <p class="tagline">Fast CMU estimates for blocks, mortar, grout, sand, and reinforcement.</p>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false">Calculators</a>
+          <div class="dropdown-menu" aria-labelledby="calculatorsDropdown">
+            <a href="/" class="dropdown-item">Concrete Block Calculator</a>
+            <a href="/retaining-wall/index.html" class="dropdown-item">Retaining Wall Calculator</a>
+            <a href="/block-weight/index.html" class="dropdown-item">Block Weight Calculator</a>
+            <a href="/fire-pit-planter/index.html" class="dropdown-item">Fire Pit & Planter Calculator</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/knowledge-base/" class="nav-link">Knowledge Base</a>
+        </div>
+        <div class="nav-item">
+          <a href="/about-us/" class="nav-link">About Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <h1>Concrete Block Calculator (CMU)</h1>
+      <p>Calculate concrete masonry unit (CMU) materials quickly and accurately. This block calculator estimates blocks, mortar bags, sand, grout fill, and ladder/truss reinforcement for 6″, 8″, and 12″ concrete blocks.</p>
+      <div class="steps">
+        <h2>How to Use This Calculator</h2>
+        <ol>
+          <li>Enter your wall length and height in feet</li>
+          <li>Select your block thickness (6″, 8″, or 12″)</li>
+          <li>Adjust mortar joint thickness and reinforcement spacing</li>
+          <li>Set waste percentage (default 5%)</li>
+          <li>Choose fill options if needed</li>
+          <li>Click "Calculate Materials" for instant results</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="main-content">
+      <section class="calculator" aria-labelledby="calc-title">
+        <h2 id="calc-title">Concrete Block Calculator (CMU)</h2>
+        
+        <form id="calc-form" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="length">Wall Length (ft)</label>
+              <input type="number" id="length" name="length" min="0" step="0.1" required aria-describedby="length-error">
+              <div id="length-error" class="error-message" aria-live="polite"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="height">Wall Height (ft)</label>
+              <input type="number" id="height" name="height" min="0" step="0.1" required aria-describedby="height-error">
+              <div id="height-error" class="error-message" aria-live="polite"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="thickness">Block Thickness</label>
+              <select id="thickness" name="thickness" required>
+                <option value="6">6″ CMU</option>
+                <option value="8" selected>8″ CMU</option>
+                <option value="12">12″ CMU</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mortarJoint">Mortar Joint Thickness (in)</label>
+              <input type="number" id="mortarJoint" name="mortarJoint" value="0.375" min="0.25" max="0.75" step="0.125" title="Typical range: 0.25″ to 0.75″">
+            </div>
+
+            <div class="form-group">
+              <fieldset>
+                <legend>Horizontal Reinforcement Spacing</legend>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="spacing" value="16" id="spacing16">
+                    <span>16″ on center</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="spacing" value="24" id="spacing24" checked>
+                    <span>24″ on center</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="form-group">
+              <label for="waste">Waste Percentage (%)</label>
+              <input type="number" id="waste" name="waste" value="5" min="0" max="20" step="1">
+            </div>
+          </div>
+
+          <div class="options">
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" id="fillCells" name="fillCells">
+                <span>Fill all cells with grout</span>
+              </label>
+            </div>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" id="useVermiculite" name="useVermiculite">
+                <span>Use lightweight vermiculite/zonolite fill instead of grout</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary">Calculate Materials</button>
+        </form>
+      </section>
+
+      <section class="results" aria-live="polite" aria-atomic="true" id="results">
+        <h2>Material Estimates</h2>
+        <div id="results-content">
+          <p class="placeholder">Enter your wall dimensions and click "Calculate Materials" to see estimates.</p>
+        </div>
+        <div class="result-actions" style="display: none;">
+          <button id="printBtn" class="btn-secondary">Print / Save PDF</button>
+          <button id="copyBtn" class="btn-secondary">Copy Results</button>
+          <button id="shareBtn" class="btn-secondary">Share Link</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="how" id="how-we-calculate">
+      <h2>How We Calculate</h2>
+      <details>
+        <summary>Block Calculations</summary>
+        <p><strong>Formula:</strong> Wall Area (ft²) ÷ Block Face Area (0.889 ft²) = Raw Blocks Needed</p>
+        <p>Each standard 8×8×16 block covers approximately 0.889 square feet including mortar joints. We round up and add your specified waste percentage.</p>
+      </details>
+      
+      <details>
+        <summary>Mortar Bag Estimates</summary>
+        <p><strong>Formula:</strong> (Blocks ÷ 100) × 7 bags = Mortar Bags</p>
+        <p>Based on industry standard of approximately 7 bags of masonry cement per 100 blocks. Actual usage may vary based on joint thickness and block dimensions.</p>
+      </details>
+      
+      <details>
+        <summary>Sand Requirements</summary>
+        <p><strong>Formula:</strong> Mortar Bags × 0.003 tons/bag = Sand Needed</p>
+        <p>Estimates sand based on typical mortar mix ratios. Many contractors add an extra half yard for small pours.</p>
+      </details>
+      
+      <details>
+        <summary>Horizontal Reinforcement</summary>
+        <p><strong>Formula:</strong> (Wall Height ÷ Spacing) × Wall Length = Linear Feet</p>
+        <p>Calculates ladder or truss reinforcement runs based on your selected spacing (16″ or 24″ on center). Results rounded to 10-foot stick purchases.</p>
+      </details>
+      
+      <details>
+        <summary>Grout Fill Volume</summary>
+        <p><strong>Factors per 100 ft²:</strong> 6″ = 0.93 yd³, 8″ = 1.12 yd³, 12″ = 1.65 yd³</p>
+        <p>Based on typical hollow core volumes for standard CMU blocks. Add half yard option available for small pours.</p>
+      </details>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+          How do I calculate how many concrete blocks I need for a wall?
+        </button>
+        <div class="faq-answer" id="faq1">
+          <p>To calculate the number of concrete blocks needed for a wall, use our concrete block calculator by entering the wall's width and height dimensions. The calculator will determine the total square footage of your wall and divide it by the area of a single concrete block to estimate the quantity needed. Remember to add 5-10% extra blocks for cuts and breakage during construction.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+          What block size should I use in the concrete block calculator?
+        </button>
+        <div class="faq-answer" id="faq2">
+          <p>Standard concrete blocks come in various sizes, with the most common being 8x8x16 inches. When using the concrete block calculator, select your specific block size from the dropdown menu. The calculator supports different masonry block dimensions including hollow blocks, cinder blocks, and solid concrete blocks to provide accurate material estimation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+          How does the concrete block calculator determine mortar needed?
+        </button>
+        <div class="faq-answer" id="faq3">
+          <p>Our masonry calculator estimates the amount of mortar required based on your wall dimensions and block size. It calculates the number of mortar joints (horizontal and vertical) and multiplies by the joint thickness to determine total mortar volume. Typically, you'll need about 1 bag of mortar mix per 30-35 concrete blocks, depending on joint thickness and block dimensions.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+          Can I calculate concrete block cost using this calculator?
+        </button>
+        <div class="faq-answer" id="faq4">
+          <p>Yes, our concrete block calculator includes a cost estimation feature. Simply enter the price per block or price per square foot in your area, and the calculator will multiply this by the total number of blocks needed to estimate your material cost. This helps with construction budgeting and project planning.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+          How do I calculate concrete needed to fill block walls (core fill)?
+        </button>
+        <div class="faq-answer" id="faq5">
+          <p>To calculate concrete needed for block fill, use the calculator's core fill option. Enter your wall dimensions and select hollow blocks. The calculator will determine the volume of hollow cores that need filling with concrete. This is essential for reinforced masonry construction and structural concrete block walls.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq6">
+          What's the difference between square footage and number of blocks needed?
+        </button>
+        <div class="faq-answer" id="faq6">
+          <p>Square footage measures the total wall area, while the number of blocks needed is calculated by dividing the wall's square footage by the area of a single block. Our concrete block calculator performs this calculation automatically, accounting for mortar joints and providing both measurements for your construction project.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq7">
+          How accurate is the concrete block calculator for material estimation?
+        </button>
+        <div class="faq-answer" id="faq7">
+          <p>Our free concrete calculator provides precise estimates based on standard construction practices. However, actual materials needed may vary depending on factors like block size variations, mortar joint thickness, and construction methods. We recommend ordering 5-10% additional materials beyond the calculator's estimate to account for waste and cuts.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq8">
+          Can I use this calculator for different types of masonry blocks?
+        </button>
+        <div class="faq-answer" id="faq8">
+          <p>Yes, our masonry calculators support various block types including concrete blocks, cinder blocks, hollow blocks, and solid masonry units. Select your specific block type and dimensions, and the calculator will adjust the estimation accordingly. This versatility makes it useful for different construction and foundation projects.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq9">
+          How do I calculate materials needed for a concrete slab foundation?
+        </button>
+        <div class="faq-answer" id="faq9">
+          <p>For slab calculations, enter the length, width, and thickness of your concrete slab. The calculator will determine the cubic yards of concrete needed and can estimate additional materials like aggregate, cement, and sand ratios. This feature is perfect for foundation work and concrete construction projects.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq10">
+          What's the difference between a concrete block calculator and a brick calculator?
+        </button>
+        <div class="faq-answer" id="faq10">
+          <p>Concrete blocks and bricks are different masonry materials requiring separate calculations. Concrete blocks are typically larger (8x8x16 inches) and used for structural walls and foundations, while bricks are smaller (approximately 2.25x3.75x8 inches) and often used for decorative facades. Our concrete block calculator is specifically designed for concrete masonry units (CMU), but we also offer a brick calculator for traditional clay brick projects. Brick calculations require different mortar ratios and joint spacing compared to concrete blocks.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq11">
+          What measurements should I use - metric or standard units?
+        </button>
+        <div class="faq-answer" id="faq11">
+          <p>Our concrete block calculator supports both metric and standard (inch/foot) measurements. Choose the unit system that matches your project specifications. The calculator will maintain consistency throughout all calculations and provide results in your selected measurement system, ensuring accurate material quantity determination for your masonry project.</p>
+        </div>
+      </div>
+
+      <script type="application/ld+json" id="faq-jsonld">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I calculate how many concrete blocks I need for a wall?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To calculate the number of concrete blocks needed for a wall, use our concrete block calculator by entering the wall's width and height dimensions. The calculator will determine the total square footage of your wall and divide it by the area of a single concrete block to estimate the quantity needed. Remember to add 5-10% extra blocks for cuts and breakage during construction."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What block size should I use in the concrete block calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard concrete blocks come in various sizes, with the most common being 8x8x16 inches. When using the concrete block calculator, select your specific block size from the dropdown menu. The calculator supports different masonry block dimensions including hollow blocks, cinder blocks, and solid concrete blocks to provide accurate material estimation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the concrete block calculator determine mortar needed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our masonry calculator estimates the amount of mortar required based on your wall dimensions and block size. It calculates the number of mortar joints (horizontal and vertical) and multiplies by the joint thickness to determine total mortar volume. Typically, you'll need about 1 bag of mortar mix per 30-35 concrete blocks, depending on joint thickness and block dimensions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I calculate concrete block cost using this calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, our concrete block calculator includes a cost estimation feature. Simply enter the price per block or price per square foot in your area, and the calculator will multiply this by the total number of blocks needed to estimate your material cost. This helps with construction budgeting and project planning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I calculate concrete needed to fill block walls (core fill)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To calculate concrete needed for block fill, use the calculator's core fill option. Enter your wall dimensions and select hollow blocks. The calculator will determine the volume of hollow cores that need filling with concrete. This is essential for reinforced masonry construction and structural concrete block walls."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between square footage and number of blocks needed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Square footage measures the total wall area, while the number of blocks needed is calculated by dividing the wall's square footage by the area of a single block. Our concrete block calculator performs this calculation automatically, accounting for mortar joints and providing both measurements for your construction project."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate is the concrete block calculator for material estimation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our free concrete calculator provides precise estimates based on standard construction practices. However, actual materials needed may vary depending on factors like block size variations, mortar joint thickness, and construction methods. We recommend ordering 5-10% additional materials beyond the calculator's estimate to account for waste and cuts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this calculator for different types of masonry blocks?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, our masonry calculators support various block types including concrete blocks, cinder blocks, hollow blocks, and solid masonry units. Select your specific block type and dimensions, and the calculator will adjust the estimation accordingly. This versatility makes it useful for different construction and foundation projects."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I calculate materials needed for a concrete slab foundation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For slab calculations, enter the length, width, and thickness of your concrete slab. The calculator will determine the cubic yards of concrete needed and can estimate additional materials like aggregate, cement, and sand ratios. This feature is perfect for foundation work and concrete construction projects."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between a concrete block calculator and a brick calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concrete blocks and bricks are different masonry materials requiring separate calculations. Concrete blocks are typically larger (8x8x16 inches) and used for structural walls and foundations, while bricks are smaller (approximately 2.25x3.75x8 inches) and often used for decorative facades. Our concrete block calculator is specifically designed for concrete masonry units (CMU), but we also offer a brick calculator for traditional clay brick projects. Brick calculations require different mortar ratios and joint spacing compared to concrete blocks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What measurements should I use - metric or standard units?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our concrete block calculator supports both metric and standard (inch/foot) measurements. Choose the unit system that matches your project specifications. The calculator will maintain consistency throughout all calculations and provide results in your selected measurement system, ensuring accurate material quantity determination for your masonry project."
+            }
+          }
+        ]
+      }
+      </script>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Concrete Block Calculator (CMU)",
+        "url": "https://concreteblockcalculator.com/",
+        "description": "A web-based calculator for estimating concrete masonry unit (CMU) materials, including blocks, mortar, sand, grout, and reinforcement for 6″, 8″, and 12″ blocks.",
+        "applicationCategory": "Construction",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+      </script>
+    </section>
+
+    <section class="about">
+      <h2>About This Calculator</h2>
+      <p>This concrete block calculator uses industry-standard formulas and assumptions to provide material estimates for CMU construction projects. Our calculations are based on common practices but should be verified with your supplier, structural engineer, or local building codes.</p>
+      <p><strong>Contact:</strong> <a href="mailto:info@concreteblockcalculator.com">info@concreteblockcalculator.com</a></p>
+      <p><strong>Disclaimer:</strong> These estimates are for planning purposes only. Actual material requirements may vary based on specific project conditions, local codes, and construction practices.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="#how-we-calculate">How we calculate</a> · 
+      <a href="#faq">FAQ</a> · 
+      <a href="/about">About</a> · 
+      <a href="/author">Author</a> · 
+      <a href="/privacy">Privacy Policy</a> · 
+      <a href="/terms">Terms of Use</a> · 
+      <a href="mailto:info@concreteblockcalculator.com">Contact</a>
+    </nav>
+    <small>
+      © <span id="year"></span> concreteblockcalculator.com · 
+      Last updated <time id="lastUpdated" datetime="2025-09-23">September 23, 2025</time>
+    </small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

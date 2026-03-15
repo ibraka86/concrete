@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <style>
+      .block { fill: #2F80ED; }
+      .lines { fill: #ffffff; stroke: #1a5cc7; stroke-width: 0.5; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" rx="4" ry="4" fill="#2F80ED"/>
+  
+  <!-- Block grid pattern -->
+  <g class="blocks">
+    <!-- Top row -->
+    <rect x="3" y="3" width="12" height="6" rx="1" class="lines"/>
+    <rect x="17" y="3" width="12" height="6" rx="1" class="lines"/>
+    
+    <!-- Middle row (offset) -->
+    <rect x="3" y="11" width="6" height="6" rx="1" class="lines"/>
+    <rect x="11" y="11" width="12" height="6" rx="1" class="lines"/>
+    <rect x="25" y="11" width="4" height="6" rx="1" class="lines"/>
+    
+    <!-- Bottom row -->
+    <rect x="3" y="19" width="12" height="6" rx="1" class="lines"/>
+    <rect x="17" y="19" width="12" height="6" rx="1" class="lines"/>
+    
+    <!-- Small bottom section -->
+    <rect x="3" y="27" width="26" height="2" rx="1" class="lines"/>
+  </g>
+</svg>
