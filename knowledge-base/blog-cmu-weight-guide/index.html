@@ -47,6 +47,47 @@
     .density-block.standard { background: #EBF4FF; border-color: #2F80ED; }
     .density-block.heavy { background: #FFF5F5; border-color: #F56565; }
     .density-block .block-weight { font-size: 1.4rem; font-weight: 800; }
+
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+      .infographic,
+      .calc-box,
+      .toggle-wrapper {
+        padding: 1rem;
+        margin: 1.5rem 0;
+      }
+
+      .calc-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .toggle-tabs {
+        justify-content: center;
+      }
+
+      .tab-btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+      }
+
+      .density-visual {
+        grid-template-columns: 1fr;
+      }
+
+      .bar-label {
+        min-width: 100px;
+        font-size: 0.8rem;
+      }
+
+      .bar-fill {
+        font-size: 0.75rem;
+        padding-right: 0.5rem;
+      }
+
+      .weight-bars {
+        gap: 0.75rem;
+      }
+    }
   </style>
 </head>
 <body>

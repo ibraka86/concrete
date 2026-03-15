@@ -279,6 +279,56 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
     }
+
+    /* ===== MOBILE OPTIMIZATIONS ===== */
+    @media (max-width: 768px) {
+      .article-header {
+        padding: 2rem 1.5rem;
+      }
+
+      .article-header h1 {
+        font-size: 1.75rem;
+      }
+
+      .card,
+      .card-accent,
+      .step-block {
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .step-header {
+        flex-wrap: wrap;
+      }
+
+      .alert {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+      }
+
+      .cost-bar-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .cost-bar-label {
+        min-width: auto;
+      }
+
+      .cost-bar-outer {
+        width: 100%;
+      }
+
+      .stat-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .comparison-card {
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
