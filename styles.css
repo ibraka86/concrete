@@ -640,8 +640,8 @@ a:hover {
 /* Blog Layout System */
 .blog-layout {
   display: grid;
-  grid-template-columns: 280px 1fr 280px;
-  gap: 2.5rem;
+  grid-template-columns: 1fr 320px;
+  gap: 3rem;
   align-items: start;
   max-width: 1400px;
   margin: 0 auto;
@@ -695,21 +695,8 @@ a:hover {
 
 @media (max-width: 1200px) {
   .blog-layout {
-    grid-template-columns: 280px 1fr;
-  }
-  .blog-sidebar {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  .blog-layout {
     grid-template-columns: 1fr;
-  }
-  .toc {
-    position: static;
-    max-height: none;
-    margin-bottom: 2rem;
+    gap: 2rem;
   }
 }
 
