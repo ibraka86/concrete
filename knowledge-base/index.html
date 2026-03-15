@@ -11,29 +11,41 @@
     .kb-hero {
       background: linear-gradient(135deg, #0B1A2B 0%, #1a3a5c 100%);
       color: white;
-      padding: 4rem 2rem;
+      padding: 5rem 2rem;
       text-align: center;
       border-radius: 20px;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
     }
-    .kb-hero h1 { color: white; font-size: 2.5rem; margin-bottom: 1rem; }
+    .kb-hero::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(47, 128, 237, 0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .kb-hero h1 { color: white; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
     .kb-hero p { color: rgba(255,255,255,0.9); font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
 
     .kb-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-      margin-bottom: 4rem;
+      gap: 2.5rem;
+      margin-bottom: 6rem;
     }
 
     .kb-card {
       background: white;
-      border-radius: 16px;
+      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      border: 1px solid #e2e8f0;
-      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border: 1px solid #eef2f6;
+      transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
       text-decoration: none;
@@ -41,39 +53,41 @@
     }
 
     .kb-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
       border-color: var(--primary);
     }
 
     .kb-content {
-      padding: 2rem;
+      padding: 2.5rem;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
     }
 
     .kb-tag {
-      background: #ebf4ff;
-      color: #2563eb;
+      background: var(--primary-light);
+      color: var(--primary);
       font-size: 0.75rem;
       font-weight: 700;
       text-transform: uppercase;
-      padding: 0.25rem 0.75rem;
+      padding: 0.4rem 1rem;
       border-radius: 99px;
       align-self: flex-start;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.05em;
     }
 
     .kb-card h2 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin: 0 0 1rem;
-      color: #0b1a2b;
-      line-height: 1.3;
+      color: #111827;
+      line-height: 1.25;
+      font-weight: 800;
     }
 
     .kb-card p {
-      color: #475569;
+      color: #4b5563;
       font-size: 1rem;
       margin-bottom: 1.5rem;
       line-height: 1.6;
@@ -82,10 +96,15 @@
     .kb-link {
       margin-top: auto;
       color: var(--primary);
-      font-weight: 600;
+      font-weight: 700;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      transition: gap 0.2s;
+    }
+    
+    .kb-card:hover .kb-link {
+      gap: 0.75rem;
     }
 
     main { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
@@ -99,7 +118,6 @@
           <img src="../favicon.svg" alt="" aria-hidden="true" width="32" height="32">
           <span>Concrete Block Calculator</span>
         </a>
-        <p class="tagline">Fast CMU estimates for blocks, mortar, grout, sand, and reinforcement.</p>
       </div>
 
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
@@ -108,7 +126,7 @@
 
       <nav class="main-nav" id="mainNav">
         <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false">Calculators</a>
+          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false" tabindex="0">Calculators</a>
           <div class="dropdown-menu" aria-labelledby="calculatorsDropdown">
             <a href="../" class="dropdown-item">Concrete Block Calculator</a>
             <a href="../retaining-wall/" class="dropdown-item">Retaining Wall Calculator</a>
@@ -127,9 +145,14 @@
   </header>
 
   <main>
+    <nav class="breadcrumb" style="margin: 2rem 0;" aria-label="Breadcrumb">
+      <a href="../">Home</a><span>›</span>
+      <span>Knowledge Base</span>
+    </nav>
+
     <div class="kb-hero">
       <h1>Knowledge Base</h1>
-      <p>Expert resources, step-by-step guides, and technical data for Masonry & Concrete projects.</p>
+      <p>Master your next masonry project with our expert-written technical guides, step-by-step DIY tutorials, and current industry data.</p>
     </div>
 
     <div class="kb-grid">
@@ -138,7 +161,7 @@
         <div class="kb-content">
           <span class="kb-tag">Technical Data</span>
           <h2>Concrete Block Weight Guide</h2>
-          <p>The definitive guide to CMU weights. Exact weights for standard, lightweight, and heavyweight blocks by size.</p>
+          <p>The definitive guide to CMU weights. Accurate data for standard, lightweight, and heavyweight blocks. Essential for shipping and structural planning.</p>
           <span class="kb-link">Read Guide →</span>
         </div>
       </a>
@@ -148,7 +171,7 @@
         <div class="kb-content">
           <span class="kb-tag">DIY Projects</span>
           <h2>DIY Cinder Block Fire Pit</h2>
-          <p>Build a stunning backyard fire pit for as little as $30. 5 affordable designs with step-by-step instructions.</p>
+          <p>Build your dream backyard fire pit for as little as $30. Explore 5 safe, affordable designs with full checklists and material lists.</p>
           <span class="kb-link">Read Guide →</span>
         </div>
       </a>
@@ -157,8 +180,8 @@
       <a href="retaining-wall-guide/" class="kb-card">
         <div class="kb-content">
           <span class="kb-tag">Construction</span>
-          <h2>Retaining Wall Step-by-Step</h2>
-          <p>Learn how to build a concrete block retaining wall with proper footing, drainage, and geogrid reinforcement.</p>
+          <h2>Retaining Wall Master Guide</h2>
+          <p>A professional-grade guide to building segmental retaining walls. Covers footings, drainage systems, and geogrid reinforcement.</p>
           <span class="kb-link">Read Guide →</span>
         </div>
       </a>
@@ -166,15 +189,20 @@
   </main>
 
   <footer class="site-footer">
-    <nav>
-      <a href="../">Home</a> · 
-      <a href="../knowledge-base/">Knowledge Base</a> · 
-      <a href="../about-us/">About Us</a> · 
-      <a href="mailto:info@concreteblockcalculator.com">Contact</a>
-    </nav>
-    <small>© 2025 concreteblockcalculator.com</small>
+    <div class="footer-container">
+      <nav>
+        <a href="../">Home</a> · 
+        <a href="../knowledge-base/">Knowledge Base</a> · 
+        <a href="../about-us/">About Us</a> · 
+        <a href="mailto:info@concreteblockcalculator.com">Contact</a>
+      </nav>
+      <small>© <span id="year"></span> concreteblockcalculator.com · Real Solutions for Concrete Block Projects</small>
+    </div>
   </footer>
 
   <script src="../app.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

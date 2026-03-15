@@ -69,33 +69,6 @@
     .article-header h1 { color: #fff; margin-bottom: 1rem; font-size: clamp(1.8rem, 5vw, 2.5rem); }
     .article-header p { color: rgba(255,255,255,0.9); font-size: 1.1rem; }
 
-    /* ===== TOC ===== */
-    .toc {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    }
-    .toc h3 { margin: 0 0 1rem; font-size: 0.95rem; font-weight: 700; color: #1e293b; display: flex; align-items: center; gap: 0.5rem; }
-    .toc ol { margin: 0; padding-left: 1.2rem; }
-    .toc li { margin-bottom: 0.5rem; font-size: 0.95rem; }
-    .toc a { color: #475569; text-decoration: none; transition: color 0.2s; }
-    .toc a:hover { color: var(--primary); text-decoration: underline; }
-
-    @media (min-width: 1024px) {
-      .toc {
-        float: left;
-        width: 300px;
-        margin-right: 2.5rem;
-        margin-top: 0;
-        position: sticky;
-        top: 2rem;
-        z-index: 10;
-      }
-    }
-
     /* ===== STEP BLOCKS ===== */
     .step-block {
       background: var(--bg-secondary); border-radius: 12px;
@@ -319,7 +292,6 @@
           <img src="../../favicon.svg" alt="" aria-hidden="true" width="32" height="32">
           <span>Concrete Block Calculator</span>
         </a>
-        <p class="tagline">Fast CMU estimates for blocks, mortar, grout, sand, and reinforcement.</p>
       </div>
 
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
@@ -328,7 +300,7 @@
 
       <nav class="main-nav" id="mainNav">
         <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false">Calculators</a>
+          <a class="nav-link dropdown-toggle" id="calculatorsDropdown" role="button" aria-expanded="false" tabindex="0">Calculators</a>
           <div class="dropdown-menu" aria-labelledby="calculatorsDropdown">
             <a href="../../" class="dropdown-item">Concrete Block Calculator</a>
             <a href="../../retaining-wall/" class="dropdown-item">Retaining Wall Calculator</a>
@@ -349,12 +321,31 @@
 <!-- ===== MAIN ===== -->
 <main id="main">
   <div class="blog-layout">
+    <aside class="toc" aria-label="Table of contents">
+      <h3>📋 Table of Contents</h3>
+      <ol>
+        <li><a href="#overview">Project Overview &amp; When You Need a Retaining Wall</a></li>
+        <li><a href="#planning">Phase 1 – Planning, Permits &amp; Block Selection</a></li>
+        <li><a href="#materials">Tools &amp; Materials Complete List</a></li>
+        <li><a href="#estimator">Interactive Material Estimator</a></li>
+        <li><a href="#steps">Step-by-Step Construction (Steps 1–10)</a></li>
+        <li><a href="#drainage">Drainage Deep-Dive: The #1 Cause of Wall Failure</a></li>
+        <li><a href="#geogrid">Geogrid Reinforcement Guide</a></li>
+        <li><a href="#infographic">Visual Wall Cross-Section Infographic</a></li>
+        <li><a href="#wall-types">Wall Type Comparison</a></li>
+        <li><a href="#cost">Cost Breakdown &amp; Budget Guide</a></li>
+        <li><a href="#mistakes">10 Mistakes That Destroy Retaining Walls</a></li>
+        <li><a href="#checklist">Pre-Build Checklist</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+    </aside>
+
     <div class="blog-main">
 
   <!-- Breadcrumb -->
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Home</a><span>›</span>
-    <a href="/blog">Blog</a><span>›</span>
+    <a href="../../">Home</a><span>›</span>
+    <a href="../">Knowledge Base</a><span>›</span>
     <span>How to Build a Concrete Block Retaining Wall</span>
   </nav>
 
@@ -403,28 +394,10 @@
   <div class="card" style="background: linear-gradient(135deg, #1a3a5c 0%, #2F80ED 100%); color: white; text-align: center; padding: 2.5rem;">
     <h2 style="color: white; margin-top: 0;">Plan Your Wall Like a Pro</h2>
     <p style="color: rgba(255,255,255,0.9); margin-bottom: 1.5rem;">Get exact material counts, gravel volume, and structural requirements for your retaining wall in seconds.</p>
-    <a href="/retaining-wall/index.html" class="btn-primary" style="background: white; color: var(--primary);">Open Retaining Wall Calculator →</a>
+    <a href="../../retaining-wall/" class="btn-primary" style="background: white; color: var(--primary);">Open Retaining Wall Calculator →</a>
   </div>
 
-  <!-- ===== TABLE OF CONTENTS ===== -->
-  <div class="toc">
-    <h3>📋 Table of Contents</h3>
-    <ol>
-      <li><a href="#overview">Project Overview &amp; When You Need a Retaining Wall</a></li>
-      <li><a href="#planning">Phase 1 – Planning, Permits &amp; Block Selection</a></li>
-      <li><a href="#materials">Tools &amp; Materials Complete List</a></li>
-      <li><a href="#estimator">Interactive Material Estimator</a></li>
-      <li><a href="#steps">Step-by-Step Construction (Steps 1–10)</a></li>
-      <li><a href="#drainage">Drainage Deep-Dive: The #1 Cause of Wall Failure</a></li>
-      <li><a href="#geogrid">Geogrid Reinforcement Guide</a></li>
-      <li><a href="#infographic">Visual Wall Cross-Section Infographic</a></li>
-      <li><a href="#wall-types">Wall Type Comparison</a></li>
-      <li><a href="#cost">Cost Breakdown &amp; Budget Guide</a></li>
-      <li><a href="#mistakes">10 Mistakes That Destroy Retaining Walls</a></li>
-      <li><a href="#checklist">Pre-Build Checklist</a></li>
-      <li><a href="#faq">Frequently Asked Questions</a></li>
-    </ol>
-  </div>
+  <!-- TOC moved to sidebar -->
 
   <!-- ===== SECTION 1: OVERVIEW ===== -->
   <section id="overview" class="card">
@@ -672,7 +645,7 @@
   <!-- ===== SECTION 4: ESTIMATOR ===== -->
   <section id="estimator" class="card">
     <h2>🧮 Interactive Material Estimator</h2>
-    <p>Enter your wall dimensions to get a quick material estimate. For precise block counts, use our <a href="/">full Concrete Block Calculator</a>.</p>
+    <p>Enter your wall dimensions to get a quick material estimate. For precise block counts, use our <a href="../../">full Concrete Block Calculator</a>.</p>
 
     <form id="wall-estimator" onsubmit="calcWall(event)">
       <div class="calc-grid">
@@ -718,7 +691,7 @@
       </div>
       <div class="alert alert-info" style="margin-top:1rem;">
         <div class="alert-icon">ℹ️</div>
-        <div class="alert-content">These are rough estimates for planning. Actual quantities depend on block brand, site conditions, and soil type. Always verify with your supplier. <a href="/">Use our full calculator</a> for precise CMU counts.</div>
+        <div class="alert-content">These are rough estimates for planning. Actual quantities depend on block brand, site conditions, and soil type. Always verify with your supplier. <a href="../../">Use our full calculator</a> for precise CMU counts.</div>
       </div>
     </div>
   </section>
@@ -1458,7 +1431,7 @@
       <li>Cross-referencing with <strong>NCMA Technical Series</strong>, Allan Block Engineering Manual, and U.S. Army Corps of Engineers retaining wall guidelines</li>
       <li>Incorporating interactive tools (estimator, checklist, infographic) that no competitor offers in a single resource</li>
     </ul>
-    <p><strong>Last reviewed:</strong> March 2026 | <strong>Content contact:</strong> <a href="/cdn-cgi/l/email-protection#bfd6d1d9d0ffdcd0d1dccddacbdaddd3d0dcd4dcded3dccad3decbd0cd91dcd0d2"><span class="__cf_email__" data-cfemail="2940474f46694a46474a5b4c5d4c4b45464a424a48454a5c45485d465b074a4644">[email&#160;protected]</span></a></p>
+    <p><strong>Last reviewed:</strong> March 2026 | <strong>Content contact:</strong> <a href="/cdn-cgi/l/email-protection#bfd6d1d9d0ffdcd0d1dccddacbdaddd3d0dcd4d4d3dccad3decbd0cd91dcd0d2"><span class="__cf_email__" data-cfemail="2940474f46694a46474a5b4c5d4c4b45464a424a48454a5c45485d465b074a4644">[email&#160;protected]</span></a></p>
   </section>
 
     </div><!-- /blog-main -->
@@ -1467,28 +1440,17 @@
       <div class="sidebar-widget">
         <h3>Latest Posts</h3>
         <ul class="latest-posts-list">
-          <li>
-            <a href="../blog-cmu-weight-guide/">Concrete Block Weight Guide</a>
-            <div class="post-date">March 12, 2025</div>
-          </li>
-          <li>
-            <a href="../fire-pit-article/">DIY Cinder Block Fire Pit</a>
-            <div class="post-date">March 10, 2025</div>
-          </li>
-          <li>
-            <a href="../retaining-wall-guide/" class="active">Retaining Wall Step-by-Step</a>
-            <div class="post-date">March 15, 2026</div>
-          </li>
+          <li><a href="../blog-cmu-weight-guide/">CMU Weight Guide</a></li>
+          <li><a href="../fire-pit-article/">DIY Fire Pit Guide</a></li>
+          <li><a href="../retaining-wall-guide/" class="active">Retaining Wall Guide</a></li>
         </ul>
       </div>
-
       <div class="sidebar-widget">
-        <h3>Popular Calculators</h3>
+        <h3>Calculators</h3>
         <ul class="latest-posts-list">
-          <li><a href="../../">Concrete Block Calculator</a></li>
-          <li><a href="../../retaining-wall/">Retaining Wall Calculator</a></li>
+          <li><a href="../../">Block Calculator</a></li>
           <li><a href="../../fire-pit-planter/">Fire Pit Calculator</a></li>
-          <li><a href="../../block-weight/">Block Weight Calculator</a></li>
+          <li><a href="../../retaining-wall/">Retaining Wall</a></li>
         </ul>
       </div>
 
