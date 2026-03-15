@@ -640,10 +640,10 @@ a:hover {
 /* Blog Layout System */
 .blog-layout {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 280px 1fr 280px;
   gap: 2.5rem;
   align-items: start;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -653,7 +653,6 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.5rem;
-  margin-bottom: 2rem;
   box-shadow: 0 2px 4px var(--shadow);
 }
 
@@ -694,9 +693,12 @@ a:hover {
   min-width: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .blog-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: 280px 1fr;
+  }
+  .blog-sidebar {
+    display: none;
   }
 }
 
@@ -705,11 +707,15 @@ a:hover {
     grid-template-columns: 1fr;
   }
   .toc {
-    display: none;
+    position: static;
+    max-height: none;
+    margin-bottom: 2rem;
   }
 }
 
 .blog-sidebar {
+  position: sticky;
+  top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
