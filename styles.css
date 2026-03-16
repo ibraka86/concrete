@@ -281,11 +281,9 @@ a:hover {
 .hamburger {
   display: block;
   width: 24px;
-  height: 2.5px;
+  height: 2px;
   background: var(--text-primary);
   position: relative;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  border-radius: 2px;
 }
 
 .hamburger::before,
@@ -293,35 +291,24 @@ a:hover {
   content: '';
   position: absolute;
   width: 24px;
-  height: 2.5px;
+  height: 2px;
   background: var(--text-primary);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  border-radius: 2px;
+  left: 0;
 }
 
-.hamburger::before { top: -7px; }
-.hamburger::after { bottom: 7px; }
-
-/* Menu open state */
-.menu-toggle.active {
-  background: var(--primary);
-  border-color: var(--primary);
+.hamburger::before {
+  top: -8px;
 }
 
-.menu-toggle.active .hamburger {
-  background: transparent;
+.hamburger::after {
+  top: 8px;
 }
 
-.menu-toggle.active .hamburger::before {
-  transform: rotate(45deg);
-  top: 0;
-  background: white;
-}
-
+/* Menu open state - keep simple 3 lines */
+.menu-toggle.active .hamburger,
+.menu-toggle.active .hamburger::before,
 .menu-toggle.active .hamburger::after {
-  transform: rotate(-45deg);
-  bottom: 0;
-  background: white;
+  background: var(--text-primary);
 }
 
 @media (max-width: 991px) {
@@ -912,16 +899,31 @@ a:hover {
   margin: 1.5rem 0;
   border-left: 4px solid var(--primary);
   background: var(--bg-accent);
+  color: var(--text-primary);
 }
 
 .callout-warning {
-  border-color: var(--warning);
-  background: var(--warning-bg);
+  border-color: #DD6B20;
+  background: #FFFAF0;
+  color: #7c2d12;
 }
 
 .callout-info {
-  border-color: var(--primary);
-  background: var(--info-bg);
+  border-color: #3182CE;
+  background: #EBF8FF;
+  color: #2c5282;
+}
+
+.callout-danger {
+  border-color: #E53E3E;
+  background: #FFF5F5;
+  color: #742a2a;
+}
+
+.callout-success {
+  border-color: #38A169;
+  background: #F0FFF4;
+  color: #22543d;
 }
 
 .callout h4 {
@@ -929,6 +931,14 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: inherit;
+}
+
+.callout p,
+.callout ul,
+.callout li,
+.callout strong {
+  color: inherit;
 }
 
 .table-wrap {
@@ -1777,5 +1787,90 @@ select:focus,
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Alert boxes for knowledge base articles */
+.alert {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+  background: #fff;
+  color: #1a202c;
+}
+
+.alert-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.alert-content {
+  flex: 1;
+  color: #1a202c;
+  line-height: 1.6;
+}
+
+.alert-content strong {
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.alert-danger {
+  background: #FFF5F5;
+  border-color: #E53E3E;
+  color: #742a2a;
+}
+
+.alert-danger .alert-content,
+.alert-danger .alert-content strong {
+  color: #742a2a;
+}
+
+.alert-warning {
+  background: #FFFAF0;
+  border-color: #DD6B20;
+  color: #7c2d12;
+}
+
+.alert-warning .alert-content,
+.alert-warning .alert-content strong {
+  color: #7c2d12;
+}
+
+.alert-info {
+  background: #EBF8FF;
+  border-color: #3182CE;
+  color: #2c5282;
+}
+
+.alert-info .alert-content,
+.alert-info .alert-content strong {
+  color: #2c5282;
+}
+
+.alert-success {
+  background: #F0FFF4;
+  border-color: #38A169;
+  color: #22543d;
+}
+
+.alert-success .alert-content,
+.alert-success .alert-content strong {
+  color: #22543d;
+}
+
+/* Mobile optimizations for alerts */
+@media (max-width: 768px) {
+  .alert {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .alert-icon {
+    font-size: 1.25rem;
   }
 }
