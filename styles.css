@@ -98,7 +98,8 @@ a:hover {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
@@ -314,6 +315,8 @@ a:hover {
 @media (max-width: 991px) {
   .header-container {
     padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   .menu-toggle {
@@ -412,7 +415,7 @@ a:hover {
 .blog-main {
   line-height: 1.8;
   font-size: 1.1rem;
-  color: #374151;
+  color: var(--text-secondary);
   min-width: 0; /* Prevent grid breakout */
 }
 
@@ -508,8 +511,8 @@ a:hover {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
-  color: #111827;
-  border-bottom: 2px solid #f3f4f6;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border);
   padding-bottom: 0.5rem;
 }
 
@@ -571,7 +574,7 @@ a:hover {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-size: clamp(1.3rem, 3vw, 1.6rem);
-  color: #111827;
+  color: var(--text-primary);
 }
 
 .blog-main p {
@@ -1101,6 +1104,8 @@ main {
 }
 
 /* Cards */
+.card,
+.card-accent,
 .calculator,
 .results,
 .how,
@@ -1113,6 +1118,10 @@ main {
   margin-bottom: 2rem;
   box-shadow: 0 2px 4px var(--shadow);
   border: 1px solid var(--border);
+}
+
+.card-accent {
+  background: var(--bg-accent);
 }
 
 .steps {

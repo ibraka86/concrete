@@ -55,7 +55,9 @@ function initializeDOM() {
 
 function initializeEventListeners() {
   // Form submission
-  formElements.form.addEventListener('submit', handleFormSubmit);
+  if (formElements.form) {
+    formElements.form.addEventListener('submit', handleFormSubmit);
+  }
   
   // Input changes with debouncing
   const inputs = [
@@ -76,9 +78,11 @@ function initializeEventListeners() {
   });
   
   // Radio buttons
-  formElements.spacing.forEach(radio => {
-    radio.addEventListener('change', handleInputChange);
-  });
+  if (formElements.spacing) {
+    formElements.spacing.forEach(radio => {
+      radio.addEventListener('change', handleInputChange);
+    });
+  }
   
   // Result actions
   if (resultElements.printBtn) {
@@ -92,17 +96,19 @@ function initializeEventListeners() {
   }
   
   // Mutual exclusion for fill options
-  formElements.fillCells.addEventListener('change', function() {
-    if (this.checked) {
-      formElements.useVermiculite.checked = false;
-    }
-  });
-  
-  formElements.useVermiculite.addEventListener('change', function() {
-    if (this.checked) {
-      formElements.fillCells.checked = false;
-    }
-  });
+  if (formElements.fillCells && formElements.useVermiculite) {
+    formElements.fillCells.addEventListener('change', function() {
+      if (this.checked) {
+        formElements.useVermiculite.checked = false;
+      }
+    });
+    
+    formElements.useVermiculite.addEventListener('change', function() {
+      if (this.checked) {
+        formElements.fillCells.checked = false;
+      }
+    });
+  }
   
   // Load inputs from URL parameters
   loadFromURLParams();
@@ -526,21 +532,21 @@ function copyToClipboard(text) {
 function loadFromURLParams() {
   const params = new URLSearchParams(window.location.search);
   
-  if (params.has('length')) formElements.length.value = params.get('length');
-  if (params.has('height')) formElements.height.value = params.get('height');
-  if (params.has('thickness')) formElements.thickness.value = params.get('thickness');
-  if (params.has('spacing')) {
+  if (params.has('length') && formElements.length) formElements.length.value = params.get('length');
+  if (params.has('height') && formElements.height) formElements.height.value = params.get('height');
+  if (params.has('thickness') && formElements.thickness) formElements.thickness.value = params.get('thickness');
+  if (params.has('spacing') && formElements.spacing) {
     const spacing = params.get('spacing');
     formElements.spacing.forEach(radio => {
       radio.checked = radio.value === spacing;
     });
   }
-  if (params.has('waste')) formElements.waste.value = params.get('waste');
-  if (params.has('fill')) formElements.fillCells.checked = true;
-  if (params.has('vermiculite')) formElements.useVermiculite.checked = true;
+  if (params.has('waste') && formElements.waste) formElements.waste.value = params.get('waste');
+  if (params.has('fill') && formElements.fillCells) formElements.fillCells.checked = true;
+  if (params.has('vermiculite') && formElements.useVermiculite) formElements.useVermiculite.checked = true;
   
   // Calculate if we have valid inputs
-  if (params.has('length') && params.has('height')) {
+  if (params.has('length') && params.has('height') && formElements.length && formElements.height) {
     setTimeout(() => {
       if (validateInputs()) {
         calculateMaterials();
@@ -565,17 +571,17 @@ function loadSavedInputs() {
     if (saved) {
       const inputs = JSON.parse(saved);
       
-      if (inputs.length) formElements.length.value = inputs.length;
-      if (inputs.height) formElements.height.value = inputs.height;
-      if (inputs.thickness) formElements.thickness.value = inputs.thickness;
-      if (inputs.spacing) {
+      if (inputs.length && formElements.length) formElements.length.value = inputs.length;
+      if (inputs.height && formElements.height) formElements.height.value = inputs.height;
+      if (inputs.thickness && formElements.thickness) formElements.thickness.value = inputs.thickness;
+      if (inputs.spacing && formElements.spacing) {
         formElements.spacing.forEach(radio => {
           radio.checked = radio.value == inputs.spacing;
         });
       }
-      if (inputs.waste !== undefined) formElements.waste.value = inputs.waste * 100;
-      if (inputs.fillCells) formElements.fillCells.checked = inputs.fillCells;
-      if (inputs.useVermiculite) formElements.useVermiculite.checked = inputs.useVermiculite;
+      if (inputs.waste !== undefined && formElements.waste) formElements.waste.value = inputs.waste * 100;
+      if (inputs.fillCells !== undefined && formElements.fillCells) formElements.fillCells.checked = inputs.fillCells;
+      if (inputs.useVermiculite !== undefined && formElements.useVermiculite) formElements.useVermiculite.checked = inputs.useVermiculite;
     }
   } catch (error) {
     console.warn('Could not load saved inputs:', error);
